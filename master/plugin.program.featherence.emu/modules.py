@@ -1025,7 +1025,7 @@ def searchtrailer(filename):
 def copyarcade(force=False):
 	name = 'copyarcade' ; printpoint = ""
 	path = os.path.join(rom_path, 'Arcade', '')
-	if not os.path.exists(os.path.join(emulatordata_path,'save','MAME 2014', 'mame', 'cfg', '')) and os.path.exists(os.path.join(featherence_emu_module_path,'save','mame', 'cfg', '')):
+	if (not os.path.exists(os.path.join(emulatordata_path,'save','MAME 2014', 'mame', 'cfg', '')) or force==True) and os.path.exists(os.path.join(featherence_emu_module_path,'save','mame', 'cfg', '')):
 		printpoint = printpoint + '1'
 		notification('copying Arcade CFG','','',2000)
 		source = os.path.join(featherence_emu_module_path,'save', 'mame')
@@ -1035,6 +1035,26 @@ def copyarcade(force=False):
 	elif not os.path.exists(os.path.join(emulatordata_path,'save','MAME 2014', 'mame', 'diff', '')) or not os.path.exists(os.path.join(emulatordata_path,'save','MAME 2014', 'mame', 'nvram', '')):
 		printpoint = printpoint + '2'
 		downloads2('nvram_diff.zip', os.path.join(emulatordata_path,'save', 'MAME 2014', 'mame'))
+	
+	text = "force" + space2 + str(force)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+
+def copydolphin(force=False):
+	name = 'copydolphin' ; printpoint = ""
+	path1 = os.path.join(save_path, 'dolphin-emu', 'User', 'Config', '')
+	path2 = os.path.join(system_path, 'dolphin-emu', '')
+	if (not os.path.exists(os.path.join(path1)) or force==True) and os.path.exists(os.path.join(featherence_emu_module_path,'save','dolphin-emu', 'User', '')):
+		printpoint = printpoint + '1'
+		notification('copying to save/dolphin-emu','','',2000)
+		source = os.path.join(featherence_emu_module_path,'save', 'dolphin-emu')
+		target = os.path.join(emulatordata_path,'save', 'dolphin-emu')
+		copyfiles(source, target)
+	if (not os.path.exists(path2) or force==True) and os.path.exists(os.path.join(featherence_emu_module_path,'system','dolphin-emu', 'Sys', '')):
+		printpoint = printpoint + '2'
+		notification('copying to system/dolphin-emu','','',2000)
+		source = os.path.join(featherence_emu_module_path,'system', 'dolphin-emu')
+		target = os.path.join(emulatordata_path,'system', 'dolphin-emu')
+		copyfiles(source, target)
 	
 	text = "force" + space2 + str(force)
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
@@ -1109,7 +1129,10 @@ def copyconfig(force=False):
 			printpoint = printpoint + '4'
 			notification('copying remaps','','',1000)
 			copyfiles(remaps_path2, remaps_path)
-
+	
+	copydolphin(force)
+	
+	
 	text = "extra" + space2 + str(extra) + newline + \
 	'os.listdir(path)' + space2 + str(os.listdir(path)) + newline + \
 	'force' + space2 + str(force)
@@ -1479,7 +1502,7 @@ def copylaunchers(force=False):
 			elif systemplatformlinux:
 				if systemplatformlinuxraspberrypi or OS == "oe2": _ps2_args = 'pcsx2'
 				elif OS == "i386": _ps2_args = ''
-				else: _ps2_args = 'pcsx2'
+				else: _ps2_args = 'play'
 			elif systemplatformwindows: _ps2_args = 'pcsx2_libretro.dll'
 			dp.update(65,'Generating Launchers file',"Setting _ps2_args..")
 			replace_word(emudata_launcher_file,'_ps2_args',_ps2_args, infile_="", LineR=False , LineClean=False)

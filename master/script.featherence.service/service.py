@@ -11,4 +11,4 @@ from modules import *
 xbmc.sleep(100)
 
 mode5('', admin, 'demon', '')
-mode3('', admin, 'sdarot', '')
+#mode3('', admin, 'sdarot', '')

@@ -572,7 +572,7 @@ class Main:
 							'''Game is not available'''
 							if games_color2 != "": rom_name = '[COLOR=' + str(games_color2) + ']' + rom_name + '[/COLOR]'
 							else: rom_name = '[COLOR=red]' + rom_name + '[/COLOR]'
-						if roms[key]["name"] == 'XXXXX': pass
+						if roms[key]["name"] == 'XXXXX' or 'XXXXX' in roms[key]["name"] or 'not working' in roms[key]["name"]: pass
 						elif os.path.exists(roms[key]["filename"]) or filter_games != 'true': self._add_rom(launcherID, rom_name, roms[key]["filename"], roms[key]["gamesys"], roms[key]["thumb"], defined_fanart, roms[key]["trailer"], roms[key]["custom"], roms[key]["genre"], roms[key]["release"], roms[key]["studio"], roms[key]["plot"], roms[key]["altapp"], roms[key]["altarg"], len(roms), key, False, "")
 					resolution_check()
 					xbmcplugin.endOfDirectory( handle=int( self._handle ), succeeded=True, cacheToDisc=False )

@@ -10942,7 +10942,7 @@
 			<lnk></lnk>
 			<roms>
 				<rom>
-					<id>d39a1e79ra1ba6713ac2769cbd3f4032</id>
+					<id>d39a1e79ra1ba6713ac2769cbd3f4v32</id>
 					<name>Volfied</name>
 					<filename>rom_pathSega Genesis/_2P/Volfied.zip</filename>
 					<thumb>rom_pathSega Genesis/_2P/_Artwork/boxfront/Volfied.jpg</thumb>
@@ -12042,7 +12042,7 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>accbf0d1537f07004018b289e617891d</id>
+					<id>accbf0d1537f07004018b289e617891f</id>
 					<name>Disney's Hercules Action Game</name>
 					<filename>rom_pathSony Playstation/_1P/Disney's Hercules Action Game/Disney's Hercules Action Game.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Disney's Hercules Action Game.jpg</thumb>
@@ -12738,7 +12738,7 @@
 			<name>Sony Playstation 2P</name>
 			<category>Featherence_playstation</category>
 			<application>emulator_file</application>
-			<args>lib_args_ps1_args "%rom%"</args>
+			<args>lib_args_ps2_args "%rom%"</args>
 			<rompath>rom_pathSony Playstation/_2P/</rompath>
 			<thumbpath>rom_pathSony Playstation/_2P/_Artwork/boxfront/</thumbpath>
 			<fanartpath>rom_pathSony Playstation/_2P/_Artwork/screenshot/</fanartpath>
@@ -13045,7 +13045,7 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>e7336418b8fc57c21bc6d10a28982c2d</id>
+					<id>e7336418b8fc57c21bc6d10a28982z2d</id>
 					<name>Small Soldiers</name>
 					<filename>rom_pathSony Playstation/_2P/Small Soldiers/Small Soldiers.m3u</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Small Soldiers.jpg</thumb>
@@ -17174,22 +17174,22 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp12101</id>
-					<name>Donkey Kong Jungle Beat</name>
-					<filename>rom_pathGameCube/_1P/Donkey Kong Jungle Beat.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Donkey Kong Jungle Beat.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Donkey Kong Jungle Beat.jpg</fanart>
+					<id>7d2gce81ea61168385a37ed78fp12101</id>
+					<name>Donkey Kong - Jungle Beat</name>
+					<filename>rom_pathGameCube/_1P/Donkey Kong - Jungle Beat.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Donkey Kong - Jungle Beat.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Donkey Kong - Jungle Beat.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Adventure</genre>
+					<genre>Action</genre>
 					<release>2005</release>
 					<publisher>Nintendo</publisher>
-					<gameplot>Donkey Kong Jungle Beat is a Nintendo GameCube video game featuring the ape Donkey Kong and played with the DK Bongos. It was released in Japan on December 16, 2004, in Europe on February 4, 2005, in North America on March 14, 2005, and in Australia on March 17, 2005. In 2008 and 2009, the game was re-released in the New Play Control! series of revamped Nintendo GameCube titles. The Wii version of Donkey Kong Jungle Beat is somewhat changed from the original GameCube version, including new levels, modifications of old levels, and traditional controls that have the player use the analog stick to move and the A button to jump, unlike the GameCube version which required the player to beat the bongos to do both. This is the first game to be rated E10 by the ESRB.</gameplot>
+					<gameplot>After the Donkey Konga games, Nintendo thought of a novelty use for the DK Bongos device. In Jungle Beat, you still have to match the rhythm by hitting the bongos timely, but the visual presentation is a platformer, much like a regular Donkey Kong game. You control Donkey Kong by hitting the left or right bongos while tapping both drums together or clapping allows for jumps, vine-swinging, wall-kicks, ground-pounding, and other moves.[CR]You have to cross 40 areas to rid the island of evil kongs. During your journey, you can travel using a variety of animals, and they each need a certain rhythm to control. Aside from the input device, it is a regular platformer with power-ups, bananas to collect, many enemies, and end bosses.[CR]There are two versions of the game - one with the DK Bongos included and a lower-priced version without the device.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp12101</id>
+					<id>7d2gcd81ea61668385a37ed78fpva101</id>
 					<name>Metal Gear Solid - The Twin Snakes</name>
 					<filename>rom_pathGameCube/_1P/Metal Gear Solid - The Twin Snakes_cd1.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Metal Gear Solid - The Twin Snakes.jpg</thumb>
@@ -17204,7 +17204,7 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp12101</id>
+					<id>7d2gcd81ea61668385a37ed78fp1c101</id>
 					<name>Super Mario Sunshine</name>
 					<filename>rom_pathGameCube/_1P/Super Mario Sunshine.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Super Mario Sunshine.jpg</thumb>
@@ -17324,7 +17324,7 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78fp10035</id>
+					<id>7d2gcd81ea61668385a37ed78fh10035</id>
 					<name>Fire Emblem - Path Of Radiance</name>
 					<filename>rom_pathGameCube/_1P/Fire Emblem - Path Of Radiance.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Fire Emblem - Path Of Radiance.jpg</thumb>
@@ -17430,7 +17430,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78fp10008</id>
-					<name>Eternal Darkness</name>
+					<name>Eternal Darkness XXXXX</name>
 					<filename>rom_pathGameCube/_1P/Eternal Darkness.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Eternal Darkness.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Eternal Darkness.jpg</fanart>
@@ -17639,8 +17639,23 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37cdw8f2p0043</id>
+					<name>The Legend of Zelda - Twilight Princess</name>
+					<filename>rom_pathGameCube/_1P/The Legend of Zelda - Twilight Princess.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/The Legend of Zelda - Twilight Princess.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/The Legend of Zelda - Twilight Princess.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2006</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Twilight Princess is the first Legend of Zelda game for the Wii and also the last for GameCube. At first, Link is a simple farm boy, whose tasks consist of herding goats to watching children in Ordon village, Link's hometown. One day, Link is asked by the mayor to run an errand in Castle Town, but things suddenly go wrong…[CR]The land becomes dark, and strange creatures appear from another world called the Twilight Realm, which turns most into ghosts. Link, however, becomes a wolf. After becoming a wolf, Link is aided by Midna, a resident of the Twilight Realm. Midna helps Link find a way to turn human again along with other tasks.[CR]The wolf cannot use a sword or other items. Instead, as a wolf Link must use his senses to solve puzzles and get past obstacles. The beast can also dig holes to find hearts and rupees and to get in places. It can push blocks with its head to climb higher or reveal hidden passageways. Additionally, it can attack enemies by biting or pouncing on them.[CR]As a human, Link can move around quickly, aim his bow, swing his sword, and even fish. Link also collects many different items, which allow him to perform varied attacks and reach places he couldn't before. Link performs many attacks with his sword and can even learn other sword moves.[CR]The game's art is similar to the naturalistic style of Ocarina of Time, rather than the cel-shaded look of The Wind Waker. Chronologically, the game takes place between the two aforementioned titles, and quite a few locations from Ocarina of Time can be visited. The main adventure takes place in several provinces with dungeons and temples. With the help of Midna, you can easily travel around quickly later in the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0044</id>
-					<name>Star Wars Rogue Squadron II - Rogue Leader</name>
+					<name>Star Wars Rogue Squadron II - Rogue Leader *איטיות</name>
 					<filename>rom_pathGameCube/_1P/Star Wars Rogue Squadron II - Rogue Leader.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Star Wars Rogue Squadron II - Rogue Leader.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Star Wars Rogue Squadron II - Rogue Leader.jpg</fanart>
@@ -17805,10 +17820,10 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Winnie the Pooh's Rumbly Tumbly Adventure</name>
+					<filename>rom_pathGameCube/_1P/Winnie the Pooh's Rumbly Tumbly Adventure.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Winnie the Pooh's Rumbly Tumbly Adventure.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Adventure / Platform</genre>
@@ -17834,7 +17849,487 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37edw8f2p0055</id>
+					<id>7d2gcd81ea61668385a37edw8f2p0c55</id>
+					<name>Hitman 2 - Silent Assassin</name>
+					<filename>rom_pathGameCube/_1P/Hitman 2 - Silent Assassin.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Hitman 2 - Silent Assassin.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Hitman 2 - Silent Assassin.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Eidos Interactive</publisher>
+					<gameplot>The perfect hitman, Agent 47, tries to distance himself from his violent past and becomes a humble church gardener. But he is tricked into returning to his trade when his friend, a priest, gets kidnapped by an Italian mafioso. Hitman 2: Silent Assassin is a third-person stealth game. As a titular hitman, you have to complete a number of missions all over the world. Each mission generally involves assassinating someone and possibly fulfilling a couple of other objectives.[CR]Typically, your target will be protected by numerous guards. While there's a large arsenal of weapons available to you - ranging from stealthy weapons such as a garrote or a silenced pistol, up to machine guns and sniper rifles - your main weapon will be stealth. Agent 47 can sneak around to remain undetected, and he can disguise himself in clothes from killed or stunned guards.[CR]The guards aren't completely stupid, however, as they will investigate suspicious noises, and they'll react if they see you waving around a gun. They'll get suspicious if they see you running around, raise alarm upon finding a corpse, and if you hang in a disguise around them too long, they'll eventually realize you're not one of their buddies.[CR]Hitman 2: Silent Assassin brings something new to the series: depending on your stealthiness, you are given a rating upon completing a mission. Going trigger-happy on everyone will result in being called a "Mass Murderer", while only the most patient and skilled players will manage to receive the "Silent Assassin" rating, which generally involves stealthily eliminating the target without raising any suspicion.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c56</id>
+					<name>Star Fox Adventures</name>
+					<filename>rom_pathGameCube/_1P/Star Fox Adventures.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Star Fox Adventures.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Star Fox Adventures.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>2002</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Fox McCloud returns and is given a different mission than he is normally used to. At the far edge of the Lylat system, an evil army, led by General Scales, is destroying the world of Dinosaur Planet, rendering all its inhabitants helpless. It is now up to Fox McCloud and his team to save the planet and destroy the evil army.[CR]Star Fox Adventures breaks away from the previous games in the series, being an action game with light puzzle-solving elements, similar to Legend of Zelda: Ocarina of Time. You control Fox McCloud as he adventures through Dinosaur Planet, but at the beginning, you control the female fox Krystal, whom McCloud must later rescue. There are missions where you use your trusty Arwing craft, but the majority of the game takes place on foot.[CR]Helping you throughout your adventure are your trusty sidekicks; Peppy, Slippy, and ROB the Robot, who guide and give you mission briefings. To aid Fox throughout the game, a variety of weapons and magical items are available from blasters to grenades to magic staffs. You may also purchase items with "scarabs", the game's currency. Throughout the game you may partake in various mini-games, which are found at different stores.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c57</id>
+					<name>Prince of Persia - The Sands of Time</name>
+					<filename>rom_pathGameCube/_1P/Prince of Persia - The Sands of Time.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Prince of Persia - The Sands of Time.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Prince of Persia - The Sands of Time.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>The King and the Prince of Persia are besieging the Maharajah's castle to plunder the treasures hidden inside. In order to impress his father, the Prince sneaks inside to recover the magical Dagger of Time. He quickly learns that this dagger has the ability to control time. The malevolent Vizier has other plans for the dagger, however, and tricks the Prince into unlocking a mysterious secret of the Dagger that causes the King and many of his subjects to be turned into sand zombies. Now, the Prince must figure out what has happened and try to set things right again.[CR]Prince of Persia: The Sands of Time is an action game with platforming and puzzle-solving elements. It updates many of the gameplay concepts from the previous games, and brings them into a fully three-dimensional world. The Prince will engage in sword fighting, wall climbing, spike dodging, puzzle solving, and more in his quest. The Prince also carries the Dagger of Time, which allows him to unleash several magical powers. The most important of these powers is the ability to reverse time. This ability allows the player to reverse their actions when they lead the Prince to his death.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c58</id>
+					<name>Wario World</name>
+					<filename>rom_pathGameCube/_1P/Wario World.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Wario World.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Wario World.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Deep within Wario's castle lies a treasure room filled with the spoils he has plundered during his many adventures. A mysterious black jewel, ensconced among the treasures, has a strange power to transform gems into monsters. While Wario rests in his castle upstairs the jewel begins to morph his treasure trove into a host of monsters, turning Wario's basements into a bizarre parallel universe. Awakening the next morning to monsters instead of treasure, Wario must step into that alternate world to win the treasure back.[CR]Wario World is an action platformer where you play as the titular Wario. Punch, pound, barge and jump your way through hoards of enemies as you reclaim your stolen treasure. Wario can also grab certain items and enemies and whirl them around him and then release them into more foes, causing even more carnage.[CR]Defeating enemies yields Wario coins, and he can grab these to purchase health and bonuses. If there's too many coins to grab in an area, you can press L and Wario will inhale the coins to collect them instead. Also tucked away within the levels are Spritelings, caged creatures which offer Wario hints when freed.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c59</id>
+					<name>Resident Evil Zero</name>
+					<filename>rom_pathGameCube/_1P/Resident Evil Zero_cd1.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil Zero.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil Zero.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2002</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Resident Evil: Zero takes place before the events of the original Resident Evil. You take on the role as one of two characters; Rebecca Chambers, the Bravo team medic encountered in the first game, and Billy Coen, an ex-con being transported. The game begins with the Bravo team flying overhead, en route to investigate a series of murders. Something happens, and the helicopter crashes. Everyone survives, but when they all start searching, they encounter an overturned military transport truck, with nothing but corpses inside. Rebecca Chambers, the youngest member of S.T.A.R.S. Alpha Team, goes to investigate the Umbrella Company Luxury Train, which has mysteriously stalled in the middle of the woods. You now take control of Rebecca, and your journey begins.[CR]In addition to the series' traditional survival horror gameplay, the game introduces what it calls a "partner zapping" system, which allows you to switch between Rebecca and Billy at any time. This feature must be used at times, as the game requires both characters to work together to solve some puzzles. New to the game are a bunch of terrifying enemies, like the mutant centipede, new areas to explore, and the ability to drop items on the ground instead of having to find an item box.[CR]Unlike the original GameCube release, all enhanced ports later on feature an additional Wesker mode which gets unlocked after completing the game. That mode adds two new costumes, a red-eye controlled Rebecca look and a Wesker look for Billy with certain special abilities for Wesker. Both skins seem to have been based on Wesker and Jill from Resident Evil 5 which came after the GameCube release of this game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c60</id>
+					<name>Resident Evil 2</name>
+					<filename>rom_pathGameCube/_1P/Resident Evil 2.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Action</genre>
+					<release>2003</release>
+					<publisher>Capcom</publisher>
+					<gameplot>An update of Resident Evil 2, this time with Dual Shock support, a few new extras, and an added battle mode upon completion of the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c61</id>
+					<name>Nickelodeon SpongeBob SquarePants - The Movie</name>
+					<filename>rom_pathGameCube/_1P/Nickelodeon SpongeBob SquarePants - The Movie.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Nickelodeon SpongeBob SquarePants - The Movie.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Nickelodeon SpongeBob SquarePants - The Movie.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Family / Action / Puzzle</genre>
+					<release>2004</release>
+					<publisher>THQ</publisher>
+					<gameplot>On a heroic, comedic quest through more than 20 levels of platform, driving and sliding action, SpongeBob and Patrick leave Bikini Bottom and journey to new and unexplored lands. Players join their struggle to defeat Plankton's diabolic scheme to take over the world...Plan Z! Plankton has stolen King Neptune's crown and assumed control of the town of Bikini Bottom, placing the blame squarely on Mr. Krabs. Together, SpongeBob and Patrick must journey to far away Shell City to recover the crown, return to Bikini Bottom and save the town and Mr. Krabs.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c62</id>
+					<name>Resident Evil - Code Veronica X</name>
+					<filename>rom_pathGameCube/_1P/Resident Evil - Code Veronica X_cd1.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil - Code Veronica X.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil - Code Veronica X.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2003</release>
+					<publisher>Capcom</publisher>
+					<gameplot>This is the same as the original Resident Evil: Code: Veronica for Dreamcast, with new cut-scenes that were not included in the original. Also, Steve got a haircut.[CR]The game is otherwise almost the same, you still take control of Claire Redfield and Chris Redfield, who are searching for each other, while uncovering the secrets behind the Umbrella Corporation.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c63</id>
+					<name>Call of Duty - Finest Hour</name>
+					<filename>rom_pathGameCube/_1P/Call of Duty - Finest Hour.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Call of Duty - Finest Hour.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Call of Duty - Finest Hour.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2004</release>
+					<publisher>Activision</publisher>
+					<gameplot>Call of Duty: Finest Hour is the first CoD game on the consoles. The story spans through three different fronts in the Second World War through three soldiers' viewpoints. Basically, the game is a heavily scripted, story-driven action game where the main focus is on the action and the dramatization of the war and the people in the middle of it all. One of the defining features if Call of Duty-games is the mood they set and the accurate reproduction of the actual WW2 battlefields and operations. As well as the usual range of WW2 weaponry, in CoD:FH there are also vehicles in which one can drive around, blasting the enemies to bits in the process.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c64</id>
+					<name>Call of Duty 2 - Big Red One</name>
+					<filename>rom_pathGameCube/_1P/Call of Duty 2 - Big Red One.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Call of Duty 2 - Big Red One.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Call of Duty 2 - Big Red One.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>In the second Call of Duty game for consoles, players again take to battle in The Second World War. As with other Call of Duty games, the focus is on the characters and their drama amidst the furious, heavily scripted, first-person action. As a private new to war in America's most legendary infantry division, nicknamed the Big Red One for the distinctive patch they wore, players will fight through the game as a team in the Fighting First and will be affected by the loss of friends on the battlefield.[CR]Players will have to re-enact the successes of World War II through a wide variety of land, sea, and air missions in Africa, Sicily, and Normandy, by using vehicles including tanks, jeeps, armored cars, and half-tracks. Success will depend on how well players can move, shoot, and complete the objectives that a commanding officer provides before each mission.[CR]The Xbox and PS2 versions offer multiplayer games with up to 16 players.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c65</id>
+					<name>True Crime - New York City</name>
+					<filename>rom_pathGameCube/_1P/True Crime - New York City.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/True Crime - New York City.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/True Crime - New York City.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>Marcus Reed is a gangster turned cop who is out to clean the streets of New York. Marcus joins the Organized Crime Division of the NYPD with the intent to rid the city of crime and violence. Hoping to make a name for himself after his mentor is shot down, Marcus goes after the top crime syndicates of the city.[CR]Besides having to do this, Marcus is a street-level cop. He is responsible for anything from stopping street fights to stopping gang wars to defusing bombs! Not only this, he can frisk people on the street for contraband, can do trunk searches on cars, as well as issue tickets to speeders.[CR]But if Marcus is gonna do all those things, he's gonna do it his way. Need some cash? Marcus isn't opposed to a bit of extortion from the local pharmacy. Need some way to stabilize your career after that rampage last week? Plant some evidence on a guy and bring him in. No one will know. Pistols not cutting it for you? The gun stores sell police officers anything, from M4s to flamethrowers to RPGs.[CR]With the city of New York at your fingertips, and nearly every building accessible to you, how will you rule? Will you be a shining beacon of morals, or a shady figure in the underworld of NY. The choice is up to you.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c66</id>
+					<name>Incredible Hulk - Ultimate Destruction</name>
+					<filename>rom_pathGameCube/_1P/Incredible Hulk - Ultimate Destruction.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Incredible Hulk - Ultimate Destruction.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Incredible Hulk - Ultimate Destruction.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Vivendi</publisher>
+					<gameplot>The Incredible Hulk faces against his greatest adversary - the Abomination - in a free-roaming, open-world action-adventure. Every object is interactive, plus you can also wield the power of 'weaponization', whereby you can create new weapons from everyday objects. As the most powerful creature on earth, take the battle from the city to the badlands, smash six classic Marvel bosses and finally defeat the Devil Hulk inside your mind.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c67</id>
+					<name>Prince of Persia - The Two Thrones</name>
+					<filename>rom_pathGameCube/_1P/Prince of Persia - The Two Thrones.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Prince of Persia - The Two Thrones.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Prince of Persia - The Two Thrones.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>After many dangerous adventures, the Prince finally makes his way home to Babylon, bringing with him his new bride Kaileena, the Empress of Time. Their hopes for a peaceful and happy future together are dashed, however, when they arrive in Persia to find the land ravaged by war. Kaileena is promptly captured and murdered by the evil Vizier, and her death unleashes the Sands of Time, from which the Vizier derives terrifying new powers.[CR]Once again the Prince of Persia must stand to fight, but this time he will be stronger than ever, thanks to his new alter ego the Dark Prince, born of the Prince's contact with the Sands. As he fights to reclaim his kingdom from the hands of a madman, he must also battle with his own inner demons as the Dark Prince threatens to consume him entirely.[CR]The game is very similar (in terms of fight and puzzle sequences) to the previous installments of UbiSoft's Prince of Persia trilogy: The Sands of Time and Warrior Within. There are some major innovations like the character of the Dark Prince, who possesses the main protagonist from time to time and offers him new combos and moves. There is also a new ability, called "Speed Kill", which is very effective against all opponents in the game (victims are attacked from behind and murdered in brutal and stealthy fashion).[CR]In Prince of Persia: The Two Thrones player will explore not only the streets of Babylon, but also a ruined palace of his father, a temple and the famous Hanging Gardens.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f1P0023</id>
+					<name>Harry Potter and the Prisoner of Azkaban</name>
+					<filename>rom_pathGameCube/_1P/Harry Potter and the Prisoner of Azkaban.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Harry Potter and the Prisoner of Azkaban.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Harry Potter and the Prisoner of Azkaban.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle / Fantasy / Detective</genre>
+					<release>2004</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Based on the third book and movie of the series, players now take control of Harry, Ron, and Hermione in this 3D adventure as they face the dangers of their third year of Hogwarts, avoiding the soul-stealing Dementors, and trying to solve the mystery of escaped convict Sirius Black.[CR]Players will navigate through the castle of Hogwarts and beyond, as they learn new spells and how to work together as a team, solving multiple puzzles and avoiding traps that will either require teamwork, or one of the kid's particular skills. Harry can leap across chasms and climb ropes. Ron can sense secret areas. Hermione, being the smallest, can fit into areas where the others can't. Players can also control Hedwig the owl, or Buckbeak the hippogriff to accomplish other tasks and overcome obstacles.[CR]Survive the year, learn new spells, and discover the truth of Sirius Black's role during the night Harry became known as "The Boy Who Lived".</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c69</id>
+					<name>Disney's Magical Mirror Starring Mickey Mouse</name>
+					<filename>rom_pathGameCube/_1P/Disney's Magical Mirror Starring Mickey Mouse.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Disney's Magical Mirror Starring Mickey Mouse.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Disney's Magical Mirror Starring Mickey Mouse.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Family / Adventure / Puzzle</genre>
+					<release>2002</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>In this third-person game, you play as Mickey Mouse. Mickey is dreaming in his bed and a ghost draws Mickey through his bedroom mirror, then shatters the mirror into 12 pieces. Mickey must make his way through his dream house and collect the mirror pieces so he can get back to his bedroom and wake up.[CR]On his quest, Mickey collects stars that allow him to perform certain actions. He needs to find keys to unlock doors, figure out environmental puzzles, and the like. He may also collect "souvenirs," but these are not necessary.[CR]This is a kids' game that can be enjoyed by adults too. It's primarily an adventure game but there are also some included arcade-style minigames, completion of which is not required to finish the game.[CR]You can also use the Game Boy Advance Link Cable to connect to a Game Boy to play Disney's Magical Quest Starring Mickey & Minnie</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c70</id>
+					<name>Lara Croft Tomb Raider - Legend</name>
+					<filename>rom_pathGameCube/_1P/Lara Croft Tomb Raider - Legend.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Lara Croft Tomb Raider - Legend.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Lara Croft Tomb Raider - Legend.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>2006</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Legend is the seventh major game in the Tomb Raider series, now for the first time developed by Crystal Dynamics, along with the original character designer of the game's protagonist Lara Croft: Toby Gard.[CR]Heroine Lara is searching for a South American relic, but her adventure takes a different course when rogue anthropologist Amanda Evert shows up. Presumed dead along with a team of graduate students after an accident in a tomb in Peru, where Lara was the only one to escape, Amanda is back with a score to settle as they both race, along with the shady James Rutland Jr., to obtain an ancient artifact. Many other characters, both friends and foes, will stir things up. The story takes Lara through locations all over the world, from the Himalayas to Ghana, Kazakhstan, Bolivia, Japan, and England, including her famous mansion filled with secrets and collectibles. Aside from current events, Lara's past is also revealed, through flashbacks. Among other things, you will get to know how she lost her mother and why it is such a burden.[CR]The typical third-person action-adventuring exploring is still present. Lara can move more freely and is no longer limited by specific jumps. As you travel through rough environments, you will need to run, dive, swim, climb on poles, ladders, roofs, use zip lines, shimmy, and vault, with acrobatic actions such as somersaults and flips. You need to cross difficult terrain, solve puzzles to advance or open up new areas, and engage in combat. New tools include a grappling hook, not only used to move around but also to haul enemies Scorpion-style, binoculars, a PLS (personal light source), flares, a PDA and a headset to keep in contact with tech support Zip.[CR]Enemies are still rather scarce. Both humans and animals will attack you, and the game retains the auto lock-on mode, but now with a slide attack and close combat with both kicks and punches, plus bullet-time actions to get behind enemies quickly. Lara carries her trademark dual-wielded pistols, but can also pick up new weapons along the way, such as a shotgun and grenades. Missions take place in both indoor and outdoor environments, with arcade motorcycle and jeep sequences in between. As usual, Lara has a fancy outfit for each location.[CR]The PSP version includes the full game and adds a multiplayer mode: Tomb Trials. You can race another player through tombs to see who comes out first, or go on a timed scavenger hunt for artifacts.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c71</id>
+					<name>TMNT</name>
+					<filename>rom_pathGameCube/_1P/TMNT.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/TMNT.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/TMNT.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2007</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Cowabunga! Take control of your favourite turtle ninjas as you play through the events of the 2007 CGI movie. Leonardo returns from his meditation in South America to find his family in disarray, and crime on the rise in New York. A mysterious figure calling himself the "Nightwatcher" has turned up, and a shadowy rich man named Winters seems to be in cahoots with the remnants of the Foot Clan. Only the Ninja Turtles can clean up the streets![CR]TMNT is an action game, similar to Prince of Persia: The Sands of Time. Play as Leonardo, Michelangelo, Raphael and Donatello, swapping on the fly and using special co-operative moves to help your brothers in battle. Each turtle, being a ninja, can perform moves like double jumping, running along and up walls, gripping onto tiny cracks in the walls, and jumping from wall to wall to scale dizzying heights. Most of the game is spent making your way to the next destination by using your ninja moves to explore New York. Each character also has their own special move: Leo can traverse through walls, Raph can use his Sais to scale particular surfaces, Mikey can use his Nunchucks as helicopters to float for a short period, and Don can pole vault across long gaps with his Bo Staff.[CR]Sometimes, battles will occur - in these situations, you'll be locked in an arena and must battle all your enemies before you can move on. Battling is a simple affair - you can use one button for standard attacks (charge it for a more powerful one), and another button for light attacks that push enemies away. If your fellow turtles are with you, you can also hold down your character swap button for a tandem co-op attack. Some levels will allow you to play as the Nightwatcher - he fights similarly to the Turtles, except that as the more he fights, the more his 'rage' builds, which can cause a devastating surrounding attack when fully charged. The Wii version of the game controls similarly to all other versions, except that gestures are used for attacking instead of button presses.[CR]The basic goal for each level is to get to the end. At the end of each level, you're graded on the following attributes: your speed, your combat, and the amount of coins collected. In levels where you work with your brothers, you'll also be graded on how well you worked together. Succeed in a these attributes, and you'll earn turtle coins which can be used to purchase unlockables. If you get an A Rank or higher in a level, you'll also unlock a Challenge Map, which can be played to earn even more turtle coins. Finally, once you've played any level at least once, turtle coins will appear in hard-to-reach spots for you to collect.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c72</id>
+					<name>The Incredibles</name>
+					<filename>rom_pathGameCube/_1P/The Incredibles.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/The Incredibles.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/The Incredibles.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2004</release>
+					<publisher>THQ</publisher>
+					<gameplot>This game is based on the hit Pixar film of the same name and same plot.[CR]The action game sees you controlling the Incredible family members, each with their own superpowers. Lift insanely heavy objects, bash through walls as Mr. Incredible, stretch to swing across chasms and grab enemies as Mrs. Incredible as well as taking control of their kids' Dash (run amazingly fast) and Violet (invisibility) in the 3D action game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c73</id>
+					<name>Ice Age 2 - The Meltdown</name>
+					<filename>rom_pathGameCube/_1P/Ice Age 2 - The Meltdown.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Ice Age 2 - The Meltdown.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Ice Age 2 - The Meltdown.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Family / Puzzle</genre>
+					<release>2006</release>
+					<publisher>Sierra</publisher>
+					<gameplot>Ice Age 2: The Meltdown is loosely based on the movie of the same name. The game takes place in prehistory - you play as Scrat, the hapless (but not totally helpless!) proto-squirrel, helping your friends escape the coming of a huge flood.[CR]The WASD keys move you forward and back, left and right, and the mouse controls camera movement and some actions. Scrat has a few special moves as well, such as sniff, his spin attack, a double jump, a ground stomp (useful for breaking ice), and a roll attack. Much of the game consists of hunting down acorns and other special nuts for health renewal or for unlocking bonuses. There are a few mini-games within the game - you can play as Sid, zipping along an ice slide while avoiding obstacles; there's also penguin-bowling and a mini-game where you "shoot" at monkeys to regain a walnut that was whisked out from under your nose.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c74</id>
+					<name>Army Men RTS</name>
+					<filename>rom_pathGameCube/_1P/Army Men RTS.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Army Men RTS.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Army Men RTS.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>2004</release>
+					<publisher>Global Star</publisher>
+					<gameplot>The world of Army Men is under your control in the first Real-Time Strategy episode in the Army Men series. Command your Green troops, from the simple soldier to high powered tanks, against a former fellow Green commander who is now leading the enemy, the Tan Forces. The mission is simple, kill the traitor and his forces before all-out chaos begins.[CR]Fight in the trenches of real-world battle areas set in the plastic toy world, or fight in the trenches of backyard gardens, using gnomes, flowers, and garden hoses as extra defense against the enemy. And just when the Tan army falls back, the ant or cockroach army comes rolling in, with the wildlife getting their own back on you.[CR]The familiar "Red Alert" style resource management system allows you to choose from a wide range of attack and defense options. Resources themselves come from siphoning plastic and electricity from discarded toys, batteries, and the like scattered around the battlefield. When you lose a building or soldier, melt it down to re-build a new building or soldier.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c75</id>
+					<name>Disney's Hide and Sneak</name>
+					<filename>rom_pathGameCube/_1P/Disney's Hide and Sneak.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Disney's Hide and Sneak.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Disney's Hide and Sneak.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>2003</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Disney's Hide & Sneak is a single-player 3D stealth adventure game that lets you play as either Mickey Mouse and Minnie Mouse.[CR]Either Mickey or Minnie will get kidnapped by a strange flying alien mushroom - depending on who the player chooses to control. Now the other character has to undertake a rescue mission. Gameplay includes climbing, solving puzzles, jumping, evading and hiding from enemies. Enemies can be taken out when sneaking close enough to enemies. As you make progress you traverse three game areas. These are a warehouse, museum, and ruins.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c76</id>
+					<name>Hello Kitty - Roller Rescue</name>
+					<filename>rom_pathGameCube/_1P/Hello Kitty - Roller Rescue.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Hello Kitty - Roller Rescue.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Hello Kitty - Roller Rescue.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Family / Action / Puzzle</genre>
+					<release>2005</release>
+					<publisher>Namco</publisher>
+					<gameplot>When Sanrio Town is invaded by the evil King Block and his minions, only one skating kitten can save the day! Hello Kitty must battle the villainous block troops that have kidnapped Hello Kitty's friends and family.[CR]Hello Kitty: Roller Rescue is an action platform game where the player controls Hello Kitty and battle through various captured levels of Sanrio Town. The player also gets the option of a computer-controlled partner to help battle the villains. Partners include My Melody, Purrin, and Monkichi. Each partner has their own special attack or ability that can help Hello Kitty out.[CR]As they progress through the game, players can unlock movie clips and music from the game. They can also unlock character bios on various characters in the Hello Kitty Universe, as well as different outfits for Hello Kitty to wear and new weapons for her to use.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c77</id>
+					<name>DreamWorks Shark Tale</name>
+					<filename>rom_pathGameCube/_1P/DreamWorks Shark Tale.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/DreamWorks Shark Tale.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/DreamWorks Shark Tale.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Racing / Driving / Family</genre>
+					<release>2004</release>
+					<publisher>Activision</publisher>
+					<gameplot>Shark Tale is inspired by the movie of the same name and follows the adventures of Oscar, a blue-streaked cleaner wrasse fish. Oscar seems to have got himself into a bit of trouble as he needs to earn money to pay off a loan shark.[CR]The game consists of over 25 chapters with each chapter having three missions to perform. The three missions are broken into a regular one, a bonus one, and an elite one. Completing missions earn Oscar fame points which affect his fame rating. Also, depending on how well Oscar performs missions will determine how much money he earns to pay off his debt. Missions are varied including things like escaping a shark, erasing graffiti, and a dancing segment.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c78</id>
+					<name>Top Gun - Combat Zones</name>
+					<filename>rom_pathGameCube/_1P/Top Gun - Combat Zones.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Top Gun - Combat Zones.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Top Gun - Combat Zones.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Simulation / Flight</genre>
+					<release>2002</release>
+					<publisher>Mstiff</publisher>
+					<gameplot>Top Gun: Combat Zones is an arcade-style flight simulator. The game features 36 different missions in locations around the world. The mission objectives vary greatly. Some missions require you to take out multiple ground targets, like anti-aircraft guns and buildings. Others require you to shoot down enemy MiGs. Some missions have both air-to-air and air-to-ground combat.[CR]You start with only 1 selectable plane, an F-14, and only one scenario in which to fly missions, Southeast Asia. By completing missions you can unlock other planes and war zones. There are 4 different combat zones in which to fly.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c79</id>
+					<name>Cabela's Big Game Hunter 2005 Adventures</name>
+					<filename>rom_pathGameCube/_1P/Cabela's Big Game Hunter 2005 Adventures.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Cabela's Big Game Hunter 2005 Adventures.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Cabela's Big Game Hunter 2005 Adventures.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Simulation</genre>
+					<release>2004</release>
+					<publisher>Activision</publisher>
+					<gameplot>Another in the Big Game Hunting series, 2005 Adventures brings you 36 big game animals in 10 locations. Choose from many guns, bows, equipment, and clothing before heading out to take on these animals.[CR]Head out looking for whatever animal(s) you have tags for. Track your target through mountains, plains, hills, streams, and lakes. Swim across lakes and streams that are in your way and drive various vehicles to save time getting where you're going. Once you find your prey, get close enough to shoot without your target noticing you. Then take the shot![CR]Play the game in quick hunt or career mode, or play with friends online. Go to your cabin to see the animals you have shot in career mode... you can even choose your what cabin you want out of six choices![CR]Unlike many other hunting games that have you go out and kill what you can in a single day, you can take as many days as you need to bag your limit. Use tents to sleep away the nights, or walk around looking for possible spots to sit and wait for prey on the following day... just don't forget to eat and drink to keep up your energy.[CR]Play through rain and snow as well as clear weather conditions. Animals behave differently in different conditions, just like in real life.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c80</id>
+					<name>World Series of Poker</name>
+					<filename>rom_pathGameCube/_1P/World Series of Poker.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/World Series of Poker.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/World Series of Poker.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Cards / Strategy</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>The official game of the premier poker tournament, World Series Of Poker allows you to take on some of the greatest poker players in 26 different poker games, earn WSOP bracelets and earn a place in the "WSOP Hall of Fame".[CR]During tournaments, you take part in several tables en route to the final table. Each table consists of 8 players that are automatically replenished with new players when numbers dwindle. Once the tournament is down to the last 16, you move onto the "featured table", and once down to the last 8, you move onto the final table, where the winner will be decided.[CR]Several famous poker players make an appearance in game including Chris "Jesus" Ferguson, Men the Master and Jennifer Tilly.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c81</id>
+					<name>Tonka - Rescue Patrol</name>
+					<filename>rom_pathGameCube/_1P/Tonka - Rescue Patrol.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Tonka - Rescue Patrol.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Tonka - Rescue Patrol.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Family / Action</genre>
+					<release>2003</release>
+					<publisher>TDK</publisher>
+					<gameplot>Designed for younger children, Tonka: Rescue Patrol lets you drive a firetruck, police car, helicopter, and many other vehicles, as well as helping out around the city. For example, the firetruck might drive to a building on fire to put the fire out, while a crane may move construction material to where it is needed.[CR]There are multiple environments to work in, including a city, country and even an academy to show how to use the vehicles. In the garage, you can clean and repair the vehicles, or even change the paint color.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c82</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c83</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c84</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c85</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c86</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c87</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_1P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -17890,7 +18385,22 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed1af2p0000</id>
+					<id>7d2gcd81ea61668385a37ed78c1p0000</id>
+					<name>Need for Speed - Most Wanted</name>
+					<filename>rom_pathGameCube/_2P/Need for Speed - Most Wanted.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Need for Speed - Most Wanted.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Need for Speed - Most Wanted.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing</genre>
+					<release>2005</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>eed for Speed: Most Wanted is in fact a cross between the Underground and the Hot Pursuit spin-offs. The player must gain notoriety by racing in the streets and attracting the attention of the cops in order to ascend in the Black List of illegal racers. In the end he must face no.1, Razor who tricked him out of his own car and used it to get to the top.[CR]Many racing modes are carried on from NFSU2 with the addition of "Milestones", special events where the driver must evade capture and/or disable police cars by bringing down Pursuit Breakers, specially marked buildings such as gas stations and water towers. For each one of the 15 Blacklisted opponents, the player must win a specific number of events from each of the two main types and gain enough notoriety in the process. The player can invest bet money to buy new cars or improve his existing one's looks and performance so that he remains competitive.[CR]In Most Wanted, Josie Maran replaces Brooke Burke as the racer girl. The plot is furthered through use of FMV video with live actors and digital sets, which has been heavily enhanced so that it looks quite real.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed1af2v1000</id>
 					<name>Burnout</name>
 					<filename>rom_pathGameCube/_2P/Burnout.iso</filename>
 					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Burnout.jpg</thumb>
@@ -17901,6 +18411,21 @@
 					<release>2002</release>
 					<publisher>Acclaim</publisher>
 					<gameplot>Burnout is a arcade style racing game in the mold of the Test Drive or Need For Speed series. In this game, you are racing on realistic streets with real traffic to contend with. There are 6 courses on which to race, 3 of which are reminiscent of Europe, and 3 from the USA. There are several vehicles to choose from, ranging from compact cars to pickups. However, they are not based on real makes and models. One notable feature of Burnout is the "Burn Meter." The Burn Meter is a gauge that is filled by performing reckless stunts, like racing into oncoming traffic, or power-drifting through corners. Once the Burn Meter is filled, your car gets a super speed boost.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78fp20005</id>
+					<name>Mario Kart - Double Dash!!</name>
+					<filename>rom_pathGameCube/_2P/Mario Kart - Double Dash!!.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Mario Kart - Double Dash!!.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Mario Kart - Double Dash!!.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Driving</genre>
+					<release>2003</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Mario Kart: Double Dash is the latest version of the game that started the "kart-racing" genre. This Mario Kart is more focused on co-op play and weapons. All the features and weapons of the previous games return: Red Shells, Stars, Mushrooms, etc. together with new character-specific weapons like Chain Chomps and Giant Koopa shells. The courses also follow the tradition with each one being faithful to the Mario universe.[CR]This time there are two racers per kart. Much of the game's challenge lies in determining when to switch places in the kart. This game supports multiple players. Therefore, one can team up with a friend on the same kart and take on the opponents cooperatively so that one player can drive the kart and the other can use power-ups. There is also a comprehensive LAN mode, allowing up to 8 GameCubes to be connected together.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18040,6 +18565,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37ed78n2p0007</id>
+					<name>Virtua Striker 2002</name>
+					<filename>rom_pathGameCube/_2P/Virtua Striker 2002.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Virtua Striker 2002.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Virtua Striker 2002.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Soccer / Sports</genre>
+					<release>2002</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Although Sega were unable to obtain an official license from FIFA, Virtua Striker 2002 includes 64 teams from countries around the world, with 22 players for each team. Game modes include Road to World Cup, Tournament and Versus.[CR]Road to World Cup allows you to choose from the 64 teams, editing their names, stats, uniforms and more before taking them onto the world stage to compete for the World Cup. The road is long, however, as you must use your available points (equivalent to money) to schedule matches with other international teams, purchase venues, pay for travel expenses for out of town tours and training camps, and more importantly, pay for your players and coaching staff.[CR]The other modes of play allow you to simply join in a arcade football match. You choose the team and a CPU opponant, then play for the points in tournament, or pride in versus and practise modes.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0008</id>
 					<name>Capcom VS SNK 2 EO</name>
 					<filename>rom_pathGameCube/_2P/Capcom VS SNK 2 EO.iso</filename>
@@ -18056,7 +18596,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f2p0009</id>
-					<name>Sonic Adventure 2 - Battle</name>
+					<name>Sonic Adventure 2 - Battle XXXXX</name>
 					<filename>rom_pathGameCube/_2P/Sonic Adventure 2 - Battle.iso</filename>
 					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Sonic Adventure 2 - Battle.jpg</thumb>
 					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Sonic Adventure 2 - Battle.jpg</fanart>
@@ -18085,21 +18625,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2g1281ea61668385a37ed78f2p0010</id>
-					<name>The Lord of the Rings - The Return of the King</name>
-					<filename>rom_pathGameCube/_2P/The Lord of the Rings - The Return of the King.iso</filename>
-					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/The Lord of the Rings - The Return of the King.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Lord of the Rings - The Return of the King.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action / Adventure</genre>
-					<release>2003</release>
-					<publisher>Electronic Arts</publisher>
-					<gameplot>The Lord of the Rings: The Return of the King is a 2003 action/hack and slash video game developed by EA Redwood Shores for the PlayStation 2 and Windows, by Hypnos Entertainment for the GameCube and Xbox, by Griptonite Games for the Game Boy Advance, by JAMDAT for mobile, and by Beenox for Mac. The game was published by Electronic Arts. It is a sequel to the 2002 game The Lord of the Rings: The Two Towers.[CR]The game is an adaptation of Peter Jackson's 2002 film The Lord of the Rings: The Two Towers and his 2003 film The Lord of the Rings: The Return of the King, which was released shortly after the game. As it is not an adaptation of J. R. R. Tolkien's 1954 novel, The Return of the King, the third volume in his Lord of the Rings trilogy, anything from the novel not specifically mentioned or depicted in the films could not be represented in the game. This is because, at the time, Vivendi Universal Games, in partnership with Tolkien Enterprises, held the rights to the video game adaptations of Tolkien's literary works, whilst Electronic Arts held the rights to the video game adaptations of the New Line Cinema films.[12][CR]The game is similar to its predecessor in basic gameplay, but differs by adding multiple storylines, more playable characters and increased interaction with environments. A two-player co-op mode is also available for some missions. As with The Two Towers, The Return of the King was developed in close collaboration with the filmmakers, using many of the actual reference photos, drawings, models, props and other assets from the film. The game was met with positive critical reception for its graphics, audio, and gameplay, although its camera positioning and short length were criticized.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>7d2mcd81ea61668385a37ed78f2p0010</id>
 					<name>Tony Hawk's American Wasteland</name>
 					<filename>rom_pathGameCube/_2P/Tony Hawk's American Wasteland.iso</filename>
@@ -18107,7 +18632,7 @@
 					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Tony Hawk's American Wasteland.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Sports </genre>
+					<genre>Sports</genre>
 					<release>2005</release>
 					<publisher>Activision</publisher>
 					<gameplot>Now you can cruise through LA without loading levels or stopping gameplay in Tony Hawk's American Wasteland. You can skate or BMX through a new story mode that takes you through all-new skate areas using tricks that have never appeared in previous Tony Hawk games. The cash that you earn can be used to customize your equipment and your skater by going to tattoo parlors and skate shops. Tony Hawk's American Wasteland also includes a classic mode that features classic Tony Hawk Pro Skater maps and objectives.</gameplot>
@@ -18251,7 +18776,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0014</id>
-					<name>Tony Hawks Pro Skater 3</name>
+					<name>Tony Hawks Pro Skater 3 XXXXX</name>
 					<filename>rom_pathGameCube/_2P/Tony Hawks Pro Skater 3.iso</filename>
 					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Tony Hawks Pro Skater 3.jpg</thumb>
 					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Tony Hawks Pro Skater 3.jpg</fanart>
@@ -18296,6 +18821,471 @@
 				</rom>
 				<rom>
 					<id>7d2gcd811a61668385a37ed78f2p0017</id>
+					<name>One Piece - Grand Adventure</name>
+					<filename>rom_pathGameCube/_2P/One Piece - Grand Adventure.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/One Piece - Grand Adventure.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/One Piece - Grand Adventure.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0018</id>
+					<name>Need for Speed - Underground</name>
+					<filename>rom_pathGameCube/_2P/Need for Speed - Underground.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Need for Speed - Underground.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Need for Speed - Underground.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Driving</genre>
+					<release>2003</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Need For Speed: Underground is the seventh game in the long running Need For Speed racing series.[CR]The game revolves around illegal night time street racing with heavily modified import cars and has been greatly influenced by the movie the Fast And The Furious and its sequel. Players get the chance to build their own racing machine almost from the ground up, with hundreds of real licensed parts and lots of licensed cars, including the Mazda RX-7 and the Nissan Skyline GT-R. The game also features over 100 single player races and a hip hop/hard rock soundtrack including artists such as Mystikal, Rob Zombie, and the Crystal Method.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0019</id>
+					<name>The Lord of the Rings - The Return of the King</name>
+					<filename>rom_pathGameCube/_2P/The Lord of the Rings - The Return of the King.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/The Lord of the Rings - The Return of the King.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Lord of the Rings - The Return of the King.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2003</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>The Lord of the Rings: Return of the King video game again puts the fate of middle-earth in the hands of the gamer. In the last installment of the movie trilogy, destroy the Ring by casting it into the Crack of Doom, which frees Middle Earth from Dark Lord Sauron.[CR]Return of the King's third person gameplay allows immersive action set in rich, interactive levels. The new game also features an all new co-op multiplayer mode which lets players form their own Fellowship and eight playable characters like Gandalf, Aragorn, Legolas, Gimil, Sam and Frodo all played out by thier actual actors from the films, battle vicious boss monsters like Shelob and the final showdown with Dark Lord Sauron, all backed up by Academy Award winner Howard Shore.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0020</id>
+					<name>Mortal Kombat - Deception</name>
+					<filename>rom_pathGameCube/_2P/Mortal Kombat - Deception.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Mortal Kombat - Deception.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Mortal Kombat - Deception.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting</genre>
+					<release>2005</release>
+					<publisher>Midway</publisher>
+					<gameplot>Based on the Mortal Kombat: Deadly Alliance engine, players once again have to fight to stop this new threat in the sixth installment of the fighting series. The standard Arcade, Versus, and Practice modes return, as well as new items to be found in the Krypt. In addition, there are new Konquest Adventure, Chess Kombat, and Puzzle Kombat modes to give the player new mini-games.[CR]There are a dozen Mortal Kombat fighters selectable at the start of the game, including both old favorites and mysterious newcomers. Longtime fans of the series will recognize veterans of the earliest Mortal Kombat games, such as Sub-Zero and Scorpion, Kabal, Baraka, Mileena, Ermac, and Nightwolf, who are joined by relative newcomers like Bo'Rai Cho, who debuted in Deadly Alliance. The game also introduces nine new fighters, Ashrah, Dairou, Darrius, Havik, Hotaru, Kira, Shujinko, Onaga, and Kobra, each with a distinctly new fighting style intended to balance the deadly abilities of the other characters.[CR]The Playstation 2 and Xbox versions offer online, competitive play against other players. The Gamecube version does not include online play, but offers Goro and Shao Kahn as exclusive playable characters.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0021</id>
+					<name>Marvel Nemesis - Rise of the Imperfects</name>
+					<filename>rom_pathGameCube/_2P/Marvel Nemesis - Rise of the Imperfects.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Marvel Nemesis - Rise of the Imperfects.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Marvel Nemesis - Rise of the Imperfects.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting</genre>
+					<release>2005</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>When New York City is attacked by aliens, the greatest heroes (and villains) in the Marvel Universe confront them. Marvel Nemesis has two playing modes, a single-player story mode, where players brawl their way through a Mark Millar scripted tale, and a single- or two-player versus mode pitting heroes and villains against each other in a sandbox arena.[CR]Famous Marvel characters have been reimagined by artist Jae Lee and new characters have been created for this game series. The PS2 and Xbox versions support online play and all versions have unlockable arenas, characters, and extras.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0022</id>
+					<name>Madagascar</name>
+					<filename>rom_pathGameCube/_2P/Madagascar.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Madagascar.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Madagascar.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Family / Action / Puzzle</genre>
+					<release>2005</release>
+					<publisher>Activision</publisher>
+					<gameplot>Be a part of Dreamwork's animated adventure by guiding Marty the Zebra, Alex the lion, Melman the giraffe, Gloria the hippo and those stealthy Penguins as they escape the Central Park Zoo into the streets of New York and then into the wild jungle...err San Diego zoo.[CR]The storyline is exactly the same as the movie itself and each chapter will bring you further in the story. Every chapter will have various goals set. Only one specific goal per chapter is required to complete the chapter so you can always replay the chapter later to try to complete all the goals.[CR]Every stage will also require you to play as a different character and some will involve all characters.[CR]Each character have their own unique abilities: Marty can kick with his hind legs, sneak around his enemies slide and perform long-jumps. Alex the lion can throw fruits, use his claws and roar at his enemies. Gloria can tumble, butt bounce and hip check her enemies. And when she eats some chili peppers, she will be able to charge into her enemies. Melman can spin into, throw items at and head bash his enemies. He can also perform the Helicopter move which enables him to glide long distances. Finally the Penguin can slide, fish and attack with a Finishing move (something like a karate chop) to defeat their enemies.[CR]Throughout the game there will be various items to collect including Life Tikis to replenish your Health Meter and Monkey Money that will enable you to buy special things at the Zoovenir Shop like mini games and special outfits for the Madagascar cast.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0024</id>
+					<name>The Lord of the Rings - The Third Age</name>
+					<filename>rom_pathGameCube/_2P/The Lord of the Rings - The Third Age_cd1.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/The Lord of the Rings - The Third Age.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Lord of the Rings - The Third Age.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Role-Playing / Strategy</genre>
+					<release>2004</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Unlike the Game Boy Advance version of the game, the console version of The Lord of the Rings:The Third Age introduces entirely new characters which aren't mentioned in the books or movies. The game does relate to the movies by including scenes from all three movies, with new background speech by Ian McKellen (Gandalf).[CR]There are seven playable characters in the game which have been created specifically for it, as well as small appearances by characters such as Gandalf, Aragorn, Eowyn, Faramir, and Gothmog.[CR]The game covers events in all three movies/books, mostly with references to major events shown through cut scenes, or the scenes from the movies with Ian McKellen's narration.[CR]A classic RPG game, The Lord of the Rings: The Third Age has gameplay elements similar to Final Fantasy, where you have a party of characters, each with a different set of skills and attributes, who gain levels, making them stronger as the game progresses. Battles are turn-based, and let the gamer make different decisions on what they want to do to change the outcome of the battle. The game travels through many areas throughout Tolkien's Middle Earth, including The Pelennor Fields and Moria.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0025</id>
+					<name>Ikaruga</name>
+					<filename>rom_pathGameCube/_2P/Ikaruga.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Ikaruga.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Ikaruga.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Flying Vertical</genre>
+					<release>2003</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Vertical shoot-em-up ported from the Naomi Arcade version. Ikaruga is more or less a sequel to Radiant Silvergun on the Sega Saturn.[CR]Based on a two-colors system, the player has to switch between the black & white sides of his ship during gameplay. The black side is immune to black enemy bullets which it considers as a bonus and dies on impact with white enemy bullets. Your own black bullets damage white enemies twice as much as white bullets. And vice-versa for the white side. Those properties make a balance between protecting yourself well and killing enemies fast.[CR]This aspect, combined with specific enemy patterns and a combo system makes Ikaruga an original shoot-em-up with a dose of strategy.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0026</id>
+					<name>Taz - Wanted</name>
+					<filename>rom_pathGameCube/_2P/Taz - Wanted.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Taz - Wanted.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Taz - Wanted.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2002</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>The devious Yosemite Sam has captured Taz and locked him up as a circus animal and is planning to turn Taz's beloved homeland into a amusement park.[CR]But then Taz successfully escapes from the clutches of Sam and once again is going on the rampage to stop Sam's plans for his homeland.[CR]Blast your way through 15 different levels, each of which can be destroyed using spin, bounce and burp attacks. You can get foods such as mage hot chili and soda to aid your mission of vengeance against Sam.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0027</id>
+					<name>Over the Hedge</name>
+					<filename>rom_pathGameCube/_2P/Over the Hedge.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Over the Hedge.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Over the Hedge.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Family</genre>
+					<release>2006</release>
+					<publisher>Activision</publisher>
+					<gameplot>Over the Hedge is based on the movie with the same name. Verne and his woodland family wake-up from their winter slumber to find an ominous green wall in neck of the woods. In their amazement to find out what this endless wall is about, RJ the raccoon is more than happy to help them. The woodland friends have never seen humans before so RJ is eager to show them what humans have to offer. RJ is quick to show them the valuable treasures humans - stockpiles of food.[CR]Playing as RJ, Verne, Hammy, or Stella you go on missions to get FOOD. You also of course want to take back your neighborhood but that pesky Rancho Camelot Estates Homeowners Association President, Gladys Sharpe, is dead set on getting rid of you. She hires Dwayne the exterminator to use his tactics and gadgets to get rid of the likes of you.[CR]Play by yourself or have a friend jump in and help at anytime to get the FOOD!!! There are dozens of puzzles and mini-games to keep you entertained.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0028</id>
+					<name>TY the Tasmanian Tiger 2 - Bush Rescue</name>
+					<filename>rom_pathGameCube/_2P/TY the Tasmanian Tiger 2 - Bush Rescue.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/TY the Tasmanian Tiger 2 - Bush Rescue.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/TY the Tasmanian Tiger 2 - Bush Rescue.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Driving / Racing</genre>
+					<release>2004</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>TY the Tasmanian Tiger 2 is a 3D Platformer with an Australian theme. The player takes the role of TY, a Tasmanian tiger, armed with sharp teeth and boomerangs a-plenty. On TY's quest to defeat the evil Boss Cass and his army of cold-blooded Frilled Lizards, he must assist the colorful residents of Burramudgee Town and the Southern Rivers, who include a tree frog, a lyre bird, a platypus family, some kangaroos and more koalas than you can shake a didgeridoo at.[CR]While most of the game is standard platform fare, there are some diversions. Notably, there are a number of cart racing tracks which can be played with a friend. Additionally, there are missions that will place the player in giant robots, each with a different speciality (one is good at battle, one can put out fires, one is a submarine, etc.).[CR]There are many comedic quirks, having the players throw electrified boomerangs at robotic dinosaurs in the Outback, then send them up in a helicopter to rescue sheep stranded by a flood, then have them clear a road following a traffic accident. And finally, to top it all off, the save/continue points are outhouses.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0029</id>
+					<name>Goblin Commander - Unleash the Horde XXXXX</name>
+					<filename>rom_pathGameCube/_2P/Goblin Commander - Unleash the Horde.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Goblin Commander - Unleash the Horde.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Goblin Commander - Unleash the Horde.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>2003</release>
+					<publisher>Jaleco</publisher>
+					<gameplot>Goblin Commander: Unleash the Horde is a fast-paced action style real-time strategy game set in the fantasy goblin world of Ogriss. In it, the player will have the ability to control up to 3 unique clans of ten goblins at one time and use them to wage war in 4 unique and highly destructible environments. Each clan can be controlled either by placing waypoints with the cursor or by taking direct control of them, giving the player the ability to put themselves right in the middle of the action. Apart from goblins, each clan also has its own unique Turret and Titan that is associated with it: Turrets are defensive structures that can be placed in the world to ward off enemies while Titan’s are huge monstrosities that can be used to wreak havoc upon their enemies. Boasting 17 missions in the single-player campaign as well as 12 split-screen multi-player maps per console, Goblin Commander: Unleash the Horde brings RTS to a whole new generation of console fanatics.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0030</id>
+					<name>Kelly Slater's Pro Surfer</name>
+					<filename>rom_pathGameCube/_2P/Kelly Slater's Pro Surfer.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/Kelly Slater's Pro Surfer.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/Kelly Slater's Pro Surfer.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Sport</genre>
+					<release>2002</release>
+					<publisher>Activision</publisher>
+					<gameplot>Do you like to surf? Have you ever imagined surfing at different remote locations around the world? Well, Kelly Slater takes you around the world on his boat to surf some of the more famous beaches. With a control scheme similar to all the other Activision O2 brand games, it's easy to jump into the game and surf.[CR]Game Play Modes:[CR]Infinite Time - With no clock, no objectives, and nobody around, this gives you the best opportunity to just enjoy the surf.[CR]High Score - With 3 minutes, how high of a score can you get?[CR]Icon Challenge - See how many icons you can collect and how high of a score you can get before time runs out.[CR]Career Mode - Select a surfer and journey around the world to surf the best waves on the best beaches. As you progress you will unlock new beaches, new surf boards, and new tricks which will be usable in all the other modes of play.[CR]Multiplayer Modes:[CR]Push - Two players surf simultaneously in an attempt to "push" the split screen towards their opponent's half of the screen. As you score points the screen gets pushed more. The winner is decided once one player is pushed from the screen.[CR]Head to Head - Similar to Push but the screen is stationary and the winner is the person with the highest points when the time runs out.[CR]Time Attack - Players take turns to achieve the most points possible. The more points you get the less time is alloted to your opponent.[CR]The Pros in the game: Kelly Slater, Lisa Andersen, Tom Carroll, Tom Curren, Nathan Fletcher, Donavon Frankenreiter, Bruce Irons, Rob Machado, Kalani Robb, and some other secret characters.[CR]The beaches in the game: Sebastian, Trestles, Mavericks, Antarctica, Jaws, Pipeline, Teahupoo, Bells, Curren's Point, Kirra, G-Land, J-Bay, Mundaka, Cortez Bank, and perhaps some other tucked-away hide-aways.[CR]The PS2 version of the game also includes a playable demo of Tony Hawk's Pro Skater 4.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0031</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0032</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0033</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0034</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0035</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0036</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0037</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0038</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0039</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0040</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0041</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0042</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0043</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0044</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0045</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0046</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0047</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0048</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd811a61668385a37ed78f2p0049</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_2P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -18352,7 +19342,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0002</id>
-					<name>XXXXX</name>
+					<name>Custom Robo</name>
 					<filename>rom_pathGameCube/_4P/Custom Robo.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Custom Robo.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Custom Robo.jpg</fanart>
@@ -18362,6 +19352,36 @@
 					<release>2004</release>
 					<publisher>Nintendo</publisher>
 					<gameplot>Get ready to enter a world of hypertech weapons, holosseums, and heavy-barrel battles. Custom Robo puts you in the pilot's seat of a state-of-the-art war machine in the not-too-distant future where crime and justice duke it out in virtual battlegrounds. With the game's powerful, innovative customization, you can construct your robot from the ground up using an arsenal of more than 200 parts and weapons, from guns and bombs to robo models and homing pods. Many weapons are freely available on the market, but some--deadly and highly illegal--can only be acquired in secret robo gambling rooms and from the hands of crime syndicates.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f3p0002</id>
+					<name>Super Mario Strikers</name>
+					<filename>rom_pathGameCube/_4P/Super Mario Strikers.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Super Mario Strikers.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Super Mario Strikers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Family</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Mario plays soccer in this Mario sports game. There are no referees or rules in this version of soccer. The game is played in an arena enclosed within an electric fence, and the players can use items. Bowser shows up from time to time to shake things up. You can steal, pass, shoot, deke, hit other players, and more. Players choose a team captain, sidekicks, and a side. You can choose from play modes such as grudge match, cup battle, custom tournament, and a tutorial. A team captain can also do a super strike which counts as two goals but be careful because an opponent can still hit you. Sidekicks cannot do a super strike but can charge a shot for more power. Players can do a lob pass or ground pass. You can execute a one-timer by shooting as soon as a teammate passes the ball to you. You can hit any opponent but if you hit one who does not possess the ball their team receives an item. You can get an item by scoring a goal.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37e178f3p0002</id>
+					<name>Mario Party 7</name>
+					<filename>rom_pathGameCube/_4P/Mario Party 7.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Mario Party 7.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Mario Party 7.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Family</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Mario and his friends need a break from fighting evil and saving the world; so they decided to go on a cruise! But Bowser showed up and is wrecking the good times; the only thing left to do is play a game of Mario Party![CR]This is the seventh entry in the Mario Party Series and features similar gameplay. The game features a combination of a board game and mini games. The goal is to collect as many stars as possible as you make your way around the game board; after each turn, players compete in one of 86 mini games. The winner of the mini game earns coins which can be used to purchase the stars. Mini games can be played with players in teams, or every player for them self. In addition to the regular spaces, the game board also features several other types of spaces; some will begin a Bowser mini game, provide hidden bonuses, or allow you to purchase orbs to help slow down your opponents. Most of the mini games are played with the GameCube controller, and also included in the package is a microphone which is used for several voice activated mini games.[CR]The usual single player and multi player game modes are included. New in this release is the ability for up to eight players to compete! In the eight player game variation two players will need to share each of the controllers, each player controlling one of the analog sticks and a trigger.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18381,7 +19401,22 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0000</id>
+					<id>7d2gcd81ea61668385a37ed28f4p0003</id>
+					<name>Def Jam - Fight for NY</name>
+					<filename>rom_pathGameCube/_4P/Def Jam - Fight for NY.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Def Jam - Fight for NY.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Def Jam - Fight for NY.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Fighting / Wrestling</genre>
+					<release>2004</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Def Jam: Fight for NY is the sequel to the out-of-left-field Def Jam: Vendetta.[CR}The game opens with the person you beat in the previous game, D-Mobb, being arrested. As the police are driving, an SUV comes out of nowhere and smashes into the car, setting D-Mobb free. After a quick cutscene, it turns out the person who was driving the SUV was you, and you have now joined D-Mobb's crew.[CR]Fight for NY's story mode takes you through the ranks, and pits you against tougher and tougher fighters. You start off in D-Mobb's crew as a nobody and will have to work your way up, fighting off people from other crews, including D-Mobb's rival, Crow. You'll take part mostly in one-on-one brawls, with the odd team match and free for all thrown in.[CR]To aid you in fighting, you can use the environment to hurt your enemy. You can smash people into wooden/cement walls, fences, or just whack them off of a wooden pillar. Speakers, soda machines, garbage cans... All there to harm your enemy (or you). Some objects are interactive, such as floodlights, which will change the lighting of the ring once someone's been thrown into them. You have weapons at your disposal, usually a metal pipe, pool cue, and a broken bottle.[CR]The crowd also gets into the action, which can be good or bad for you. You can throw an enemy into a crowd and have them push him towards you; you can knock a stunned enemy into the crowd, and they will hold him down, giving you free shots; or you can throw an opponent into a part of the crowd holding a weapon, and they'll use the weapon against him.[CR]There are five fighting styles available to you. There is Street Fighting, which focuses on punches; Kickboxing, which focuses on kick attacks; Martial Arts, which focuses on speed, running, and acrobatic attacks; Wrestling, which focuses on standard wrestling moves, like bodyslams; and Submissions, which focus on wearing down a specific part of the enemy until that limb is damaged enough to earn a submission.[CR]In addition to Story mode, you have Battle mode, which allows you to play with up to four players in different types of matches.[CR]Fight for NY has lots of unlockables. Earning reward points from Battle matches, you can purchase new fighters or venues to fight in.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p3009</id>
 					<name>F-Zero GX</name>
 					<filename>rom_pathGameCube/_4P/F-Zero GX.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/F-Zero GX.jpg</thumb>
@@ -18442,7 +19477,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0006</id>
-					<name>XXXXX</name>
+					<name>Gotcha Force</name>
 					<filename>rom_pathGameCube/_4P/Gotcha Force.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Gotcha Force.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Gotcha Force.jpg</fanart>
@@ -18756,11 +19791,26 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea61668385a37ed78f18p025</id>
+					<name>WWE Wrestlemania 18</name>
+					<filename>rom_pathGameCube/_4P/WWE Wrestlemania 18.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE Wrestlemania 18.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE Wrestlemania 18.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting / Sports</genre>
+					<release>2002</release>
+					<publisher>THQ</publisher>
+					<gameplot>WWE WrestleMania X8 is a wrestling game based on the World Wrestling Entertainment (formerly known as World Wrestling Federation) license. The core gameplay relies on a grappling system, featuring a variety of specific grapple moves, and counter move system, allowing the player to respond with counters assigned to different buttons. A few weapon-based moves are also included, as well as signature moves and entrances unique to each wrestler.[CR]Match types include Standard, Hardcore, Table, Ladder, TLC, Battle Royal, Steel Cage, Hell in a Cell, and Ironman. The number of participants in the match varies from singles, tag team, handicap, Triple Threat, Fatal Four-Way, to large-scale matches Battle Royal and Royal Rumble. The Path of a Champion game mode provides an opportunity to win any of the titles in WWF Championship, WWF Intercontinental Championship, WWF European Championship, WWF Light Heavyweight Championship, WWF Hardcore Championship and World Tag Team Championship (all the championship names are still referred to as "WWF", despite the promotion's name change).[CR]In the Battle for the Belts mode, the player can attempt to win one of fifty-one fictional belts. The game also includes a Create-A-Wrestler mode, in which the player can create a wrestler with customized appearance, moves, profile, and other options.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0025</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/WWE WRESTLEMANIA 19.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE WRESTLEMANIA 19.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE WRESTLEMANIA 19.jpg</fanart>
+					<name>WWE Wrestlemania 19</name>
+					<filename>rom_pathGameCube/_4P/WWE Wrestlemania 19.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/WWE Wrestlemania 19.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/WWE Wrestlemania 19.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Fighting / Sports</genre>
@@ -18832,7 +19882,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0031</id>
-					<name>XXXXX</name>
+					<name>Pokemon XD - Gale of Darkness</name>
 					<filename>rom_pathGameCube/_4P/Pokemon XD - Gale of Darkness.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Pokemon XD - Gale of Darkness.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Pokemon XD - Gale of Darkness.jpg</fanart>
@@ -18847,21 +19897,186 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0032</id>
-					<name>XXXXX</name>
-					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Monopoly Party</name>
+					<filename>rom_pathGameCube/_4P/Monopoly Party.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Monopoly Party.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Monopoly Party.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Strategy / Board</genre>
+					<release>2002</release>
+					<publisher>Infogrames</publisher>
+					<gameplot>Based on the hugely successful Monopoly board games, you have the opportunity to become a millionaire and bankrupt up to four other friends.[CR]Like the original, you must buy property, move around the board, make money and ruin your enemy to survive. This game features all you would expect of the game, fines, "GO", comunity chests and chances.[CR]But unlike the original, your board can be made to be a sci-fi, fantasy, prehistoric or the original board.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0033</id>
+					<name>Mario Power Tennis</name>
+					<filename>rom_pathGameCube/_4P/Mario Power Tennis.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Mario Power Tennis.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Mario Power Tennis.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Family</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Mario and friends appear in another tennis game. Each character has their own special power move. All the characters can use slices, topspins, flat shots, and lobs. There are many different modes such as exhibition, tournament, and special games. The tournament mode consists of standard courts, the rules are the same as regular tennis, and gimmick courts, the rules are the same except with special conditions. The exhibition mode contains standard and gimmick along with ring shot and item mode. In ring shot, players must hit the ball through rings to score points. In item mode, players can use items similar to Mario Kart.[CR]The special games include modes like Artist on the Court (players use paint balls to color a mural on a wall), Terror Tennis (players keep ghosts from escaping their portraits by hitting the portraits), Chain-Chomp Challenge (players must feed their Chomps tennis balls while trying not to knock Bob-ombs at the Chomps), Gooper Blooper Volley (players keep volleying the ball to the Blooper for a specified amount of times), and others. Players can win more modes and players by finishing tournaments.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0034</id>
+					<name>Metroid Prime 2 - Echoes</name>
+					<filename>rom_pathGameCube/_4P/Metroid Prime 2 - Echoes.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Metroid Prime 2 - Echoes.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Metroid Prime 2 - Echoes.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2004</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>A long time ago a race of beings called the Luminoth settled the planet Aether. They built energy controllers to harness the "light of Aether" to prolong the life of their planet and its inhabitants. After many ages of peace and prosperity, a meteor collided with the planet; this collision opened a dimensional rift into another world, called Dark Aether. From this world came an evil race of beings known as the Ing, and for many ages a war was fought between the Ing of the dark world and the Luminoth of the light world. Over time the Ing began winning, turning the light world to dark. At about this time, a federation spacecraft happens to be chasing a Space Pirate vessel, which is destroyed by the Ing, through the area. Wondering about the fate of this craft, the Galactic Federation sends an urgent message to Samus Aran, asking her to find the crew and investigate the planet Aether.[CR]This is the sequel to Metroid Prime where players once again control bounty hunter Samus Aran as she arrives on Aether. The game is played from both a first-person view(walking, running, jumping) and third-person view (morph ball mode and cut scenes). The game uses a combination of action, adventure, and platform game elements; while searching the player is able to uncover the story by finding federation reports and Luminoth lore. There are variety of puzzles to solve to reach new locations, different landscapes that the player can jump and grapple across and attack plenty of enemies. As usual, players begin the game with limited capabilities but additional weapons and suit upgrades can be found, including some standards from the Metroid series such as the varia suit, morph ball bombs, and missiles along with a few new weapons, such as the dark suit, dark beam, and light beam.[CR]Metroid Prime 2: Echoes also features multiplayer modes for up to four players. In deathmatch, combatants need to hunt down each of the other players. This variation can be played either with a time limit or where the greatest number of frags wins. The second option is called bounty mode; in this variation each player starts with a number of bounty coins. When one player hits another player with a powerful attack, some of their coins will drop, which can be collected. Coins may also be found throughout the landscape, and the player with the most coins at the end wins.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0035</id>
+					<name>Kirby Air Ride</name>
+					<filename>rom_pathGameCube/_4P/Kirby Air Ride.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Kirby Air Ride.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Kirby Air Ride.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Racing / Driving / Family</genre>
+					<release>2003</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Kirby's adventures take him into new territory in this race through the stars. Control Kirby and various other characters from the franchise through the tracks (ranging from star fields to Mario like kingdoms) simply by using the analog stick. As Kirby accelerates himself, all you need to do is guide Kirby and be careful not to hit any obstacles on the track. Kirby can also use various special moves, such as attacks on the other racers to slow them down. 4 players can take to the track at any time, controlling a different colored Kirby.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0036</id>
+					<name>Mario Superstar Baseball</name>
+					<filename>rom_pathGameCube/_4P/Mario Superstar Baseball.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Mario Superstar Baseball.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Mario Superstar Baseball.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports / Family</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>Mario and friends are challenged to play baseball with Bowser. So they play ball games with each other to decide who should play Bowser. The rules are the same as any other baseball game with some exceptions. Like other baseball games, each team gets three strikes, three outs, and four balls per inning. However, you can choose to play less than nine innings.[CR]You can also choose from Exhibition, Challenge, Toy Field, and Mini-game modes:[CR]Exhibition mode is one game between two teams.[CR]In Challenge mode, you choose a team to play every other team; you can get the other teams characters by completing certain challenges. When you beat the other teams, you get a chance to play Bowser's team.[CR]In Toy Field mode, up to four players take turns to get the most points; players receive points by hitting the ball at certain spots, which consist of out, 1, 2, or 3-hits, or homerun spots. You can get a turn by catching the ball when your opponent hits the ball.[CR]At the start of Exhibition and Challenge modes, you choose your team captain. In Exhibition mode, you also choose team members, but in Challenge mode, your team members depend on which captain you pick.[CR]All the team captains have star pitches and star hits. The characters can also pitch fastballs and change-ups. You can unlock more characters through Challenge mode.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37edw8f2p0c68</id>
+					<name>Tom and Jerry in War of the Whiskers</name>
+					<filename>rom_pathGameCube/_4P/Tom and Jerry in War of the Whiskers.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Tom and Jerry in War of the Whiskers.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Tom and Jerry in War of the Whiskers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Family</genre>
+					<release>2003</release>
+					<publisher>NewKidCo</publisher>
+					<gameplot>A Power Stone-like fighting game featuring characters from the classic Tom and Jerry series of cartoons.[CR]Fight in a variety of arenas based upon classic Tom and Jerry cartoons, to unlock further levels and other T&J characters that you can play as. Each level features breakable terrain and various implements that you can use to beat your adversary. Each level also features a unique surprise for unwary players.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0037</id>
+					<name>Star Fox - Assault</name>
+					<filename>rom_pathGameCube/_4P/Star Fox - Assault.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Star Fox - Assault.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Star Fox - Assault.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter / Flight</genre>
+					<release>2005</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>The Lylat System has been at peace for several years after the mysterious disaster was averted on Dinosaur Planet. But, alas, Andrew Oikonny, who has been kicked out of Star Wolf, seems to have taken over Andross's army, and to make things even trickier, strange insect-like creatures called Aparoids have started to appear all around and destroy and assimilate objects.[CR]Star Fox Assault marks a return to the space and air combat in the spirit of the original Star Fox and Star Fox 64 games. In addition to this, Fox and friends get to fight on foot, using various different kinds of weapons, and the Landmaster tank. The game includes a 10-mission campaign as well as a rather varied multiplayer mode.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0038</id>
+					<name>FIFA Soccer 07</name>
+					<filename>rom_pathGameCube/_4P/FIFA Soccer 07.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/FIFA Soccer 07.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/FIFA Soccer 07.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Sports</genre>
+					<release>2006</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>Enhancing the engine debuted with the previous game and official 2006 World Cup game, FIFA Soccer 07 includes enhanced ball and player collision physics and more player animations adding to the 16 trick moves and first touch ball reception introduced to the game engine with the previous games in the series. Players can choose between 2 and 10 minutes halves in three different game speeds and four different difficulty levels. Over 510 teams are accurately represented in the game. 27 leagues from 20 nations are included, along a "Rest of the World" for the best teams in championships left outside the game and international teams. Spain, England (with two), France, Germany, and Italy also feature second divisions. Players can also create two clubs, customizing their badge, kits and home stadium, selecting players from anywhere in the game, along with the starting budget in manager mode. The player creation tool remains mostly unchanged, with the ability to customize everything, from faces (with a complete set of options, from jaw width to eyebrow shape) to the appearance and playing abilities.[CR]While the focus of this yearly update was on the game engine, the Manager mode was also enhanced: players now also improve their playing ability from being active members of the squad, forcing the player to choose between keeping his celebrated stars near retirement in the starting eleven or give the benefits of the youth system a chance to shine. Another new feature, in what is now the primary mode of the series, is the ability to watch the game in a simplified text mode, with the ability to jump into action to turn the events still available. The points system was replaced by a less abstract currency model (with the ability to choose between Pounds, Euros or Dollars). Other game modes include Tournaments (including the creation of custom tournaments) and Challenges. By completing challenges (similar to the Global Challenges mode in World Cup 2006) the player can spend points in the Fanshop with items such as new teams, a special overhead camera, new balls from Adidas (including all original World Cup balls from 1974 to 2002), stadiums, third kits and special celebrations for created players.[CR]Finally, online gaming received a new mode: Interactive Leagues. These are online-only leagues based on the fixtures of their real counterparts (English Premier League, French Ligue 1, German Bundesliga, and Mexican 1st division). Then, online players go head-to-head with their favorite teams with a victory counting one vote for their favorite team. Once the week is over, the team with more votes is declared the winner of the week, getting three points. The number of weekly matches a player can do in this mode is unlimited.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0039</id>
+					<name>Ratatouille</name>
+					<filename>rom_pathGameCube/_4P/Ratatouille.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Ratatouille.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Ratatouille.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2007</release>
+					<publisher>THQ</publisher>
+					<gameplot>Ratatouille is based on the Pixar film of the same name. The version by Asobo Studio is, like other versions, a 3D platform game, but has its own design, levels and missions.[CR]The game follows the plot of the film only loosely, but has the main voice cast from the movie reprising their roles. The player controls Remy, a rat with a refined sense of taste. When Remy finds himself in Paris near the restaurant of the famous deceased chef Gusteau, he works on making his dream of becoming a chef himself come true, while helping out his fellow rats to procure food.[CR]While many of the environments in the game are similar to those in the next-generation version, this version has almost none of the open world elements seen in the other title, with smaller levels and mostly linear progress. To get around in the various levels that include the sewers, streets and rooftops of Paris, the restaurant kitchen and a food market, Remy can jump and double-jump, swing along poles, balance on ropes, crawl on certain walls and defend himself with tail swipes or by using spoons as weapons. He can also engage his keen sense of smell, which displays the path to the next goal or objective. Sometimes, Remy must evade guards by hiding out of sight until their attention wanes. Other sequences in the levels involve sliding down pipes, rafting through water currents and fleeing from humans that chase Remy. Another large part are mini-games, many of which involve cooking, with Remy having to pick ingredients or peel potatoes.[CR]There are some optional bonus missions, taking the form of dream sequences, in which Remy navigates landscapes made of foodstuffs. All levels include many collectibles. In most levels there will be up to 100 stars to collect. Special items in certain levels include batteries, darts or lightbulbs. Collecting all of a certain kind of item in an area awards bonus points, which can be spent in Gusteau's shop to unlock bonuses, including various kinds of artwork as well as the possibility to play the mini-games outside the main game, in both single and multiplayer modes.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0040</id>
+					<name>Rampage - Total Destruction</name>
+					<filename>rom_pathGameCube/_4P/Rampage - Total Destruction.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Rampage - Total Destruction.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Rampage - Total Destruction.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2006</release>
+					<publisher>Midway</publisher>
+					<gameplot>Scum Labs is testing a new drink called 'Scum Soda'. However, all thirty test subjects that drank it have transformed into angry, hulking monsters! Most of the monsters have been contained in cryo-tubes and hidden within various cities. However, some monsters, such as George, Lizzie and Ralph, are still free! It's up to you to tear down cities and find the hidden monsters.[CR]Rampage: Total Destruction is an update to the arcade game Rampage. In it, you play as one of thirty furious monsters as you make your way through cities, destroying buildings and eating people for health. Destroying buildings builds up your "Rampage Meter" - when this is full, you'll become super-powered for a while, and be able to destroy things much more quickly. Each level also has a bonus challenge - such as 'Eat ten mimes' or 'Destroy five trams'. If you complete this challenge, your monster will receive a permanent upgrade, such as a roar attack, or a charge punch. At the tenth level of each city, players face off against a boss character, Dr. Vector - if you destroy his dangerous machines as well as levelling the city, you'll receive a bonus.[CR]A new feature of Rampage: Total Destruction is the ability to climb on the front of buildings. Instead of just climbing the sides and standing on the top of buildings, players can now smash the buildings from the front as well. However, there is an added danger to this - people now hurl objects like televisions out their windows in an attempt to try and stop you.[CR]The game also includes two previous games from the series as a bonus - the original Rampage, and Rampage World Tour. These games are emulations of the arcade versions of the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0041</id>
+					<name>Beach Spikers - Virtua Beach Volleyball</name>
+					<filename>rom_pathGameCube/_4P/Beach Spikers - Virtua Beach Volleyball.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Beach Spikers - Virtua Beach Volleyball.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Beach Spikers - Virtua Beach Volleyball.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Sport</genre>
+					<release>2002</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Beach Spikers is an action beach volleyball game for one to four players. Several modes of gameplay are included: arcade (a conversion of the arcade game), world tour (the player creates a team, develops a relationship with their partner to increase her ability, and aims to be the world champs), vs mode (play against other players or the CPU) and a tutorial mode. Several mini-games are also featured, such as beach countdown where teams play volleyball with a bomb and hope it doesn't explode on their side of the net, and beach flags where the player needs to capture a flag before their opponent.[CR]Beach Spikers comes with a number of predefined teams, or the player can create their own team from a variety of female athletes. Each character can be customized in appearance as well, from hair and skin color to uniform.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0042</id>
+					<name>Open Season</name>
+					<filename>rom_pathGameCube/_4P/Open Season.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Open Season.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Open Season.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle / Family</genre>
+					<release>2006</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>In this game the player takes the role of Boog, a domesticated bear who tries to return to the civilization after being released in a nearby forest due to an unfortunate misadventure, and Elliot, a crazy, one-horned deer who desires to be Boog's partner.[CR]In order to achieve his goal, Boog will have to prove himself to the creatures of the forest by helping them to get rid of the hunters. By gaining their respect, Boog will be able to convince the creatures to help him reach his hometown.[CR]Open Season is a third-person view action game based on Sony Animation Studios' first movie. The player controls the main character in the forest and uses the different forest creatures to resolve simple puzzles (considering the target age for the game) by throwing them. The player can collect "achievement points" (not related to the Xbox 360 Achievement points) that will unlock new abilities for Boog.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0043</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -18876,7 +20091,37 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d2gcd81ea61668385a37ed78f4p0034</id>
+					<id>7d2gcd81ea61668385a37ed78f4p0044</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0045</id>
+					<name>XXXXX</name>
+					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>7d2gcd81ea61668385a37ed78f4p0046</id>
 					<name>XXXXX</name>
 					<filename>rom_pathGameCube/_4P/XXXXX.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
@@ -22904,6 +24149,346 @@ Disk Man - משחק דמוי Supaplex, אבל שוב, מורכב יותר. את�
 			</roms>
 		</launcher>
 		<launcher>
+			<id>Featherence_playstation21P</id>
+			<name>Sony Playstation 1P</name>
+			<category>Featherence_playstation2</category>
+			<application>emulator_file</application>
+			<args>lib_args_ps2_args "%rom%"</args>
+			<rompath>rom_pathSony Playstation 2/_1P/</rompath>
+			<thumbpath>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathSony Playstation 2/_1P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>m3u</romext>
+			<platform>Playstation 2</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/1P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30000</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30001</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30002</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30003</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30004</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30005</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30006</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30007</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30008</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30009</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30010</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30011</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30012</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30013</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30014</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30015</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30016</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30017</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30018</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30019</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22fc8536f30020</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+		<launcher>
 			<id>Featherence_playstation22P</id>
 			<name>Sony Playstation 2P</name>
 			<category>Featherence_playstation2</category>
@@ -22927,7 +24512,322 @@ Disk Man - משחק דמוי Supaplex, אבל שוב, מורכב יותר. את�
 			<lnk></lnk>
 			<roms>
 				<rom>
-					<id>57fe106afc5fcc9dfc22978536f3358e</id>
+					<id>57fe101bfv5fcc9dfc22978536f30000</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30001</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30002</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30003</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30004</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30005</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30006</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30007</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30008</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30009</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30010</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30011</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30012</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30013</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30014</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30015</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30016</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30017</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30018</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30019</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_2P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30020</id>
+					<name>Sonic Heroes</name>
+					<filename>rom_pathSony Playstation 2/_2P/Sonic Heroes.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/Sonic Heroes.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_2P/_Artwork/screenshot/Sonic Heroes.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2004</release>
+					<publisher>SEGA</publisher>
+					<gameplot>Sonic Heroes is a 3D action-platformer in which the player takes control of a team of 3 characters, each with a special ability - speed, fly and power. The objective of the game is to race through levels as quickly as possible whilst defeating enemies and collecting rings. Your time, rings and enemies defeated make up a point system, and more points mean a higher rank on the level. There are 4 teams of characters each with their own changes to the gameplay:[CR]Team Sonic is the intermediate difficulty featuring Sonic (speed), Tails (fly) and Knuckles (power).[CR]Team Shadow is the hard difficulty featuring Shadow (speed), Rogue (fly) and E-123 Omega (power).[CR]Team Rose is the easy difficulty featuring Amy (speed), Cream (fly) and Big (power).[CR]Team Chaotix features new mission-based objectives with Espio (speed), Charmy (fly) and Vector (power).[CR]The game features 4 modes:[CR]Story Mode, giving players the opportunity to play through levels as the story progresses.[CR]Challenge Mode, giving players the opportunity to replay levels that they have previously cleared in Story Mode[CR]Battle Mode, a multiplayer mode where players can race or battle each other[CR]Tutorial Mode, teaching players the basics of playing the game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv5fcc9dfc22978536f30021</id>
 					<name>Ben 10 - Ultimate Alien Cosmic Destruction</name>
 					<filename>rom_pathSony Playstation 2/_2P/Ben 10 - Ultimate Alien Cosmic Destruction/Ben 10 - Ultimate Alien Cosmic Destruction.iso</filename>
 					<thumb>rom_pathSony Playstation 2/_2P/_Artwork/boxfront/Ben 10 - Ultimate Alien Cosmic Destruction.jpg</thumb>
@@ -22938,6 +24838,346 @@ Disk Man - משחק דמוי Supaplex, אבל שוב, מורכב יותר. את�
 					<release>1999</release>
 					<publisher>Eighting/Raizing</publisher>
 					<gameplot>With the dawning of the new millennium, a new breed of assassins emerges-altered humans who transmute into violent, raging beasts. All must fight and survive to satisfy their own inner quests...</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+			</roms>
+		</launcher>
+		<launcher>
+			<id>Featherence_playstation24P</id>
+			<name>Sony Playstation 4P</name>
+			<category>Featherence_playstation2</category>
+			<application>emulator_file</application>
+			<args>lib_args_ps2_args "%rom%"</args>
+			<rompath>rom_pathSony Playstation 2/_4P/</rompath>
+			<thumbpath>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/</thumbpath>
+			<fanartpath>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/</fanartpath>
+			<trailerpath>rom_pathSony Playstation 2/_4P/_Artwork/gameplay(video)/</trailerpath>
+			<custompath></custompath>
+			<romext>m3u</romext>
+			<platform>Playstation 2</platform>
+			<thumb>special://home/addons/plugin.program.featherence.emu/resources/media/4P.png</thumb>
+			<fanart></fanart>
+			<genre></genre>
+			<release></release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30000</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30001</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30002</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30003</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30004</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30005</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30006</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30007</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30008</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30009</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30010</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30011</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30012</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30013</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30014</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30015</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30016</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30017</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30018</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30019</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfzx5cc9dfc22978536f30020</id>
+					<name>XXXXX</name>
+					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
