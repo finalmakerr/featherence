@@ -44,43 +44,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="Featherence Emu" version="0.1.28" provider-name="finalmakerr, Angelscry">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-	<summary lang="en">Nostalgia Games</summary>
-	<summary lang="he">משחקי נוסטלגיה</summary>
-    <description lang="en">Features:
-- 11 Consoles of choice.
-- Advanced customized settings in addon settings.
-- Adult contents support.
-- Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
-- Download any game directly! Over 1000 games are available!
-- Dreamcast virtual memory setup.
-- Fanart and Posters supports and are available as a download pack or per downloaded game.
-- Full PS3 Joystick support in-Kodi and in-Game (In-Game key videos are available per each console).
-- Games are categorized by number of possible players.
-- Genre and Description support.
-- High performance modules with improved quality.
-- Multi-disks support.
-- Search game by Title, Date, Platform, Publisher or Genre.
-- Search trailer in YouTube.
-- Smart self restore and update of contents.
-    </description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>www.featherence.com</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
 <addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.5" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
@@ -512,24 +475,6 @@
 	<email>finalmakerr@gmail.com</email>
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.featherence.service</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="script.module.featherence.emu" name="Featherence Emu Module" version="1.1.13" provider-name="finalmakerr">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.module.featherence.emu</source>
 	<website>www.featherence.com</website>
   </extension>
 </addon>

@@ -14,6 +14,6 @@
 
 # **Links:**
 
-* [Website](https://www.featherence.com/)
-* [YouTube](https://www.youtube.com/user/finalmakerr)
+* [Nostalgia](https://www.youtube.com/@youplay.nostalgia)
+* [YouTube](https://www.youtube.com/@youplay.nostalgia)
 * [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.1.0.zip)

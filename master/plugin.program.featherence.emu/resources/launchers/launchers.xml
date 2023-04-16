@@ -11267,6 +11267,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e79ba1ba6713ed9769ebd3f49b0</id>
+					<name>King's Quest</name>
+					<filename>rom_pathSega Master System/_1P/King's Quest.zip</filename>
+					<thumb>rom_pathSega Master System/_1P/_Artwork/boxfront/King's Quest.jpg</thumb>
+					<fanart>rom_pathSega Master System/_1P/_Artwork/screenshot/King's Quest.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>1984</release>
+					<publisher>Sierra</publisher>
+					<gameplot>Sir Graham is a brave knight who is sent on a quest to retrieve three treasures that were stolen by deception and stealth: a shield that protects its bearer from invaders, a mirror that foretells the future, and a treasure chest that is forever filled with gold. If Graham takes these treasures back to the royal castle, then the ailing King Edward the Benevolent of Daventry will hand over the crown. During his travels, Graham will meet characters that will either help or hinder him.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>dae2c7f6f5b5dd37a7cc42f3fcfbd932</id>
 					<name>Alex Kidd in Miracle World</name>
 					<filename>rom_pathSega Master System/_1P/Alex Kidd in Miracle World.zip</filename>
@@ -20177,6 +20192,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e79ra1ba6713ec1769ebd3f6439</id>
+					<name>Wings Of Fury</name>
+					<filename>rom_pathDOS/_EN/Wings Of Fury/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Wings Of Fury.png</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Wings Of Fury.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>1989</release>
+					<publisher>Broderbund</publisher>
+					<gameplot>Wings of Fury is an abandoned side scrolling shooter game developed by Broderbund and was released by Broderbund in 1989</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4024</id>
 					<name>Beware of the Dog</name>
 					<filename>rom_pathDOS/_EN/Beware of the Dog/GO.BAT</filename>
@@ -20779,7 +20809,7 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4005</id>
 					<name>Tyrian 2000</name>
-					<filename>rom_pathDOS/_EN/Tyrian 2000/GO.BAT</filename>
+					<filename>rom_pathDOS/_EN/Tyrian 2000/Tyrian~1.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Tyrian 2000.jpg</thumb>
 					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Tyrian 2000.jpg</fanart>
 					<trailer></trailer>
@@ -21783,7 +21813,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769ebd3f6067</id>
-					<name>Earthworm Jim</name>
+					<name>Earthworm Jim XXXXX</name>
 					<filename>rom_pathDOS/_EN/Earthworm Jim/GO.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Earthworm Jim.png</thumb>
 					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Earthworm Jim.png</fanart>
@@ -24173,46 +24203,46 @@ Disk Man - משחק דמוי Supaplex, אבל שוב, מורכב יותר. את�
 			<roms>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30000</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Crash Twinsanity</name>
+					<filename>rom_pathSony Playstation 2/_1P/Crash Twinsanity.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Crash Twinsanity.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Crash Twinsanity.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Arcade</genre>
+					<release>2004</release>
+					<publisher>Vivendi</publisher>
+					<gameplot>Two purple birds called the Evil Twins form a new threat to Crash's homeworld. Crash has to team up with his arch rival Dr. Neo Cortex to put a stop to this new threat.[CR]Crash Twinsanity is a classic-style Crash platform game, though this time Crash has to work together with Dr. Cortex from time to time. Crash can pick up and throw Dr. Cortex to places he can't reach himself, or use him as a hammer to slap enemies. The consistent conflict between both heroes causes many funny situations.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30001</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Grand Theft Auto III</name>
+					<filename>rom_pathSony Playstation 2/_1P/Grand Theft Auto III.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Grand Theft Auto III.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Grand Theft Auto III.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action / Shooter / Driving</genre>
+					<release>2001</release>
+					<publisher>Rockstar</publisher>
+					<gameplot>After leaving San Andreas and going on a crime spree throughout the country, Claude Speed and Catalina head to Liberty City for a life of crime. During a bank heist, Claude is betrayed by Catalina and her Colombian friend Miguel, and he is shot by her just as they are leaving the scene of the crime. Claude fully recovers....in a prison cell. However, while being transported to a prison, Colombians ambush the prison van for an inmate riding with Claude. Claude and his friend, 8-Ball, escape in the process. Now it is time for revenge. Claude slowly rises through the ranks of the local gangs, gaining trust from local mob bosses and turning on others. Claude gains influence, trust, and most importantly, money along the way. It is time for Claude to rise from the dead and get revenge for what Catalina has done.[CR]Grand Theft Auto III is similar in its concept to its predecessors: the player is cast in the role of a vicious (albeit novice) criminal, who performs tasks for crime lords and gradually raises his rank in the criminal world. Driving is the main gameplay element in the game, though the player can also fully explore the city on foot. For the first time in the series, the entire game is rendered in 3D. Different camera angles are available for driving, and free camera rotation is available when on foot.[CR]As opposed to the previous games, Liberty City is the only city the player can explore in the game. The game puts more emphasis on the story, displaying cutscenes before each mission. In order to complete the game, it is necessary to perform all the main story missions; however, the player often has the choice between several missions at a given moment. The missions include chases, races, short third-person shooter sequences, as well as various mini-game-like activities. Outside of the missions, the player is free to explore the city and undertake sub-missions, for example working as a taxi driver, delivering sick people to the hospital in an ambulance car, etc.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30002</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Monster Hunter</name>
+					<filename>rom_pathSony Playstation 2/_1P/Monster Hunter.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Monster Hunter.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Monster Hunter.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Role-Playing / Action / Puzzle</genre>
+					<release>2004</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Monster Hunter is a third-person action game set in a kind of pre-historic fantasy world. Many of the creatures you'll see are very similar to dinosaurs, ancient relatives to modern day animals such as boars and insects, and even dragons. Next to a singleplayer mode, the game can also be played online. You can have a hunting party of up to four people, and once you start to go after larger prey, you'll definitely need them all. Every couple of weeks, Capcom organizes online missions. While some are harder than others, they all allow you the chance to create equipment you'd never be able to get if you only played offline.[CR]Thankfully, you won't be fighting with your bare hands. When you first begin your game, you are given a simple sword and shield, but as you complete missions and harvest materials from both the creatures you kill and various nooks and crannies in the environments, you can begin to craft stronger weapons and armor for yourself. On top of that, you can also use berries, plants, shells and more to craft healing items, stat boosters and even ammunition if you opt to use a bowgun.[CR]There are several weapon types in Monster Hunter, including the bowgun (perfect for group support and long-range attacks), Great Swords (huge and slow, but very powerful and a great reach), and even Hammers (The most powerful weapon class, but cannot block). Most weapons can even be upgraded once you create them, allowing you to add damage, sharpness and even elemental attributes.[CR]The game is played out through missions you take from the Hunter's Guild (or the village elder if you're playing solo), and these missions range from material gathering, to egg stealing, and even live capture. Combat is all real-time. The left analog stick moves your hunter while the right stick is actually used for attacking. Different directions on the stick trigger different types of attacks, even allowing for some simple combos.[CR]The story in Monster Hunter is a very basic one. You want to be the best Hunter ever, so you go out to prove yourself. That's really all there is to it.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -24868,16 +24898,16 @@ Disk Man - משחק דמוי Supaplex, אבל שוב, מורכב יותר. את�
 			<roms>
 				<rom>
 					<id>57fe101bfzx5cc9dfc22978536f30000</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_4P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Marvel Ultimate Alliance</name>
+					<filename>rom_pathSony Playstation 2/_4P/Marvel Ultimate Alliance.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_4P/_Artwork/boxfront/Marvel Ultimate Alliance.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_4P/_Artwork/screenshot/Marvel Ultimate Alliance.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Role-Playing</genre>
+					<release>2006</release>
+					<publisher>Activision</publisher>
+					<gameplot>Dr. Doom has united supervillains as the Masters of Evil. Now for the first time ever, over 20 Marvel superheroes including Spider-Man, Captain America, Wolverine, Ghost Rider, Blade and Silver Surfer have come together to stop Doom. Mix and match your choice of Marvel superheroes, in teams of four as you travel across the Marvel Universe to stop this threat. Certain teams such as The Fantastic Four and The New Avengers provide additional bonuses.[CR]Some heroes must be unlocked first. The game also features RPG elements, such as leveling up. When a hero gains a level, they earn points you can use to upgrade their skills. You also collect Shield Coins, which can be spent on boosts for your hero team.[CR]You explore various legendary Marvel locales, from Asgard, to Prince Namor's Atlantis, where you take on foes with punches, kicks and super powers. Super powers drain energy, however, so use them wisely. Combos can be achieved by combining super powers. Energy is restored by collecting blue orbs from fallen foes.[CR]Boss battles are like the comics themselves: titanic battles that often not only test brawn but your brain as well. With over 20 playable heroes plus all the cameos, there are over 100 heroes and villains.[CR]The game modes feature either single player, co-op, or online play. In general, Marvel Ultimate Alliance's gameplay can be considered an improved version of 2004's X-Men: Legends. The different versions are fairly identical. The PSP release has three more game modes, while Wii, PS3 and Xbox 360 have additional levels.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
