@@ -372,9 +372,9 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 				
 				elif category == 'Featherence_dos':
 					if launcher == 'Featherence_dosEN':
-						file = "DOS.zip"
+						file = "DOS_EN.zip"
 						fileID = getfileID(file)
-						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS_EN.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 						
 					elif launcher == 'Featherence_dosHE':
 						file = "DOS.zip"
@@ -478,7 +478,7 @@ def getfileID(file):
 	elif file == "Arcade_1P.zip": fileID = 'ff5suc5a8u6vss8' #featherence.user5
 	elif file == "Arcade_1P_Turret Tower.zip": fileID = "usyvftx1cx85528" #htptuser1
 	
-	elif file == "Arcade_2P.zip": fileID = 'lc5rdhqms9i7q6q' #featherence.user51
+	elif file == "Arcade_2P.zip": fileID = '94bxvexuh408yc7' #featherence.user51
 
 	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip": fileID = '5k1kkdavv5klqvh' #featherence.user15
 	elif file == "Arcade_2P_Area 51.zip": fileID = 'zgg4mpg6dh71z02' #htptuser2
@@ -547,7 +547,8 @@ def getfileID(file):
 	elif file == "N64_2P.zip": fileID = 'nik1li3j3dy6qfh' #buy
 	elif file == "N64_4P.zip": fileID = 'k1judhtx8kxj17y' #buy (#htpt)
 	elif file == "NES.zip": fileID = 'x34c6ra4x7p5md6' #buyhtpt
-	elif file == "DOS.zip": fileID ='af88lxievh3nuo3' #featherence.guser37
+	elif file == "DOS.zip": fileID = 'af88lxievh3nuo3' #featherence.guser37 (NO!)?
+	elif file == "DOS_EN.zip": fileID = 'jt70ycbv1xhghu8' #featherence.guser37
 	elif file == "NDS.zip": fileID = '5abhum0vadjjeec' #htptdebugout2
 	elif file == "NDS2.zip": fileID = 'u5cueqkzg5knx8o' #featherence.user30 (htpt)
 	

@@ -230,8 +230,8 @@ msgid "[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence
 msgstr "[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence[CR]"
 
 msgctxt "#32072"
-msgid "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/user/finalmakerr[CR]"
-msgstr "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/user/finalmakerr[CR]"
+msgid "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/@featherence[CR]"
+msgstr "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/@featherence[CR]"
 
 msgctxt "#32073"
 msgid "Go To YouTube!"
@@ -376,8 +376,8 @@ msgid "Choose YES to proceed (Optional)"
 msgstr "Choose YES to proceed (Optional)"
 
 msgctxt "#32108"
-msgid "[B][COLOR=blue]Facebook[/COLOR][/B]: www.facebook.com/groups/featherence[CR]"
-msgstr "[B][COLOR=blue]Facebook[/COLOR][/B]: www.facebook.com/groups/featherence[CR]"
+msgid "[B][COLOR=blue]Link[/COLOR][/B]: www.youtube.com/@youplay.nostalgia[CR]"
+msgstr "[B][COLOR=blue]Link[/COLOR][/B]: www.youtube.com/@youplay.nostalgia[CR]"
 
 msgctxt "#32109"
 msgid "Sub Button Name"
