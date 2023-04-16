@@ -2,6 +2,10 @@
 <addon id="emulator.retroarch_win64" name="Featherence Emu Console - Windows x64" version="1.0.2" provider-name="finalmakerr">
   <requires>
 	<import addon="xbmc.python" version="2.24.0"/>
+	<import addon="repository.featherence" />
+	<import addon="script.module.featherence.emu" />
+	<import addon="plugin.program.featherence.emu" />
+	<import addon="script.featherence.service" />
   </requires>
   <extension point="xbmc.python.script"
              library="default.py">
