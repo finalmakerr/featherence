@@ -480,11 +480,7 @@ def getfileID(file):
 	
 	elif file == "Arcade_2P.zip": fileID = 'lc5rdhqms9i7q6q' #featherence.user51
 
-	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip":
-		fileID_L.append('bqrt9ltcb1h5zjh') #guser26
-		fileID_L.append('5k1kkdavv5klqvh') #featherence.user15
-		fileName_L.append('Source 1')
-		fileName_L.append('Source 2')
+	elif file == "Arcade_2P_Age Of Heroes - Silkroad 2.zip": fileID = '5k1kkdavv5klqvh' #featherence.user15
 	elif file == "Arcade_2P_Area 51.zip": fileID = 'zgg4mpg6dh71z02' #htptuser2
 		
 	elif file == "Arcade_2P_Area 51 Maximum Force Duo v2.0.zip": fileID = 'v74zfmphjua4xo6' #featherence.user35
@@ -492,12 +488,10 @@ def getfileID(file):
 	elif file == "Arcade_2P_Demon Front.zip": fileID = 'q6dyv0bzu7xvcdz' #guser26
 		
 	elif file == "Arcade_2P_Flame Gunner.zip":
-		fileID_L.append('ag0k2gh5a20e7yg') #guser26
 		fileID_L.append('1aor06jv3zm1sxy') #featherence.user15
 		fileID_L.append('pah5c5cmsiv5deu') #featherence.user28
 		fileName_L.append('Source 1')
 		fileName_L.append('Source 2')
-		fileName_L.append('Source 3')
 	elif file == "Arcade_2P_Garou - Mark of the Wolves.zip": fileID = 'ol5f0v2d9nkodyd' #featherence.user51
 	elif file == "Arcade_2P_Killer Instinct.zip": fileID = 'yztr7wx3xeb0xxf' #guser24
 	elif file == "Arcade_2P_Killer Instinct 2.zip": fileID = 's4jlqn4316uxrq6' #guser24

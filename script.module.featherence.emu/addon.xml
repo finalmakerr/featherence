@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.featherence.emu" name="Featherence Emu Module" version="1.1.13" provider-name="finalmakerr">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Multi-emulator frontend based on libretro</summary>
+    <description lang="en">_</description>
+	<description lang="he">_</description>
+    <disclaimer></disclaimer>
+	<source>https://github.com/finalmakerr/featherence</source>
+	<website>https://www.youtube.com/@youplay.nostalgia</website>
+  </extension>
+</addon>

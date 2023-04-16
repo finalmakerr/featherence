@@ -10,9 +10,7 @@
     <description lang="en">_</description>
 	<description lang="he">_</description>
     <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/script.module.featherence.emu</source>
-	<website>www.featherence.com</website>
+	<source>https://github.com/finalmakerr/featherence</source>
+	<website>https://www.youtube.com/@youplay.nostalgia</website>
   </extension>
 </addon>
