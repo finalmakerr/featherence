@@ -1097,7 +1097,7 @@ def copyconfig(force=False):
 	if not os.path.exists(path):
 		printpoint = printpoint + '1'
 		installemuconsole()
-	else:
+	elif systemplatformlinux and not systemplatformandroid:
 		printpoint = printpoint + '2'
 		for file in os.listdir(path):
 			y = False
@@ -1123,8 +1123,9 @@ def copyconfig(force=False):
 			printpoint = printpoint + '4'
 			notification('copying remaps','','',1000)
 			copyfiles(remaps_path2, remaps_path)
-	
-	copydolphin(force)
+		
+		copydolphin(force)
+	else: notification('OS Not supported!','','',1000)
 	
 	
 	text = "extra" + space2 + str(extra) + newline + \
@@ -1542,7 +1543,7 @@ def copylaunchers(force=False):
 				if systemplatformlinuxraspberrypi or OS == "oe2": _dos_args = ""
 				elif OS == "i386": _dos_args = 'dosbox'
 				else: _dos_args = 'dosbox_pure'
-			elif systemplatformwindows: _dos_args = 'dosbox_libretro.dll'
+			elif systemplatformwindows: _dos_args = 'dosbox_pure_libretro.dll'
 			replace_word(emudata_launcher_file,'_dos_args',_dos_args, infile_="", LineR=False , LineClean=False)
 			
 			if systemplatformandroid: _scummvm_args = ''

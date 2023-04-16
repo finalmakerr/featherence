@@ -139,6 +139,7 @@ else: config_path2 = os.path.join(featherence_emu_module_path,'config','')
 
 if systemplatformlinuxraspberrypi or OS == 'oe2': cores_path = os.path.join(emulator_path,'lib','libretro','')
 elif systemplatformandroid: cores_path = os.path.join(emulatordata_path,'cores','')
+elif systemplatformwindows: cores_path = os.path.join(emulator_path,'cores','')
 else: cores_path = os.path.join(emulatordata_path,'cores','')
 
 if systemplatformandroid: coresinfo_path = os.path.join(cores_path,'info','')
@@ -200,6 +201,7 @@ emudata_launcher_file = os.path.join(addonuserdata_path + 'launchers.xml')
 launcher_args = '--config' + space + os.path.join(emulator_path, 'retroarch.cfg') + space + '--appendconfig' + space + os.path.join(config_path, 'retroarch.cfg')
 if systemplatformwindows:
 	lib_args = launcher_args + space + '-L' + space + cores_path
+	lib_args = '-L' + space + cores_path
 elif systemplatformandroid:
 	lib_args = launcher_args + space + '-e CONFIGFILE /data/data/com.retroarch/retroarch.cfg -e IME tv.ouya.console.ime.keyboard/.OUYAKeyboard -n com.retroarch/.browser.retroactivity.RetroActivityFuture'
 else:
