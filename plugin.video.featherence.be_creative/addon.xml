@@ -19,8 +19,7 @@
 	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 	<forum></forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.be_creative</source>
-	<website>www.featherence.com</website>
+	<source>https://github.com/finalmakerr/featherence</source>
+	<website>https://www.youtube.com/@featherence</website>
   </extension>
 </addon>
