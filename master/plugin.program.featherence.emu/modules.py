@@ -548,7 +548,7 @@ def getfileID(file):
 	elif file == "N64_4P.zip": fileID = 'k1judhtx8kxj17y' #buy (#htpt)
 	elif file == "NES.zip": fileID = 'x34c6ra4x7p5md6' #buyhtpt
 	elif file == "DOS.zip": fileID = 'af88lxievh3nuo3' #featherence.guser37 (NO!)?
-	elif file == "DOS_EN.zip": fileID = 'jt70ycbv1xhghu8' #featherence.guser37
+	elif file == "DOS_EN.zip": fileID = '4yz8mu25b518rfv' #featherence.guser37
 	elif file == "NDS.zip": fileID = '5abhum0vadjjeec' #htptdebugout2
 	elif file == "NDS2.zip": fileID = 'u5cueqkzg5knx8o' #featherence.user30 (htpt)
 	
