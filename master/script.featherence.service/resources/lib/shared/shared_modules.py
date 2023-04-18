@@ -316,6 +316,7 @@ def ExtractAll(source, output):
 		
 		except Exception, TypeError:
 			printpoint = printpoint + "9"
+			notification("ExtractAll Error", "Check the log file!", "", 2000)
 			
 	'''------------------------------
 	---PRINT-END---------------------
@@ -324,7 +325,7 @@ def ExtractAll(source, output):
 		extra = newline + "TypeError:" + space2 + str(TypeError)
 		level = 7
 	text = "source" + space2 + source + space + "output" + space2 + output + space + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	'''---------------------------'''
 	if "7" in printpoint: return True
 	else: return False
@@ -1668,7 +1669,7 @@ def to_unicode(text):
 def replace_word(infile,old_word,new_word, infile_="", LineR=False , LineClean=False):
 	name = 'replace_word' ; printpoint = "" ; extra = "" ; TypeError = "" ; value = ""
 
-	if not os.path.isfile(infile): printpoint = printpoint + "9a" #(infile_ == "" or LineR == True) and
+	if not os.path.isfile(infile): printpoint = printpoint + "9a"
 	elif old_word == None or new_word == None: printpoint = printpoint + "9b"
 	else:
 		if LineR == False:
@@ -1744,7 +1745,7 @@ def ReloadSkin(admin,force=True):
 def skincheck():
 	if xbmc.getSkinDir() == 'skin.featherence': pass
 	else:
-		notification('Featherence is missing!','www.featherence.com',"",2000)
+		notification('Featherence is missing!','www.youtube.com/@youplay.nostalgia',"",2000)
 		sys.exit(0)
 def setProperty(id, value, type="home", force=True):
 

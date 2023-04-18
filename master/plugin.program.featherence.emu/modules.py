@@ -377,14 +377,14 @@ def downloads(plugin, category="", launcher="", rom="", filename="", filepath=""
 						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS_EN.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 						
 					elif launcher == 'Featherence_dosHE':
-						file = "DOS.zip"
+						file = "DOS_HE.zip"
 						fileID = getfileID(file)
-						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS_HE.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 					
 					elif launcher == 'Featherence_dosRU':
-						file = "DOS.zip"
+						file = "DOS_RU.zip"
 						fileID = getfileID(file)
-						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
+						if fileID != "": DownloadFile("https://www.dropbox.com/s/"+fileID+"/DOS_RU.zip?dl=1", file, temp_path, rom_path, percentinfo=2)
 		
 	text = "category" + space2 + str(category) + newline + \
 	"launcher" + space2 + str(launcher) + newline + \
@@ -547,8 +547,10 @@ def getfileID(file):
 	elif file == "N64_2P.zip": fileID = 'nik1li3j3dy6qfh' #buy
 	elif file == "N64_4P.zip": fileID = 'k1judhtx8kxj17y' #buy (#htpt)
 	elif file == "NES.zip": fileID = 'x34c6ra4x7p5md6' #buyhtpt
-	elif file == "DOS.zip": fileID = 'af88lxievh3nuo3' #featherence.guser37 (NO!)?
+	elif file == "DOS.zip": fileID = ''
 	elif file == "DOS_EN.zip": fileID = '4yz8mu25b518rfv' #featherence.guser37
+	elif file == "DOS_HE.zip": fileID = '' #featherence.guser37
+	elif file == "DOS_RU.zip": fileID = '' #featherence.guser37
 	elif file == "NDS.zip": fileID = '5abhum0vadjjeec' #htptdebugout2
 	elif file == "NDS2.zip": fileID = 'u5cueqkzg5knx8o' #featherence.user30 (htpt)
 	
@@ -1126,7 +1128,9 @@ def copyconfig(force=False):
 			copyfiles(remaps_path2, remaps_path)
 		
 		copydolphin(force)
-	else: notification('OS Not supported!','','',1000)
+	elif force==True and systemplatformwindows:
+		notification('OS Not supported!','','',1000)
+		#setconfig(force=True)
 	
 	
 	text = "extra" + space2 + str(extra) + newline + \
@@ -1417,18 +1421,18 @@ def copylaunchers(force=False):
 			elif systemplatformlinux: pass
 			elif systemplatformwindows:
 				dp.update(10,'Generating Launchers file',"Setting windows symbols")
-				if 1 + 1 == 2:
-					#replace_word(emudata_launcher_file,old_word,new_word, infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'rom/','rom\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'/_','\\_', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'_EN/','_EN\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'_HE/','_HE\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'_RU/','_RU\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'/GO.BAT','\\GO.BAT', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'_Artwork/','_Artwork\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'boxfront/','boxfront\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'screenshot/','screenshot\\', infile_="", LineR=False , LineClean=False)
-					replace_word(emudata_launcher_file,'P/','P\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'rom/','rom\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'/_','\\_', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'_EN/','_EN\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'_HE/','_HE\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'_RU/','_RU\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'/GO.BAT','\\GO.BAT', infile_="", LineR=False , LineClean=False)
+				replacements = {'/A': '\\A', '/B': '\\B', '/C': '\\C', '/D': '\\D', '/E': '\\E', '/F': '\\F', '/G': '\\G', '/H': '\\H', '/I': '\\I', '/J': '\\J', '/K': '\\K', '/L': '\\L', '/M': '\\M', '/N': '\\N', '/O': '\\O', '/P': '\\P', '/Q': '\\Q', '/R': '\\R', '/S': '\\S', '/T': '\\T', '/U': '\\U', '/V': '\\V', '/W': '\\W', '/X': '\\X', '/Y': '\\Y', '/Z': '\\Z'}
+				for key, value in replacements.items(): replace_word(emudata_launcher_file,key,value, infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'_Artwork/','_Artwork\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'boxfront/','boxfront\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'screenshot/','screenshot\\', infile_="", LineR=False , LineClean=False)
+				replace_word(emudata_launcher_file,'P/','P\\', infile_="", LineR=False , LineClean=False)
 			
 			dp.update(15,'Generating Launchers file',"Setting rom_path..")
 			replace_word(emudata_launcher_file,'rom_path',rom_path, infile_="", LineR=False , LineClean=False)
