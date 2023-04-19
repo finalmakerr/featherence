@@ -95,7 +95,6 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
     exe = printlog(title="exe", printpoint="", text="", level=0, option="")
     try: test = percentinfo + 1
     except: percentinfo = 10
-	#unquote parameters
     xbmc.executebuiltin('ActivateWindow(busydialog)')
     xbmc.executebuiltin('AlarmClock(busydialog,Dialog.Close(busydialog),00:05,silent)')
     url     = urllib.unquote_plus(url)

@@ -43,7 +43,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.featherence.emu" name="YouPlay Nostalgia" version="0.1.28" provider-name="finalmakerr, Angelscry">
+<addon id="plugin.program.featherence.emu" name="YouPlay Nostalgia" version="0.1.29" provider-name="finalmakerr, Angelscry">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
     <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
@@ -60,7 +60,7 @@
 - Advanced customized settings in addon settings.
 - Adult contents support.
 - Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
-- Download any game directly! Over 1000 games are available!
+- Download any game directly! Over 2000 games are available!
 - Dreamcast virtual memory setup.
 - Fanart and Posters supports and are available as a download pack or per downloaded game.
 - Full PS3 Joystick support in-Kodi and in-Game (In-Game key videos are available per each console).

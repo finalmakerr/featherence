@@ -2,6 +2,7 @@
 import xbmc, xbmcgui, xbmcaddon, os, sys, subprocess, random
 
 from variables import *
+from modules2 import *
 from shared_modules import *
 
 def mode0(admin, name, printpoint):
@@ -181,40 +182,6 @@ def mode6(value):
 	'currentpwd' + space2 + str(currentpwd) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
-def mode14(value, name, printpoint):
-	Featherence_auth = getsetting('Featherence_auth')
-	set1v = ""
-	
-	if Featherence_auth == Featherence_auth2:
-		printpoint = printpoint + '1'
-		if Featherence_authdate == datenowS:
-			printpoint = printpoint + '2'
-		else:
-			printpoint = printpoint + '3'
-			returned2, value2 = getRandom(0, min=0, max=100, percent=10)
-			if returned2 == 'ok':
-				setsetting_custom1('script.featherence.service','Featherence_auth',"")
-	else:
-		printpoint = printpoint + '4'
-		dialogok('Get your Featherence code by visit:','www.featherence.com/news','','',line2c='white')
-		returned, set1v = dialognumeric(0,'Featherence Code',"",'1','','') ; xbmc.sleep(500)
-		if set1v != Featherence_auth2:
-			printpoint = printpoint + '8'
-			notification(localize(12342),"","",1000)
-			xbmc.executebuiltin('ReplaceWindow(Home.xml)')
-		else:
-			printpoint = printpoint + '7'
-			notification("Thank you for visiting Featherence, friends :)","Please by all means, Enjoy Featherence's addons :)","",4000)
-			setsetting_custom1('script.featherence.service','Featherence_auth',set1v)
-			setsetting_custom1('script.featherence.service','Featherence_authdate',datenowS)
-	
-	text = 'value' + space2 + str(value) + newline + \
-	'set1v' + space2 + str(set1v) + newline + \
-	'Featherence_auth' + space2 + str(Featherence_auth) + newline + \
-	'Featherence_auth2' + space2 + str(Featherence_auth2) + newline + \
-	'Featherence_authdate' + space2 + str(Featherence_authdate) + newline + \
-	'datenowS' + space2 + str(datenowS)
-	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 	
 def mode8(admin, name, printpoint):
 	'''------------------------------

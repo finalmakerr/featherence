@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-'''------------------------------
----shared_variables--------------
-------------------------------'''
 import xbmc, xbmcgui, xbmcaddon, sys, os
 
 addon = 'script.featherence.service'
