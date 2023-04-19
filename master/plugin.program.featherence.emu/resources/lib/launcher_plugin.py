@@ -582,7 +582,7 @@ class Main:
     def _add_category(self, name, thumb, fanart, genre, plot, total, key):
         commands = []
         commands.append((localize(137), "XBMC.RunPlugin(%s?%s)" % (self._path, SEARCH_COMMAND) , ))
-        commands.append((addonString(30100).encode('utf-8') % (name), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
+        commands.append((addonString(30100).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
         commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 		
         folder = True

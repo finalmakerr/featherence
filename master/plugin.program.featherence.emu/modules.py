@@ -245,15 +245,18 @@ def copyautoconfig(force=False):
 def keys_help(filename):
 	name = 'keys_help' ; printpoint = ""
 	from shared_modules3 import *
-	if filename == 'Arcade': url = '&youtube_id=L12S_XuO9kQ'
-	elif filename == 'Nintendo': url = '&youtube_id=HrxGGOB8W8M'
-	elif filename == 'Nintendo 64': url = '&youtube_id=6U6435hKBnI'
-	elif filename == 'Nintendo DS': url = '&youtube_id=mSi8q2g-JIw'
-	elif filename == 'Sega Genesis': url = '&youtube_id=H2tOwo4f0AE'
-	elif filename == 'Sega Master System': url = '&youtube_id=DcDqe4UmoJI'
-	elif filename == 'Sony Playstation': url = '&youtube_id=XHr-svFqDm0'
-	elif filename == 'Super Nintendo': url = '&youtube_id=zLHY2ImgHRM'
-	elif filename == 'TurboGrafx 16': url = '&youtube_id=DLZwdLiPzqc'
+	if filename == 'Arcade': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Nintendo': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Nintendo 64': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Nintendo DS': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'GameCube': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'DOS': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Sega Genesis': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Sega Master System': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Sony Playstation': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Sony Playstation 2': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'Super Nintendo': url = '&youtube_id=b3NE_vZUVCo'
+	elif filename == 'TurboGrafx 16': url = '&youtube_id=b3NE_vZUVCo'
 	else:
 		url = ''
 		printpoint = printpoint + '9'

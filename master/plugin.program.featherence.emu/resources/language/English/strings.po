@@ -26,8 +26,8 @@ msgid "Enter the file title to search..."
 msgstr "הזן את שם הקובץ לחיפוש."
 
 msgctxt "#30100"
-msgid "%s in-game keys"
-msgstr "%s מספר מזהה משחק"
+msgid "PS3 & Keyboard Hotkeys"
+msgstr "PS3 & Keyboard Hotkeys"
 
 msgctxt "#30101"
 msgid "Delete Game"
