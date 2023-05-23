@@ -1,19 +1,21 @@
-![](http://i.imgur.com/zfdrpSG.png)
+[![U▶N😄stalgia](https://github.com/finalmakerr/featherence/blob/master/plugin.program.featherence.emu/fanart.jpg?raw=true)](https://www.youtube.com/@youplay.nostalgia)
 
-# **Install Kodi's addons from Featherence Repository:**
+An emotional / mixedaffective state called Nostalgia 😃
 
-* Featherence Service:  Core addon for every addon used in Featherence.
-* Featherence Docu:     Nature, Science, Space, Technology and more..
-* Featherence Emu:      Wanna play a game?
-* Featherence Kids:     My kids are loving it!
-* Featherence Extreme:  Go-Pro, Sports and challanges!
-* Featherence Music:    For people who love Music!
-* Featherence Remote:   Control your Kodi with IR Device.
-* Featherence:          Beauty, Light and Modern interface.
-* Featherence ROFL:     What's so funny? :)
+[How-To ▶ Nostalgia Games](https://youtube.com/shorts/WMKQjEW7S-4)
+
+[How-To Download ROMS](https://youtube.com/shorts/53imAzQsbD8)
+
+[Latest Major Update 1.30 (May 23, 2023](https://youtube.com/shorts/Xf4Li6K808s)
+
+YouPlay Nostalgia Addon is completely free for use.
+
+[Donate-To-Support YouPlay-Nostalgia Development:](https://www.paypal.com/donate/?hosted_button_id=FHN3R86U5D7ZC)
+
 
 # **Links:**
 
-* [Nostalgia](https://www.youtube.com/@youplay.nostalgia)
 * [YouTube](https://www.youtube.com/@youplay.nostalgia)
 * [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.1.0.zip)
+
+[![U▶N😄stalgia](https://github.com/finalmakerr/featherence/blob/master/plugin.program.featherence.emu/icon.png?raw=true)](https://www.youtube.com/@youplay.nostalgia)
