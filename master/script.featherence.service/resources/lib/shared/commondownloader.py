@@ -29,34 +29,36 @@ from variables import *
 from shared_modules import *
 
 def getResponse(url, size, referer, agent, cookie, silent):
-    resp = "" ; req = "" ; returned = "" ; printpoint = "" ; TypeError = ""
+    resp = "" ; req = "" ; returned = "" ; printpoint = "" ; req_str = "" ; response_data = "" ; TypeError = ""
     url = url.replace(" ","%20")
     try:
-        req = urllib2.Request(url)
-
+        req = urllib2.Request(url) ; printpoint = printpoint + '1' ; req_str = urllib2.urlopen(req).geturl()
         if len(referer) > 0:
-            req.add_header('Referer', referer)
+            req.add_header('Referer', referer) ; printpoint = printpoint + '2'
 
         if len(agent) > 0:
-            req.add_header('User-Agent', agent)
+            req.add_header('User-Agent', agent) ; printpoint = printpoint + '3'
 
         if len(cookie) > 0:
-            req.add_header('Cookie', cookie)
+            req.add_header('Cookie', cookie) ; printpoint = printpoint + '4'
 
         if size > 0:
             size = int(size)
-            req.add_header('Range',   'bytes=%d-' % size)
+            req.add_header('Range',   'bytes=%d-' % size) ; printpoint = printpoint + '5'
 
         resp = urllib2.urlopen(req, timeout=20)
-        returned = resp
+        #response_data = resp.read() #TypeError: out of memory
+        returned = resp ; printpoint = printpoint + '7'
     except Exception, TypeError:
         returned = None
     
     text = 'url' + space2 + str(url) + newline + \
     'req' + space2 + str(req) + newline + \
+    'req_str' + space2 + str(req_str) + newline + \
     'resp' + space2 + str(resp) + newline + \
     'size' + space2 + str(size) + newline + \
     'referer' + space2 + str(referer) + newline + \
+    'response_data' + space2 + str(response_data) + newline + \
     'TypeError' + space2 + str(TypeError) + newline + \
     'agent' + space2 + str(agent)
     printlog(title="getResponse-commondownloader", printpoint=printpoint, text=text, level=1, option="")
@@ -64,6 +66,8 @@ def getResponse(url, size, referer, agent, cookie, silent):
     return returned, str(TypeError)
 	
 def download(url, dest, title=None, referer=None, agent=None, cookie=None, silent=False):
+    #agent={"Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    #agent={"Chrome/80.0.3987.149"}
     if not title:
         title  = 'Kodi Download'
 
@@ -90,11 +94,11 @@ def download(url, dest, title=None, referer=None, agent=None, cookie=None, silen
     xbmc.executebuiltin(cmd)
 
 
-def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentinfo=10):
-    printpoint = "" ; extra = "" ; TypeError = ""
+def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentinfo=20):
+    printpoint = "" ; extra = "" ; TypeError = "" ; returned = "" ; respheaders = "" ; resumable = ""
     exe = printlog(title="exe", printpoint="", text="", level=0, option="")
     try: test = percentinfo + 1
-    except: percentinfo = 10
+    except: percentinfo = 20
     xbmc.executebuiltin('ActivateWindow(busydialog)')
     xbmc.executebuiltin('AlarmClock(busydialog,Dialog.Close(busydialog),00:05,silent)')
     url     = urllib.unquote_plus(url)
@@ -109,36 +113,64 @@ def doDownload(url, dest, title, referer, agent, cookie, silent=False, percentin
     resp, TypeError = getResponse(url, 0, referer, agent, cookie, silent)
     
     xbmc.executebuiltin('Dialog.Close(busydialog)')
-	
+    ContainerFolderPath = xbmc.getInfoLabel('Container.FolderPath')
+    
     if not resp:
+        printpoint = printpoint + '1'
         if silent != True or exe != "":
             if TypeError == "":
-				dialogok(title, dest, localize(13036, s=[localize(33003)]), localize(15301)) #Failed for %s, Couldn't connect to network server
+                if 'plugin.program.featherence.emu' in ContainerFolderPath:
+                    dialogok(title, 'Game is unavailable at the moment', '[CR]www.youtube.com/@youplay.nostalgia') #Game is unavailable at the moment
+                else:
+                    dialogok(title, dest, localize(13036, s=[localize(33003)]), localize(15301)) #Failed for %s, Couldn't connect to network server
             else:
-				dialogok(title, TypeError, localize(13036, s=[localize(33003)]), localize(15301))
-        return "skip"
+                if 'plugin.program.featherence.emu' in ContainerFolderPath:
+                    #dialogok(title, dest, localize(13036, s=[localize(32161)]), localize(32158) + '1') #Game is unavailable at the moment
+                    dialogok(title, str(TypeError), '', 'www.youtube.com/@youplay.nostalgia') #Game is unavailable at the moment
+                else:
+                    dialogok(title, str(TypeError), localize(13036, s=[localize(33003)]), localize(15301)) #Failed for %s, Couldn't connect to network server
+        returned = "skip"
 
-    try:    content = int(resp.headers['Content-Length'])
+    try:
+        respheaders = str(resp.headers) ; content = int(resp.headers.get("Content-Length", 0)) ; printpoint = printpoint + '2A'
     except Exception, TypeError:
         content = 0
         TypeError = str(TypeError) + " " + str(TypeError)
 
-    try:    resumable = 'bytes' in resp.headers['Accept-Ranges'].lower()
-    except: resumable = False
+    if 1 + 1 == 2:
+        try:    resumable = 'bytes' in resp.headers['Accept-Ranges'].lower()
+        except Exception, TypeError: resumable = False ; printpoint = printpoint + '4' ; TypeError = str(TypeError) + " " + str(TypeError)
 
-    if resumable:
-        pass
+        if resumable:
+            pass ; printpoint = printpoint + '5'
 
     text = 'url' + space2 + str(url) + newline + \
     'dest' + space2 + str(dest) + newline + \
     'title' + space2 + str(title) + newline + \
     'content' + space2 + str(content) + newline + \
-    'resp.headers' + space2 + str(resp.headers)
-    printlog(title="commondownloader", printpoint=printpoint, text=text, level=0, option="")
+    'TypeError' + space2 + str(TypeError) + newline + \
+    'resumable' + space2 + str(resumable) + newline + \
+    'ContainerFolderPath' + space2 + str(ContainerFolderPath) + newline + \
+    'resp' + space2 + str(resp) + newline + \
+    'resp.headers' + space2 + str(respheaders)
+    printlog(title="doDownload", printpoint=printpoint, text=text, level=0, option="")
 	
-    if content < 1:
-        if silent != True or exe != "": dialogok(title, file, localize(1446) + space + localize(21802), localize(13036, s=[localize(33003)]))
-        return "skip"
+    
+    if content < 1 and returned != "skip":
+        if silent != True or exe != "":
+            if 'plugin.program.featherence.emu' in ContainerFolderPath:
+                if url == "" or url == "#": dialogok(title, addonString_servicefeatherence(32167).encode('utf-8'), addonString_servicefeatherence(32157).encode('utf-8'),"") #I haven't uploaded it yet :(
+                else:
+                    dialogok(title, 'Game archive has en error', "",'[CR]www.youtube.com/@youplay.nostalgia') #Game archive has en error
+            else:
+                dialogok(title, file, localize(1446) + space + localize(21802), localize(13036, s=[localize(33003)]))
+        if 'drive.google.com' in url: content = 1
+        else: returned = "skip"
+    else:
+        pass
+        
+    '''There will be no download'''
+    if returned == "skip": printpoint = printpoint + '9' ; return "skip"
 
     size = 1024 * 1024
     mb   = content / (1024 * 1024)

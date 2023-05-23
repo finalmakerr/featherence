@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 
-#Widget"
+#Widget
 msgctxt "#32001"
 msgid "Recommended"
 msgstr "פרטים מומלצים"
@@ -78,7 +78,7 @@ msgctxt "#32020"
 msgid ""
 msgstr ""
 
-#Remote"
+#Remote
 msgctxt "#32021"
 msgid "Press to test the remote configuration"
 msgstr "לחץ לבדיקת הגדרת השלט"
@@ -155,7 +155,7 @@ msgctxt "#32039"
 msgid "Launch widget now"
 msgstr "Launch widget now"
 
-#Others addons settings"
+#Others addons settings
 msgctxt "#32040"
 msgid "Delay time for Intro Video and Music."
 msgstr "זמן השהייה לסרטון ומוזיקת פתיחה."
@@ -173,12 +173,12 @@ msgid "Choose your prefered languages of speak.[CR]The contents availability is 
 msgstr "בחר עדפות שפה.[CR]זמינות התכנים מושפעת מהגדרה זו!"
 
 msgctxt "#32044"
-msgid "In order to add more contents, you may visit Featherence Github[CR]and make your changes there.[CR]"
-msgstr "In order to add more contents, you may visit Featherence Github[CR]and make your changes there.[CR]"
+msgid "Have fun!"
+msgstr "Have fun!"
 
 msgctxt "#32045"
-msgid "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will be happy to teach you!"
-msgstr "If you don't know how to do that, it's quite [B]easy!![/B][CR]and we will be happy to teach you!"
+msgid ""
+msgstr ""
 
 msgctxt "#32046"
 msgid "Search History"
@@ -193,16 +193,28 @@ msgid "Need support? Want to say thanks?[CR]"
 msgstr "צריך עזרה? רוצה לומר לנו תודה?[CR]"
 
 msgctxt "#32049"
-msgid "Contact me via YouPlay on YouTube"
-msgstr "Contact me via YouPlay on YouTube"
+msgid "Get in Touch via YouPlay on YouTube"
+msgstr "Get in Touch via YouPlay on YouTube"
 
 msgctxt "#32050"
 msgid "TV Mode Quality"
 msgstr "איכות מצב טלוויזיה"
 
-#Message"
+msgctxt "#32051"
+msgid "Getting a few games for you"
+msgstr "Getting a few games for you"
+
+msgctxt "#32052"
+msgid "Goodluck running them"
+msgstr "Goodluck running them"
+
+msgctxt "#32053"
+msgid "OS and hardware are not supported!"
+msgstr "OS and hardware are not supported!"
+
+#Message
 msgctxt "#32060"
-msgid "Having a good time using Featherence? Would love to hear you!"
+msgid "Having a good time? Would love to hear you!"
 msgstr "רוצה להגיד לנו תודה? נשמח לשמוע!"
 
 msgctxt "#32061"
@@ -210,8 +222,8 @@ msgid "Do you want to contribute?"
 msgstr "מעוניין לסייע לנו בפיתוח ההרחבה?"
 
 msgctxt "#32062"
-msgid "Have an idea for new addon?"
-msgstr "יש לך רעיון להרחבה חדשה?"
+msgid "Having fun yet ;)"
+msgstr "Having fun yet ;)"
 
 msgctxt "#32063"
 msgid "Looking for support?"
@@ -224,6 +236,10 @@ msgstr "רוצה לשאול שאלה?"
 msgctxt "#32065"
 msgid "Choose YES to continue"
 msgstr "בחר "כן" להמשך"
+
+msgctxt "#32070"
+msgid "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/@youplay.nostalgia[CR]"
+msgstr "[B][COLOR=blue]YouTube[/COLOR][/B]: www.youtube.com/@youplay.nostalgia[CR]"
 
 msgctxt "#32071"
 msgid "[B][COLOR=blue]Github[/COLOR][/B]: www.github.com/finalmakerr/featherence[CR]"
@@ -246,12 +262,12 @@ msgid "Add a custom background to a category by pressing the menu button and "Se
 msgstr "בחר רקע אישי לקטגורייה ע"י לחיצה על כפתור תפריט ו-"Set Custom Fanart"."
 
 msgctxt "#32076"
-msgid "Featherence YouTube Channel"
-msgstr "Featherence YouTube Channel"
+msgid "YouTube"
+msgstr "YouTube"
 
 msgctxt "#32077"
-msgid "Featherence Github Server"
-msgstr "Featherence Github Server"
+msgid "Github"
+msgstr "Github"
 
 msgctxt "#32078"
 msgid "Featherence on YouPlay"
@@ -261,8 +277,7 @@ msgctxt "#32079"
 msgid "[B][COLOR=yellow]Featherence[/COLOR][/B][CR]"
 msgstr "[B][COLOR=yellow]Featherence[/COLOR][/B][CR]"
 
-
-#Custom start here!"
+#Custom start here!
 msgctxt "#32080"
 msgid "Main language has been changed to:"
 msgstr "שפה ראשית שונתה ל-:"
@@ -572,12 +587,12 @@ msgid "Create new button"
 msgstr "צור כפתור חדש"
 
 msgctxt "#32157"
-msgid "[B][COLOR=blue]Featherence Website[/COLOR][/B]: www.youtube.com/@featherence[CR]"
-msgstr "[B][COLOR=blue]Featherence Website[/COLOR][/B]: www.youtube.com/@featherence[CR]"
+msgid "[B][COLOR=blue]Support[/COLOR][/B]: www.youtube.com/@youplay.nostalgia"
+msgstr "[B][COLOR=blue]Support[/COLOR][/B]: www.youtube.com/@youplay.nostalgia"
 
 msgctxt "#32158"
-msgid "www.youtube.com/@youplay.nostalgia"
-msgstr "www.youtube.com/@youplay.nostalgia"
+msgid "www.youtube.com/@featherence"
+msgstr "www.youtube.com/@featherence"
 
 msgctxt "#32159"
 msgid "Music Box"
@@ -588,32 +603,28 @@ msgid "I am feeling lucky $$$"
 msgstr "I am feeling lucky $$$"
 
 msgctxt "#32161"
-msgid ""
-msgstr ""
+msgid "Game is unavailable at the moment"
+msgstr "המשחק אינו זמין כרגע"
 
 msgctxt "#32162"
-msgid ""
-msgstr ""
-
-msgctxt "#32163"
-msgid ""
-msgstr ""
+msgid "[B][COLOR=yellow]YouPlay[/COLOR][/B][CR]"
+msgstr "[B][COLOR=yellow]YouPlay[/COLOR][/B][CR]"
 
 msgctxt "#32164"
-msgid ""
-msgstr ""
+msgid "https://www.youtube.com/watch?v=WMKQjEW7S-4"
+msgstr "https://www.youtube.com/watch?v=WMKQjEW7S-4"
 
 msgctxt "#32165"
-msgid ""
-msgstr ""
+msgid "Running a test game"
+msgstr "Running a test game"
 
 msgctxt "#32166"
-msgid ""
-msgstr ""
+msgid "[B][COLOR=yellow]Run a test game[/COLOR][/B]"
+msgstr "[B][COLOR=yellow]Run a test game[/COLOR][/B]"
 
 msgctxt "#32167"
-msgid ""
-msgstr ""
+msgid "I haven't uploaded it yet :("
+msgstr "טרם העליתי את זה :("
 
 msgctxt "#32168"
 msgid ""
@@ -1524,12 +1535,12 @@ msgid ""
 msgstr ""
 
 msgctxt "#32395"
-msgid ""
-msgstr ""
+msgid "You may continue downloading in a few minutes"
+msgstr "תוכל להמשיך להוריד בעוד מספר דק'"
 
 msgctxt "#32396"
-msgid ""
-msgstr ""
+msgid "You have just downloaded a game!"
+msgstr "זה הרגע הורדת משחק!"
 
 msgctxt "#32397"
 msgid "Enable for forcing your preference view"

@@ -70,6 +70,7 @@ Addon_UpdateLog = getsetting('Addon_UpdateLog')
 Addon_Version = getsetting('Addon_Version')
 
 addonuserdata_path = os.path.join(addondata_path, addonID, '')
+addonString = xbmcaddon.Addon(addonID).getLocalizedString
 
 '''Emulator'''
 core_updater_buildbot_url = ""
@@ -82,7 +83,7 @@ if systemplatformwindows:
 		else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
 	else: emulator_path = os.path.join(addons_path, 'emulator.retroarch_win64', '')
 	
-	emulator_file = os.path.join(emulator_path, 'retroarch.exe')
+	emulator_file = os.path.join(emulator_path, 'retroarch.exe -v')
 	emulator_file_ = '"' + emulator_file  + '"' + space + '-D'
 	retroarchcfg_file = os.path.join(emulator_path, 'retroarch.cfg')
 	retroarchcoreoptionscfg_file = os.path.join(emulator_path, '.retroarch-core-options.cfg')
@@ -144,7 +145,6 @@ else: coresinfo_path = cores_path
 '''New Version'''
 content_database_path = os.path.join(emulatordata_path,'database','')
 thumbnails_path = os.path.join(emulatordata_path,'thumbnails','')
-playlist_path = os.path.join(emulatordata_path,'playlists','')
 cache_path = os.path.join(emulatordata_path,'cache','')
 resampler_path = os.path.join(emulatordata_path,'resampler','')
 recording_output_path = os.path.join(emulatordata_path,'recordings','')
@@ -152,11 +152,8 @@ recording_config_path = os.path.join(emulatordata_path,'recordings','')
 cursor_directory_path = os.path.join(featherence_emu_module_path,'cursors','')
 audio_filter_dir = os.path.join(featherence_emu_module_path,'filters','audio','')
 video_filter_dir = os.path.join(featherence_emu_module_path,'filters','video','')
-
 autoconfig_path2 = os.path.join(featherence_emu_module_path,'autoconfig','')
-assets_directory = os.path.join(emulatordata_path,'assets','')
 dynamic_wallpapers_directory = os.path.join(emulatordata_path,'assets','wallpapers','')
-overlay_directory = os.path.join(emulatordata_path,'overlay','')
 
 '''Emulator userdata'''
 storageconfig_path = os.path.join('storage', '.config', '')
@@ -182,16 +179,32 @@ screenshots_path = os.path.join(emulatordata_path,'screenshots','')
 cheats_path = os.path.join(emulatordata_path,'cheats','')
 dolphin_ini_file = os.path.join(save_path,'dolphin-emu','User','Config','Dolphin.ini')
 dirsL = [save_path, savestate_path, autoconfig_path, screenshots_path, cheats_path, rom_path, config_path, saveMAME_path, saveMAME2_path, cores_path, remaps_path]
-if systemplatformlinux:
-	dirsL.append(storageconfig_path)
-	dirsL.append(storageconfigretroarchassets_path)
-	dirsL.append(storageconfigretroarchassetsxmb_path)
-	dirsL.append(storageconfigretroarchassetsxmbmonochrome_path)
 '''New Version'''
 input_remapping_directory_path = os.path.join(emulatordata_path,'remaps','')
-core_assets_directory = os.path.join(emulatordata_path,'downloads','')
+if systemplatformwindows:
+    core_assets_directory = os.path.join(':','assets')
+    assets_directory = os.path.join(':','assets')
+    overlay_directory = os.path.join(':','overlay')
+    playlist_path = os.path.join(':','playlists')
+else:
+    core_assets_directory = os.path.join(emulatordata_path,'assets','')
+    assets_directory = os.path.join(emulatordata_path,'assets','')
+    overlay_directory = os.path.join(emulatordata_path,'overlay','')
+    playlist_path = os.path.join(emulatordata_path,'playlists','')
+    dirsL.append(storageconfig_path)
+    dirsL.append(storageconfigretroarchassets_path)
+    dirsL.append(storageconfigretroarchassetsxmb_path)
+    dirsL.append(storageconfigretroarchassetsxmbmonochrome_path)
 
 '''Featherence Emu'''
+roms_dir = os.path.join(featherence_emu_module_path,'roms')
+roms_test_1 = os.path.join(rom_path,'Arcade','_1P','wboy.zip') ; roms_test_1_launcherID = 'Featherence_arcade1P' ; roms_test_1_romName = 'b5f2c0e6f37dfa2579ca6e21674b1756'
+roms_test_2 = os.path.join(rom_path,'DOS','_EN','Arkanoid','ARKANO~1.BAT') ; roms_test_2_launcherID = 'Featherence_dosEN' ; roms_test_2_romName = 'd39a1e79ra1ba6713ec1769ebd3f6015'
+roms_test_3 = os.path.join(rom_path,'Nintendo','_1P','Super Mario Bros.zip') ; roms_test_3_launcherID = 'Featherence_nintendo1P' ; roms_test_3_romName = 'c2fb70683c5b24a2abd7620deaa3e598'
+roms_test_4 = os.path.join(rom_path,'Sega Genesis','_1P','Alex Kidd in the Enchanted Castle.zip') ; roms_test_4_launcherID = 'Featherence_segagenesis1P' ; roms_test_4_romName = '4171c11111bd2dcf45311b0b51da2711'
+roms_test_5 = os.path.join(rom_path,'Super Nintendo','_1P','Super Mario Collection.zip') ; roms_test_5_launcherID = 'Featherence_supernintendo1P' ; roms_test_5_romName = 'da755222aee5f438615c3ec76cc68752'
+rom_testL = [roms_test_1, roms_test_2, roms_test_3, roms_test_4, roms_test_5]
+
 emulanuncher_file = os.path.join(addonPath,'resources','launchers','launchers.xml')
 emudata_launcher_file = os.path.join(addonuserdata_path + 'launchers.xml')
 

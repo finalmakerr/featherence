@@ -7,8 +7,24 @@ WIP - WORK IN PROGRESS
 ------------------------
 *Your requests will be put in here!
 - Added Dreamcast disc swap support.
-- Added G-Drive file storage support.
 - Added option to hide consoles on demand.
+
+------------------------
+YouPlay Nostalgia v0.1.30 (23-May-23)
+------------------------
+- Added extra essential information when downloading a game, such as: "This game didn't uploaded yet", Game is unavailable at the moment ..
+- Reuploaded dozens of broken downloads.
+- Added few more free-hosting accounts.
+- Fixed broken fanarts and posters for some games.
+- Fixed some Arcade3P download links.
+- Added G-Drive file storage support.
+- Added hundreds of new games (250GB+ in total)
+- Update ContextMenu.
+- Added a Run Test button for multi-consoles.
+- Update Resolution Check module - So if you do see this message: Refresh Rate isn't 59.94!,You should enable resoultion check option in the addon settings!
+- Fixed dozens of broken roms.
+- Fixed hundreds of invalid links for ROMS download.
+- Added some information messages displayed when needed.
 
 ------------------------
 YouPlay Nostalgia v0.1.29 (19-Apr-23)

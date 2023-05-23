@@ -7,20 +7,6 @@ from shared_modules import *
 
 def mode0(admin, name, printpoint):
 	'''test'''
-	mode11('','')
-	#from shared_modules3 import *
-	#from shared_variables3 import *
-	#PlayVideos('name', 'mode', 'http://nickjr.walla.co.il/?w=//1887291', 'iconimage', 'desc', 'num', 'fanart')
-	#emulatordata_path = os.path.join(addondata_path, 'emulator.retroarch', '')
-	#rom_path = os.path.join(emulatordata_path,'rom','')
-	
-	#download_file_from_google_drive('0B_dmZM8wv6D9U2ZWZDRfS3ZFLVU', os.path.join(temp_path,'1.zip'))
-	
-	#DownloadFile("https://googledrive.com/host/0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://drive.google.com/uc?get=download&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1.zip', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://drive.google.com/uc?export=download&id=0B_dmZM8wv6D9ZzNncnVOUW1CVEk", '1', temp_path, rom_path, percentinfo=2)
-	#DownloadFile("https://docs.google.com/document/d/0B_dmZM8wv6D9ZzNncnVOUW1CVEk/export?format=zip", '1', temp_path, rom_path, percentinfo=2)
 	if 1 + 1 == 3:
 		path = os.path.join(addons_path, 'script.module.featherence.emu', 'config', '')
 		force = True
@@ -2887,10 +2873,10 @@ def mode512(value):
 		if value == '0': url = 'www.google.com'
 		elif value == '1': url = 'www.facebook.com/groups/featherence'
 		elif value == '2': url = 'www.github.com/finalmakerr/featherence'
-		elif value == '3': url = 'www.youtube.com'
+		elif value == '3': url = 'https://www.youtube.com/@youplay.nostalgia'
 		elif value == '4': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Thumbnail
 		elif value == '5': url = 'https://www.google.co.il/imghp?hl=iw&tab=wi' #Fanart
-		elif value == '7': url = 'www.featherence.com' #Website
+		elif value == '7': url = 'https://www.youtube.com/watch?v=WMKQjEW7S-4' #Website
 		else: url = value
 		
 		name = localize(443)

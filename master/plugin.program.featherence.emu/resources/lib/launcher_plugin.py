@@ -62,6 +62,7 @@ RESET_DREAMCAST_MEM = "%%RESET_DREAMCAST_MEM%%"
 OS_INSTALL = "%%OS_INSTALL%%"
 RESET_CONFIG = "%%RESET_CONFIG%%"
 COPY_KEYMAPS = "%%COPY_KEYMAPS%%"
+RUN_TEST_GAMES = "%%RUN_TEST_GAMES%%"
 COPY_AUTOCONFIG = "%%COPY_AUTOCONFIG%%"
 SET_CONFIG = "%%SET_CONFIG%%"
 AUDIO_DEVICES = "%%AUDIO_DEVICES%%"
@@ -80,7 +81,7 @@ __settings__ = Addon( id="plugin.program.featherence.emu" )
 __lang__ = __settings__.getLocalizedString
 
 # Main code
-from shared_variables import * ; from shared_modules import * ; from modules import *
+from shared_variables import * ; from shared_modules import * ; from modules import * ; from variables import *
 
 class Main:
     launchers = {}
@@ -203,6 +204,9 @@ class Main:
 					copyautoconfig(force=True)
                 elif (category == COPY_KEYMAPS):
                     copykeymaps()
+                elif (category == RUN_TEST_GAMES):
+                    launcherID, romName = runtestgames()
+                    self._run_rom(launcherID, romName)
                 elif (category == DOWNLOAD_ARTWORKS):
                     downloads2('_Artworks.zip', rom_path)
                 elif (category == DOWNLOAD_NVRAM):
@@ -322,6 +326,7 @@ class Main:
 
                 text = "launcher" + space2 + str(launcher) + newline + \
                 'launcherID' + space2 + str(launcherID) + newline + \
+                'self' + space2 + str(self) + newline + \
                 'application' + space2 + str(application) + newline + \
                 'apppath' + space2 + str(apppath) + newline + \
                 'rompath' + space2 + str(rompath) + newline + \
@@ -390,7 +395,8 @@ class Main:
                         if ( os.path.basename(application).lower().replace(".exe" , "") == "xbmc" ):
                             xbmc.executebuiltin('XBMC.' + arguments)
                         else:
-                            if ( xbmc.Player().isPlaying() ) or 1 + 1 == 2:
+                            if ( xbmc.Player().isPlaying() ): #30.04.2023 removed -  or 1 + 1 == 2
+								notification("123","","",2000)
 								xbmc.Player().stop()
 								xbmc.sleep(self.settings[ "start_tempo" ]+100)
 								try:
@@ -580,8 +586,9 @@ class Main:
 					notification(addonName + " - " + addonString(30349).encode('utf-8'),"","",3000)
 
     def _add_category(self, name, thumb, fanart, genre, plot, total, key):
+        '''Launchers Main Menu Right Click'''
         commands = []
-        commands.append((localize(137), "XBMC.RunPlugin(%s?%s)" % (self._path, SEARCH_COMMAND) , ))
+        commands.append((localize(137) + space + localize(15016), "XBMC.RunPlugin(%s?%s)" % (self._path, SEARCH_COMMAND) , ))
         commands.append((addonString(30100).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
         commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 		
@@ -598,6 +605,7 @@ class Main:
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s"  % (self._path, key), listitem=listitem, isFolder=True)
 
     def _add_launcher(self, name, category, cmd, path, thumbpath, fanartpath, trailerpath, custompath, ext, gamesys, thumb, fanart, genre, release, studio, plot, lnk, minimize, roms, total, key) :
+        '''Launchers Folder Right Click Menu'''
         if (int(xbmc.getInfoLabel("System.BuildVersion")[0:2]) < 12 ):
             # Dharma / Eden compatible
             display_date_format = "Date"
@@ -605,7 +613,8 @@ class Main:
             # Frodo & + compatible
             display_date_format = "Year"
         commands = []
-        commands.append((localize(137), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, category, SEARCH_COMMAND) , ))
+        commands.append((localize(137) + space + localize(15016), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, category, SEARCH_COMMAND) , ))
+        commands.append((addonString(30100).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
         commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
 
         if (path == ""):
@@ -628,6 +637,7 @@ class Main:
         xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s"  % (self._path, category, key), listitem=listitem, isFolder=folder)
 
     def _add_rom( self, launcherID, name, cmd , romgamesys, thumb, romfanart, romtrailer, romcustom, romgenre, romrelease, romstudio, romplot, altapp, altarg, total, key, search, search_url):
+        '''Roms Folder Right Click Menu'''
         filepath = self.launchers[launcherID]["roms"][key]["filename"]
 
         if (int(xbmc.getInfoLabel("System.BuildVersion")[0:2]) < 12 ):
@@ -647,16 +657,15 @@ class Main:
         listitem.setInfo( "video", { "Title": name, "Label": os.path.basename(cmd), "Plot" : romplot, "Studio" : romstudio, "Genre" : romgenre, "Premiered" : romrelease  , display_date_format : romrelease, "Writer" : romgamesys, "Trailer" : os.path.join(romtrailer), "Director" : os.path.join(romcustom), "overlay": 6 } )
 
         commands = []
-        #commands.append((localize(137), "XBMC.RunPlugin(%s?%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, SEARCH_COMMAND) , ))
-
+        commands.append((localize(137) + space + localize(15016), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, self.launchers[launcherID]["category"], SEARCH_COMMAND) , ))
         commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, SEARCH_TRAILER_COMMAND) , ))
-        #commands.append((localize(137) + space + localize(20410), "XBMC.RunPlugin(plugin://plugin.video.youtube/search/?q=%s)" % (name), ))
-        commands.append((localize(33003), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #DOWNLOAD
+        commands.append((addonString(30100).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s)" % (self._path, KEYS_HELP, name) , ))
+        commands.append(('[COLOR=' + 'yellow' + ']' + localize(33003) + '[/COLOR]', "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DOWNLOAD_COMMAND) , )) #DOWNLOAD
         if os.path.exists(filepath) and delete_games == 'true': commands.append((addonString(30101).encode('utf-8'), "XBMC.RunPlugin(%s?%s/%s/%s/%s)" % (self._path, self.launchers[launcherID]["category"], launcherID, key, DEL_GAME) , )) #DEL_GAME
         commands.append((localize(10140), 'Addon.OpenSettings('+addonID+')'))
-		
+        xbmc.executebuiltin('SetProperty("ContextMenu.PlaySelected", "")') ; xbmc.executebuiltin('SetProperty("ContextMenu.MarkWatched", "")')
         listitem.addContextMenuItems( commands, replaceItems=True)
-        xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s/%s"  % (self._path, self.launchers[launcherID]["category"], launcherID, key), listitem=listitem, isFolder=False)
+        xbmcplugin.addDirectoryItem( handle=int( self._handle ), url="%s?%s/%s/%s"  % (self._path, self.launchers[launcherID]["category"], launcherID, key), listitem=listitem, isFolder=True)
 
     def _find_roms( self, is_launcher ):
         dialog = xbmcgui.Dialog()

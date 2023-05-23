@@ -182,21 +182,6 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
-					<id>7d9d1d1cea66668385a37ed78fde3fe2</id>
-					<name>Ajaxj</name>
-					<filename>rom_pathArcade/_1P/ajax.zip</filename>
-					<thumb>rom_pathArcade/_1P/_Artwork/boxfront/ajax.jpg</thumb>
-					<fanart>rom_pathArcade/_1P/_Artwork/screenshot/ajax.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Shooter / Flying Vertical</genre>
-					<release>1987</release>
-					<publisher>Konami</publisher>
-					<gameplot>The player has been issued an emergency order. He must save the earth from being conquered by enemy forces. He climbs into his helicopter and prepares for intense aerial combat. Shooting oncoming enemy aircrafts and bombing the enemies below, he tries to make his way through the different stages to reach the enemy base. When he finishes the first stage, he is transported to his next mission by ab aircraft carrier. He hops into his jet fighters, tanks, ships, helicopters, and aircraft carriers. The player must also be aware of unseen enemies and surprise attacks. Different kinds of power ups can be obtained throughout the game. These include: '3' 3-Way: Bullets fire forward, right, and left. 'L' Laser: Player can shoot double lasers. 'T' Triple: Missiles are fired that spread out three ways in front. 'V' Vulcan: Rapid bullets are fired in the directions controlled. 'B' Bomb: Air to ground missles which can be upgraded twice. 'O' Orbital: A small drone using the same weaponry as the helicopter which can be otained by clearing a special formation of little red fighters. There is an additional super weapon that destroys all the enemies on the screen at once. However, use of this weapon is limited. Ajax contains 2 different types of stages : 2-D and 3-D. In the 2-D stage, the player controls a helicopter. In the 3-D stage, the player commands a jet fighter. Ajax features some impressive graphics filled with rotation and scaling effects (some may get a little dizzy, though!), a solid soundtrack and excellent game control. Highly recommended for any shoot'em up enthusiast!</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
 					<id>5cf6c100ed2b883f119c416c8167ef56</id>
 					<name>Aqua Jack</name>
 					<filename>rom_pathArcade/_1P/aquajack.zip</filename>
@@ -1920,7 +1905,7 @@
 					<id>2fe925bdfb67d6e09892abe229a0de48</id>
 					<name>J. J. Squawkers</name>
 					<filename>rom_pathArcade/_2P/jjsquawk.zip</filename>
-					<thumb>rom_pathArcade/_2P/_Artwork/boxfront/jjsquawk.jpg</thumb>
+					<thumb>rom_pathArcade/_2P/_Artwork/boxfront/jjsquawk.png</thumb>
 					<fanart>rom_pathArcade/_2P/_Artwork/screenshot/jjsquawk.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
@@ -4940,7 +4925,7 @@
 					<id>38cb1548774ff4fc2ceaf50f4097beda</id>
 					<name>Chaos Heat</name>
 					<filename>rom_pathArcade/_4P/chaoshea.zip</filename>
-					<thumb>rom_pathArcade/_4P/_Artwork/boxfront/chaoshea.png</thumb>
+					<thumb>rom_pathArcade/_4P/_Artwork/boxfront/chaoshea.jpg</thumb>
 					<fanart>rom_pathArcade/_4P/_Artwork/screenshot/chaoshea.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
@@ -11833,7 +11818,7 @@
 				</rom>
 				<rom>
 					<id>362a763519c4519affe153385b83a72d</id>
-					<name>Brigandine</name>
+					<name>Brigandine - The Legend of Forsena</name>
 					<filename>rom_pathSony Playstation/_1P/Brigandine - The Legend of Forsena/Brigandine - The Legend of Forsena.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Brigandine - The Legend of Forsena.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Brigandine - The Legend of Forsena.jpg</fanart>
@@ -11849,7 +11834,7 @@
 				<rom>
 					<id>362a763519c4519affe153385b83a73d</id>
 					<name>Bust-a-Move '99</name>
-					<filename>rom_pathSony Playstation/_1P/Bust-a-Move '99/Bust-a-Move '99.m3u</filename>
+					<filename>rom_pathSony Playstation/_1P/Bust-a-Move '99/BUSTAMOVE99.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Bust-a-Move '99.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Bust-a-Move '99.jpg</fanart>
 					<trailer></trailer>
@@ -11863,7 +11848,7 @@
 				</rom>
 				<rom>
 					<id>f18b7db4c591c48f849d5c52bdf1a8c0</id>
-					<name>Castlevania: Symphony of the Night</name>
+					<name>Castlevania - Symphony Of The Night</name>
 					<filename>rom_pathSony Playstation/_1P/Castlevania - Symphony Of The Night/Castlevania - Symphony Of The Night.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Castlevania - Symphony Of The Night.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Castlevania - Symphony Of The Night.jpg</fanart>
@@ -11894,9 +11879,9 @@
 				<rom>
 					<id>b8fa71f75c621d7b8e9e1a0e90c08cad</id>
 					<name>Command &amp; Conquer 1</name>
-					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer/Command &amp; Conquer_{GDI}_cd1.m3u</filename>
-					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer_{GDI}_cd1.jpg</thumb>
-					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer_{GDI}_cd1.jpg</fanart>
+					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer 1/Command &amp; Conquer 1_{GDI}_cd1.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer 1.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer 1.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -11909,9 +11894,9 @@
 				<rom>
 					<id>88f4d8cbd19a554511a86ce197e6ae1e</id>
 					<name>Command &amp; Conquer 2</name>
-					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer - Red Alert/Command &amp; Conquer - Red Alert_{Allies}_cd1.m3u</filename>
-					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer - Red Alert_{Allies}_cd1.jpg</thumb>
-					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer - Red Alert_{Allies}_cd1.jpg</fanart>
+					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer 2/Command &amp; Conquer 2_{Allies}_cd1.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer 2.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer 2.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -11924,9 +11909,9 @@
 				<rom>
 					<id>44d27ea7b89e3c61316e5a4dfd85f5d8</id>
 					<name>Command &amp; Conquer 3</name>
-					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer - Red Alert - Retaliation/Command &amp; Conquer - Red Alert - Retaliation_{Allies}_cd1.m3u</filename>
-					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer - Red Alert - Retaliation_{Allies}_cd1.jpg</thumb>
-					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer - Red Alert - Retaliation_{Allies}_cd1.jpg</fanart>
+					<filename>rom_pathSony Playstation/_1P/Command &amp; Conquer 3/Command &amp; Conquer 3.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Command &amp; Conquer 3.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Command &amp; Conquer 3.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -12178,7 +12163,7 @@
 				</rom>
 				<rom>
 					<id>4150120090514f66ccb32c4eb732d43e</id>
-					<name>Lunar: Silver Star Story Complete</name>
+					<name>Lunar - Silver Star Story Complete</name>
 					<filename>rom_pathSony Playstation/_1P/Lunar - Silver Star Story Complete/Lunar - Silver Star Story Complete.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Lunar - Silver Star Story Complete.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Lunar - Silver Star Story Complete.jpg</fanart>
@@ -12313,7 +12298,7 @@
 				</rom>
 				<rom>
 					<id>9afe764ae23970e33cb940985005f9c6</id>
-					<name>Oddworld: Abe's Oddysee</name>
+					<name>Oddworld - Abe's Oddysee</name>
 					<filename>rom_pathSony Playstation/_1P/Oddworld - Abes Oddysee/Oddworld - Abes Oddysee.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Oddworld - Abes Oddysee.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Oddworld - Abes Oddysee.jpg</fanart>
@@ -12493,7 +12478,7 @@
 				</rom>
 				<rom>
 					<id>1accd0ec088d9eb48d7638b3b9872051</id>
-					<name>Spider-Man 2</name>
+					<name>Spider-Man 2 - Enter Electro</name>
 					<filename>rom_pathSony Playstation/_1P/Spider-Man 2 - Enter Electro/Spider-Man 2 - Enter Electro.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Spider-Man 2 - Enter Electro.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Spider-Man 2 - Enter Electro.png</fanart>
@@ -12523,7 +12508,7 @@
 				</rom>
 				<rom>
 					<id>f1da4e63fab2512f816be99f2a794e3b</id>
-					<name>Spyro 2: Ripto's Rage!</name>
+					<name>Spyro 2 - Riptos Rage</name>
 					<filename>rom_pathSony Playstation/_1P/Spyro 2 - Riptos Rage/Spyro 2 - Riptos Rage.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Spyro 2 - Riptos Rage.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Spyro 2 - Riptos Rage.jpg</fanart>
@@ -12538,7 +12523,7 @@
 				</rom>
 				<rom>
 					<id>c24d94eb045312025a6aa0e178397f81</id>
-					<name>Star Ocean: The Second Story</name>
+					<name>Star Ocean - The Second Story</name>
 					<filename>rom_pathSony Playstation/_1P/Star Ocean - The Second Story/Star Ocean - The Second Story.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Star Ocean - The Second Story.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Star Ocean - The Second Story.jpg</fanart>
@@ -12628,7 +12613,7 @@
 				</rom>
 				<rom>
 					<id>9df3cbfedf6efae815a7c3e7e68253cc</id>
-					<name>Tenchu 2: Birth of the Stealth Assassins</name>
+					<name>Tenchu 2 - Birth of the Stealth Assassins</name>
 					<filename>rom_pathSony Playstation/_1P/Tenchu 2 - Birth Of The Stealth Assassins/Tenchu 2 - Birth Of The Stealth Assassins.m3u</filename>
 					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Tenchu 2 - Birth Of The Stealth Assassins.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Tenchu 2 - Birth Of The Stealth Assassins.jpg</fanart>
@@ -12865,7 +12850,7 @@
 					<id>909f7cfb383324122568ed37d11d6430</id>
 					<name>Ehrgeiz</name>
 					<filename>rom_pathSony Playstation/_2P/ehrgeiz.zip</filename>
-					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/ehrgeiz.png</thumb>
+					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/ehrgeiz.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/ehrgeiz.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
@@ -12968,7 +12953,7 @@
 				</rom>
 				<rom>
 					<id>a1999692e8a1a0f0cb372e7a924cb460</id>
-					<name>Need for Speed III: Hot Pursuit</name>
+					<name>Need for Speed III - Hot Pursuit</name>
 					<filename>rom_pathSony Playstation/_2P/Need For Speed III - Hot Pursuit/Need for Speed III Hot Pursuit.m3u</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Need for Speed III Hot Pursuit.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Need for Speed III Hot Pursuit.jpg</fanart>
@@ -13047,7 +13032,7 @@
 				<rom>
 					<id>de17f37ca68bb7ad30a482a29c834999</id>
 					<name>Speed Punks</name>
-					<filename>rom_pathSony Playstation/_2P/Speed Punks/Speed Punks.m3u</filename>
+					<filename>rom_pathSony Playstation/_2P/Speed Punks/Speed Punks.cue</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Speed Punks.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Speed Punks.jpg</fanart>
 					<trailer></trailer>
@@ -13198,7 +13183,7 @@
 				<rom>
 					<id>f18425339ef1bfd9d5059d0a79644775</id>
 					<name>Tony Hawk's Pro Skater 3</name>
-					<filename>rom_pathSony Playstation/_2P/Tony Hawk's Pro Skater 3/Tony Hawk's Pro Skater 3.m3u</filename>
+					<filename>rom_pathSony Playstation/_2P/Tony Hawk's Pro Skater 3/Tony Hawk's Pro Skater 3.cue</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Tony Hawk's Pro Skater 3.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Tony Hawk's Pro Skater 3.jpg</fanart>
 					<trailer></trailer>
@@ -13213,7 +13198,7 @@
 				<rom>
 					<id>f18425339ef1bfd9d5059d0a79644774</id>
 					<name>Tony Hawk's Pro Skater 4</name>
-					<filename>rom_pathSony Playstation/_2P/Tony Hawk's Pro Skater 4/Tony Hawk's Pro Skater 4.m3u</filename>
+					<filename>rom_pathSony Playstation/_2P/Tony Hawk's Pro Skater 4/Tony Hawk's Pro Skater 4.cue</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Tony Hawk's Pro Skater 4.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Tony Hawk's Pro Skater 4.jpg</fanart>
 					<trailer></trailer>
@@ -13272,7 +13257,7 @@
 				</rom>
 				<rom>
 					<id>6c6d295543da412c3274279b7247bc4c</id>
-					<name>Vigilante 8: 2nd Offense</name>
+					<name>Vigilante 8 - 2nd Offense</name>
 					<filename>rom_pathSony Playstation/_2P/Vigilante 8 - 2nd Offense/Vigilante 8 - 2nd Offense.m3u</filename>
 					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Vigilante 8 - 2nd Offense.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Vigilante 8 - 2nd Offense.jpg</fanart>
@@ -13477,7 +13462,7 @@
 				</rom>
 				<rom>
 					<id>f84b8066290e4715e5b5c07a83a6c722</id>
-					<name>Need for Speed: Porsche Unleashed</name>
+					<name>Need for Speed - Porsche Unleashed</name>
 					<filename>rom_pathSony Playstation/_4P/Need for Speed - Porsche Unleashed/Need for Speed - Porsche Unleashed.m3u</filename>
 					<thumb>rom_pathSony Playstation/_4P/_Artwork/boxfront/Need for Speed - Porsche Unleashed.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_4P/_Artwork/screenshot/Need for Speed - Porsche Unleashed.jpg</fanart>
@@ -13522,7 +13507,7 @@
 				</rom>
 				<rom>
 					<id>d26aa839e9d65f2faedfab94c2bc6057</id>
-					<name>Risk</name>
+					<name>Risk - The Game of Global Domination</name>
 					<filename>rom_pathSony Playstation/_4P/Risk - The Game of Global Domination/Risk - The Game of Global Domination.m3u</filename>
 					<thumb>rom_pathSony Playstation/_4P/_Artwork/boxfront/Risk - The Game of Global Domination.jpg</thumb>
 					<fanart>rom_pathSony Playstation/_4P/_Artwork/screenshot/Risk - The Game of Global Domination.jpg</fanart>
@@ -15734,7 +15719,7 @@
 				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0003</id>
 					<name>Headhunter</name>
-					<filename>rom_pathDreamcast/_1P/Headhunter/Headhunter_cd1.gdi</filename>
+					<filename>rom_pathDreamcast/_1P/Headhunter/- Disc 1/Headhunter_cd1.gdi</filename>
 					<thumb>rom_pathDreamcast/_1P/_Artwork/boxfront/Headhunter.jpg</thumb>
 					<fanart>rom_pathDreamcast/_1P/_Artwork/screenshot/Headhunter.jpg</fanart>
 					<trailer></trailer>
@@ -16045,6 +16030,7 @@
 					<gameplot>This game, called Rippin' Riders in the US, Snow Surfers in Europe, and Cool Boarders Burrrn (クールボーダーズ･バーン) in Japan, is a 1999 snowboarding game by UEP Systems for the Sega Dreamcast.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
+				</rom>
 				<rom>
 					<id>7d2b1d81ea61668385a37ed78fde0063</id>
 					<name>Spider-Man</name>
@@ -16374,7 +16360,7 @@
 				<rom>
 					<id>7d2b2d51ea61668385a37ed78fde0041</id>
 					<name>Garou Mark of the Wolves</name>
-					<filename>rom_pathDreamcast/_2P/Garou Mark of the Wolves/Garou Mark of the Wolves.gdi</filename>
+					<filename>rom_pathDreamcast/_2P/Garou Mark of the Wolves/Fatal Fury - Mark of the Wolves.gdi</filename>
 					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Garou Mark of the Wolves.jpg</thumb>
 					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Garou Mark of the Wolves.jpg</fanart>
 					<trailer></trailer>
@@ -16703,10 +16689,10 @@
 				</rom>
 				<rom>
 					<id>7d2b2d51ea61668385a37ed78fde0048</id>
-					<name>Under Defeat</name>
+					<name>Under Defeat XXXXX</name>
 					<filename>rom_pathDreamcast/_2P/Under Defeat/Under Defeat.gdi</filename>
 					<thumb>rom_pathDreamcast/_2P/_Artwork/boxfront/Under Defeat.jpg</thumb>
-					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Under Defeat.jpg</fanart>
+					<fanart>rom_pathDreamcast/_2P/_Artwork/screenshot/Under Defeat.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Shooter / Flying Vertical</genre>
@@ -17670,7 +17656,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0044</id>
-					<name>Star Wars Rogue Squadron II - Rogue Leader *איטיות</name>
+					<name>Star Wars Rogue Squadron II - Rogue Leader</name>
 					<filename>rom_pathGameCube/_1P/Star Wars Rogue Squadron II - Rogue Leader.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Star Wars Rogue Squadron II - Rogue Leader.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Star Wars Rogue Squadron II - Rogue Leader.jpg</fanart>
@@ -17971,7 +17957,7 @@
 				<rom>
 					<id>7d2gcd81ea61668385a37edw8f2p0c62</id>
 					<name>Resident Evil - Code Veronica X</name>
-					<filename>rom_pathGameCube/_1P/Resident Evil - Code Veronica X_cd1.iso</filename>
+					<filename>rom_pathGameCube/_1P/Resident Evil - Code Veronica X.iso</filename>
 					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Resident Evil - Code Veronica X.jpg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Resident Evil - Code Veronica X.jpg</fanart>
 					<trailer></trailer>
@@ -18025,21 +18011,6 @@
 					<release>2005</release>
 					<publisher>Activision</publisher>
 					<gameplot>Marcus Reed is a gangster turned cop who is out to clean the streets of New York. Marcus joins the Organized Crime Division of the NYPD with the intent to rid the city of crime and violence. Hoping to make a name for himself after his mentor is shot down, Marcus goes after the top crime syndicates of the city.[CR]Besides having to do this, Marcus is a street-level cop. He is responsible for anything from stopping street fights to stopping gang wars to defusing bombs! Not only this, he can frisk people on the street for contraband, can do trunk searches on cars, as well as issue tickets to speeders.[CR]But if Marcus is gonna do all those things, he's gonna do it his way. Need some cash? Marcus isn't opposed to a bit of extortion from the local pharmacy. Need some way to stabilize your career after that rampage last week? Plant some evidence on a guy and bring him in. No one will know. Pistols not cutting it for you? The gun stores sell police officers anything, from M4s to flamethrowers to RPGs.[CR]With the city of New York at your fingertips, and nearly every building accessible to you, how will you rule? Will you be a shining beacon of morals, or a shady figure in the underworld of NY. The choice is up to you.</gameplot>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
-				<rom>
-					<id>7d2gcd81ea61668385a37edw8f2p0c66</id>
-					<name>Incredible Hulk - Ultimate Destruction</name>
-					<filename>rom_pathGameCube/_1P/Incredible Hulk - Ultimate Destruction.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Incredible Hulk - Ultimate Destruction.jpg</thumb>
-					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Incredible Hulk - Ultimate Destruction.jpg</fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre>Action</genre>
-					<release>2005</release>
-					<publisher>Vivendi</publisher>
-					<gameplot>The Incredible Hulk faces against his greatest adversary - the Abomination - in a free-roaming, open-world action-adventure. Every object is interactive, plus you can also wield the power of 'weaponization', whereby you can create new weapons from everyday objects. As the most powerful creature on earth, take the battle from the city to the badlands, smash six classic Marvel bosses and finally defeat the Devil Hulk inside your mind.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18107,7 +18078,7 @@
 					<id>7d2gcd81ea61668385a37edw8f2p0c71</id>
 					<name>TMNT</name>
 					<filename>rom_pathGameCube/_1P/TMNT.iso</filename>
-					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/TMNT.jpg</thumb>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/TMNT.jpeg</thumb>
 					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/TMNT.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
@@ -18842,10 +18813,10 @@
 					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/One Piece - Grand Adventure.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Fighting</genre>
+					<release>2006</release>
+					<publisher>Namco</publisher>
+					<gameplot>One Piece: Grand Adventure is a fighting game based on the manga and anime franchise One Piece, by Eiichiro Oda. The game is pretty much similar to the previous One Piece: Grand Battle!, instead Grand Adventure features more playable fighters (adding new characters that appeared in the series over one year), modes and options than the previous game. It's playable by up to two players, where fights take place on a 3D stage with live environment, like bombs, sandstorms and sea waves, besides various items that serve either for buff or weapons. Single player features a story mode which follows the suit of the original series, on which the player as a pirate captain must gather a team and fight their biggest rivals.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -18929,7 +18900,7 @@
 					<name>The Lord of the Rings - The Third Age</name>
 					<filename>rom_pathGameCube/_2P/The Lord of the Rings - The Third Age_cd1.iso</filename>
 					<thumb>rom_pathGameCube/_2P/_Artwork/boxfront/The Lord of the Rings - The Third Age.jpg</thumb>
-					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Lord of the Rings - The Third Age.jpg</fanart>
+					<fanart>rom_pathGameCube/_2P/_Artwork/screenshot/The Lord of the Rings - The Third Age.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Role-Playing / Strategy</genre>
@@ -18948,7 +18919,7 @@
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Action / Flying Vertical</genre>
-					<release>2003</release>
+					<release>2001</release>
 					<publisher>Infogrames</publisher>
 					<gameplot>Vertical shoot-em-up ported from the Naomi Arcade version. Ikaruga is more or less a sequel to Radiant Silvergun on the Sega Saturn.[CR]Based on a two-colors system, the player has to switch between the black & white sides of his ship during gameplay. The black side is immune to black enemy bullets which it considers as a bonus and dies on impact with white enemy bullets. Your own black bullets damage white enemies twice as much as white bullets. And vice-versa for the white side. Those properties make a balance between protecting yourself well and killing enemies fast.[CR]This aspect, combined with specific enemy patterns and a combo system makes Ikaruga an original shoot-em-up with a dose of strategy.</gameplot>
 					<altapp></altapp>
@@ -19357,7 +19328,7 @@
 				</rom>
 				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0002</id>
-					<name>Custom Robo</name>
+					<name>Custom Robo XXXXX NOT-WORKING!</name>
 					<filename>rom_pathGameCube/_4P/Custom Robo.iso</filename>
 					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/Custom Robo.jpg</thumb>
 					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/Custom Robo.jpg</fanart>
@@ -20192,11 +20163,26 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e79ba1ba6713ed9761ebd3f49b0</id>
+					<name>King's Quest</name>
+					<filename>rom_pathDOS/_EN/King's Quest/KingsQ~1.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/King's Quest.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/King's Quest.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>1984</release>
+					<publisher>Sierra</publisher>
+					<gameplot>Sir Graham is a brave knight who is sent on a quest to retrieve three treasures that were stolen by deception and stealth: a shield that protects its bearer from invaders, a mirror that foretells the future, and a treasure chest that is forever filled with gold. If Graham takes these treasures back to the royal castle, then the ailing King Edward the Benevolent of Daventry will hand over the crown. During his travels, Graham will meet characters that will either help or hinder him.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4025</id>
 					<name>Clue - Master Detective</name>
 					<filename>rom_pathDOS/_EN/Clue - Master Detective/CLUE.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Clue - Master Detective.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Clue - Master Detective.png</fanart>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Clue - Master Detective.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Clue - Master Detective.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Cards / Puzzle</genre>
@@ -20207,11 +20193,26 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e79ra1ba6113ec1769cbd3f4025</id>
+					<name>1869</name>
+					<filename>rom_pathDOS/_EN/1869/1869.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/1869.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/1869.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>1992</release>
+					<publisher>Max Design GesMBH</publisher>
+					<gameplot>As a 19th-century merchant newcomer, the player needs to buy a ship, find a crew, load a few goods on the ship, and sail into the horizon, until the player reaches a port with a demand for said goods. The next step is to expand by buying more ships, creating regular trade routes, and becoming the head of a regular trading company.[CR]1869 focuses on management and economy, rather than action. Actual sailing is done by plotting a route and then watching the days go by, interrupted only by the occasional random event. Basically, the main activities are planning routes, watching out for special assignments (that pay well if completed on time), and generally trying to steer clear of the shores of bankruptcy.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1e79ra1ba1a13ec1769cbd3f4025</id>
-					<name>Command & Conquer</name>
-					<filename>rom_pathDOS/_EN/Command & Conquer/COMAC1.BAT</filename>
+					<name>Command & Conquer 1</name>
+					<filename>rom_pathDOS/_EN/Command & Conquer 1/COMAC1.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer 1.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command &amp; Conquer 1‎.jpg</fanart>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer 1.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -20223,10 +20224,10 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba2a13ec1769cbd3f4025</id>
-					<name>Command & Conquer: Red Alert</name>
-					<filename>rom_pathDOS/_EN/Command & Conquer - Red Alert/COMAC2.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer - Red Alert‎.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer - Red Alert.jpg</fanart>
+					<name>Command & Conquer 2</name>
+					<filename>rom_pathDOS/_EN/Command & Conquer 2/COMAC2.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer 2.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer 2.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -20256,7 +20257,7 @@
 					<name>Hexxagon 2</name>
 					<filename>rom_pathDOS/_EN/Hexxagon 2/HEXX2.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Hexxagon 2.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hexxagon‎ 2.png</fanart>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Hexxagon 2.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -20394,10 +20395,10 @@
 					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Dangerous Dave.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre>Action / Arcade</genre>
-					<release>1990</release>
-					<publisher>Gamer's Edge</publisher>
-					<gameplot>כיום כמעט כל אחד יכול ליצור משחק סטייל "דייב", אולי אפילו בפחות עבודה מזו שעשה ג'ון רומארו. אז למה דווקא "דייב"? טוב, אחרי הכל, המשחק המקורי הוא תמיד הטוב ביותר - גם אם רק מדובר במשחק פלטפורמה מהפשוטים שנראו אי פעם.[CR]שלא כמו במשחקי פלטפורמה אחרים, כאן המשחק מתרכז יותר בהתחמקויות ותזמון נכון מאשר ביריות. דייב, הדמות החביבה שאותה אתם משחקים, צריך להיות הרבה יותר זהיר ממסוכן (למרות הכותרת של המשחק). מעבר מכשולים מתוזמנים וקפיצה מהפלטפורמות הנכונות אל הנכונות בהחלט לא מצריכים תואר של "מסוכן".[CR]קלייד קופר, בן של מדען נאס"א, זכה בכל גביעי האליפות של תחרות הסקייטבורדים של "אידוויל". אתם תמיד חמדתם באותם גביעים ולכן אתם מחליטים לאתגר את קופר הצעיר בתחרות ריצה שבה המנצח לוקח את כל הגביעים. התנאים שקבעתם: המסלול יקבע על ידיכם ואתם תתחילו את המרוץ כמה מטרים לפניו. העסקה: נחתמה. המסלול: סולם. והגביעים הולכים ל: דייב? לא נראה לי...[CR]כמובן שקלייד היה מספיק משוגע כדי לגנוב חזרה את כל הגביעים ולהחביא אותם במחבוא עתיק יומין של פיראטים. לאחר שקלייד מציג לכם את הפתח למחבוא, צינור כסוף, אתם לוקחים על עצמכם את המשימה, וכאן מתחיל הקווסט שלכם. אתם משחקים את "דייב המסוכן" והמשימה שלכם היא למצוא את כל הגביעים שקלייד החביא ולצאת ממחבוא הפיראטים בחיים. אתם תעמדו בפני עשבים שוטים ומשוגעים, אש שטנית, מים מתוחכמים ואולי אפילו מפלצות המחבוא! בכל שלב מעשרת השלבים המטרה שלכם היא למצוא את הגביע של השלב, לקחת אותו, ולעבור דרך הדלת של השלב כמה שיותר מהר. כמובן שתהיה לכם עזרה במאבק נגד האויבים שבמחבוא. אתם עלולים למצוא כמה מהאקדחים של הפיראטים ששהו במקום בעבר ואולי אפילו כמה רחפות שאביו של קלייד השאיר מאחוריו. בעזרתם תוכלו להראות לקלייד שעל "דייב המסוכן" לא עובדים כל כך מהר.</gameplot>
+					<genre>Platform</genre>
+					<release>1988</release>
+					<publisher>Softdisk</publisher>
+					<gameplot>The object of the game is to collect gold cups to move on to the next level. Since the original 1988 publishing of Dangerous Dave on UpTime, there have been three sequels and three ports of the original to other platforms.[CR]The idea for Dangerous Dave came to John Romero under the influence of Super Mario. There are similarities between the two games, such as the secret levels, the level design, the monsters, and the jumping.[citation needed] According to Romero, he was "on purpose trying to make a Mario game." The mission is to guide Dave through ten levels, collecting trophies in the hideout of his enemy, Clyde. Romero says that among all Dangerous Dave sequels Dangerous Dave in the Haunted Mansion is "the best Dave ever created".</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -21040,7 +21041,7 @@
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Shooter</genre>
-					<release>1989</release>
+					<release>1987</release>
 					<publisher>Broderbund</publisher>
 					<gameplot>Wings of Fury is an abandoned side scrolling shooter game developed by Broderbund and was released by Broderbund in 1989</gameplot>
 					<altapp></altapp>
@@ -21126,7 +21127,7 @@
 					<name>Capitalism</name>
 					<filename>rom_pathDOS/_EN/Capitalism/CAP.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Capitalism.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Capitalism.jpg</fanart>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Capitalism.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -22281,7 +22282,7 @@
 					<name>Goldcorn Express</name>
 					<filename>rom_pathDOS/_EN/Goldcorn Express/GOLDCORN.BAT</filename>
 					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Goldcorn Express.png</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Goldcorn Express.png</fanart>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Goldcorn Express.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Action / Arcade</genre>
@@ -23323,6 +23324,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e19ra1ba6713ec1769ebd3f6051</id>
+					<name>Shooki</name>
+					<filename>rom_pathDOS/_HE/Shooki/SHOOKI.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Shooki.png</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Shooki.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre></genre>
+					<release></release>
+					<publisher></publisher>
+					<gameplot></gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1ng1xa1ba6711bc1769zbd3f4020</id>
 					<name>Hugo 1</name>
 					<filename>rom_pathDOS/_HE/Hugo 1/GO.BAT</filename>
@@ -23400,9 +23416,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4008</id>
 					<name>Alice in the English Land‎</name>
-					<filename>rom_pathDOS/_HE/Alice in the English Land‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in the English Land‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in the English Land‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Alice in the English Land/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in the English Land.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in the English Land.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23414,10 +23430,10 @@
 				</rom>
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4009</id>
-					<name>Alice in Word Land‎</name>
-					<filename>rom_pathDOS/_HE/Alice in Word Land‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in Word Land‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in Word Land‎.jpg</fanart>
+					<name>Alice in Word Land</name>
+					<filename>rom_pathDOS/_HE/Alice in Word Land/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Alice in Word Land.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Alice in Word Land.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23460,9 +23476,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4012</id>
 					<name>Arabic for Beginners‎</name>
-					<filename>rom_pathDOS/_HE/Arabic for Beginners‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arabic for Beginners‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arabic for Beginners‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Arabic for Beginners/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arabic for Beginners.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arabic for Beginners.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre></genre>
@@ -23475,9 +23491,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4013</id>
 					<name>Arithmetic Mazes‎</name>
-					<filename>rom_pathDOS/_HE/Arithmetic Mazes‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arithmetic Mazes‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arithmetic Mazes‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Arithmetic Mazes/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Arithmetic Mazes.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Arithmetic Mazes.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23490,9 +23506,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4014</id>
 					<name>Everything Will Be OK‎</name>
-					<filename>rom_pathDOS/_HE/Everything Will Be OK‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Everything Will Be OK‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Everything Will Be OK‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Everything Will Be OK/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Everything Will Be OK.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Everything Will Be OK.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23505,9 +23521,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4015</id>
 					<name>Gordi ABC‎</name>
-					<filename>rom_pathDOS/_HE/Gordi ABC‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi ABC‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi ABC‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Gordi ABC/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi ABC.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi ABC.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23520,9 +23536,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4016</id>
 					<name>Gordi Fractions‎</name>
-					<filename>rom_pathDOS/_HE/Gordi Fractions‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Fractions‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Fractions‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Gordi Fractions/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Fractions.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Fractions.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23550,9 +23566,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4018</id>
 					<name>Geoboard‎</name>
-					<filename>rom_pathDOS/_HE/Geoboard‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Geoboard‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Geoboard‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Geoboard/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Geoboard.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Geoboard.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Board / Strategy</genre>
@@ -23580,9 +23596,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4020</id>
 					<name>Gordi Quantum Castle‎</name>
-					<filename>rom_pathDOS/_HE/Gordi Quantum Castle‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Quantum Castle‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Quantum Castle‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Gordi Quantum Castle/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Gordi Quantum Castle.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Gordi Quantum Castle.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Puzzle</genre>
@@ -23595,15 +23611,15 @@
 				<rom>
 					<id>d39b1e19ra1ba6713ec1769cbd3f4020</id>
 					<name>Intifada</name>
-					<filename>rom_pathDOS/_HE/Intifada‎/INTIFADA.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Intifada‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Intifada‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Intifada/INTIFADA.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Intifada.png</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Intifada.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>1989</release>
+					<publisher>Mike Medved</publisher>
+					<gameplot>The game takes place during the First Intifada, and casts the player as an Israeli soldier who has to stop violent Palestinian protests, while following the current government's policy and avoiding unnecessary casualties.[CR}In order to stop the protesters the player is able to make use of various methods and weapons - a club to commit arrests, tear gas, rubber bullets, plastic bullets and live fire.[CR}Before each patrol, the open-fire policy defined by the defense minister is displayed. The policy determines which methods may be used to stop different kinds of protesters (for example - the player may be able to use more lethal fire, such as plastic bullets, to stop protesters who fire molotov cocktails).[CR}At the end of each patrol, if the player survives yet fails to follow the instructions and causes too many casualties, or fails to stop a sufficient amount of protesters, the public support will drop and the minister may be replaced, changing the open-fire policy for the next patrol.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -23625,9 +23641,9 @@
 				<rom>
 					<id>d39a1e19ra1ba6713ec1769cbd3f4022</id>
 					<name>Bonus‎</name>
-					<filename>rom_pathDOS/_HE/Bonus‎/GO.BAT</filename>
-					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Bonus‎.jpg</thumb>
-					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Bonus‎.jpg</fanart>
+					<filename>rom_pathDOS/_HE/Bonus/GO.BAT</filename>
+					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Bonus.jpg</thumb>
+					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Bonus.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Board</genre>
@@ -23655,7 +23671,7 @@
 				<rom>
 					<id>d39a1e79ra1ba6713ec1769cbd3f4009</id>
 					<name>Putt-Putt Goes to the Moon</name>
-					<filename>rom_pathDOS/_HE/Putt-Putt Goes to the Moon/GO.BAT</filename>
+					<filename>rom_pathDOS/_HE/Putt-Putt Goes to the Moon/PUTTPUTT.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Putt-Putt Goes to the Moon.png</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Putt-Putt Goes to the Moon.png</fanart>
 					<trailer></trailer>

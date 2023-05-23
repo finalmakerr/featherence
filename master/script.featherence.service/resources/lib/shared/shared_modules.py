@@ -938,7 +938,7 @@ def getRandom(custom, min=0, max=100, percent=50):
 	---RANDOM------------------------
 	------------------------------'''
 	import random
-	name = 'getRandom' ; printpoint = "" ; TypeError = "" ; extra = "" ; value = "" ; returned = ""
+	name = 'getRandom' ; printpoint = "" ; TypeError = "" ; extra = "" ; value = "" ; returned = "" ; level = 0
 
 	try:
 		custom = int(custom)
@@ -957,9 +957,10 @@ def getRandom(custom, min=0, max=100, percent=50):
 		'''---------------------------'''
 		if value <= percent: returned = "ok"
 		else: returned = "skip"
-
+	
+	if TypeError != "": level = 7
 	text = "min" + space2 + str(min) + space + "max" + space2 + str(max) + space + "percent" + space2 + str(percent) + newline + "returned" + space2 + str(returned) + space + "value" + space2 + str(value) + extra
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	
 	return returned, value
 
@@ -1370,7 +1371,7 @@ def notification(heading, message, icon, time):
 	except Exception, TypeError: printlog(title=name, printpoint=printpoint, text=str(TypeError), level=0, option="")
 
 def removefiles(path, filteroff=[], dialogprogress=""):
-	name = 'removefiles' ; printpoint = "" ; path1 = path[-1:] ; TypeError = "" ; extra = ""
+	name = 'removefiles' ; printpoint = "" ; path1 = path[-1:] ; TypeError = "" ; extra = "" ; level = 1
 	if dialogprogress != "":
 		try:
 			dialogprogress_ = dialogprogress
@@ -1426,10 +1427,11 @@ def removefiles(path, filteroff=[], dialogprogress=""):
 			os.remove(path)
 		else: printpoint = printpoint + "8"
 	
+	if TypeError != "": level = 7
 	text = "path" + space2 + to_utf8(path) + newline + \
 	"filteroff" + space2 + str(filteroff) + space + "dialogprogress" + space2 + str(dialogprogress) + newline + \
 	to_utf8(extra)
-	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	
 def copytree(source, target, symlinks=False, ignore=None):
 	import shutil
@@ -1471,7 +1473,7 @@ def movefiles(source, target):
 		
 def copyfiles(source, target):
 	'''Copy files/folders'''
-	name = 'copyfiles' ; printpoint = "" ; source1 = source[-1:] ; sourcedir = "" ; targetdir = "" ; TypeError = "" ; extra = "" ; level = 3
+	name = 'copyfiles' ; printpoint = "" ; source1 = source[-1:] ; sourcedir = "" ; targetdir = "" ; TypeError = "" ; extra = "" ; level = 1
 
 	import shutil
 	try:
@@ -1504,7 +1506,9 @@ def copyfiles(source, target):
 	except Exception, TypeError:
 		try: extra = extra + newline + "TypeError" + space2 + str(TypeError)
 		except Exception, TypeError: extra = extra + newline + "TypeError" + space2 + 'Unknown'
-
+	
+	if TypeError != "": level = 7
+	
 	text = "source" + space2 + to_utf8(source) + newline + \
 	"target" + space2 + to_utf8(target) + newline + \
 	"source1" + space2 + to_utf8(source1) + newline + \
@@ -1532,6 +1536,7 @@ def notification_common(custom, message2=""):
 	
 	elif custom == "17": notification(localize(257),'$LOCALIZE[1446]',"",2000) #Error, Unknown
 	elif custom == "18": notification(localize(257),message2,"",3000) #Error, Custom
+	elif custom == "21": notification(addonString_servicefeatherence(32396).encode('utf-8'), addonString_servicefeatherence(32395).encode('utf-8'),"",4000) #You have just downloaded a game! You may continue downloading in a few minutes
 	elif custom == "22": notification(addonString_servicefeatherence(32407).encode('utf-8'),'',"",4000) #The system is processing for solution...
 	elif custom == "23": notification(addonString_servicefeatherence(32406).encode('utf-8'), addonString_servicefeatherence(32405).encode('utf-8'),"",4000) #Active download in background
 	elif custom == "24": notification(addonString_servicefeatherence(32402).encode('utf-8'), addonString_servicefeatherence(32403).encode('utf-8'),"",2000) #Addon is missing! Trying to download addon
@@ -1941,11 +1946,9 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 	
 	macaddress = xbmc.getInfoLabel('Network.MacAddress')
 	User_Name = xbmc.getInfoLabel('Skin.String(User_Name)')
-	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr' or macaddress == 'C0:3F:D5:6B:10:41' or macaddress == 'B8:AE:ED:7E:A0:BF' or macaddress == 'AC:ED:5C:B2:1A:15' or macaddress == '34-6F-24-A5-87-F0' : admin3 = 'true'
+	if macaddress == '0C:8B:FD:9D:2F:CE' or User_Name == 'finalmakerr' or macaddress == 'C0:3F:D5:6B:10:41' or macaddress == 'B8:AE:ED:7E:A0:BF' or macaddress == 'AC:ED:5C:B2:1A:15' or macaddress == '34-6F-24-A5-87-F0' or macaddress == '04-42-1A-D1-74-61' : admin3 = 'true'
 	elif macaddress != "": admin3 = 'false'
 	else: admin3 = 'false'
-	admin3 = 'true'
-	admin2 = 'true'
 	
 	if level == 0:
 		if admin == 'true' and admin2 == 'true' and admin3 == 'true': exe = 0
@@ -1961,8 +1964,6 @@ def printlog(title="", printpoint="", text="", level=0, option=""):
 		message = printfirst + to_utf8(title) + '_LV' + str(printpoint) + space + to_utf8(text)
 		xbmc.log(msg=to_utf8(message), level=xbmc.LOGNOTICE)
 	return exe
-
-'''Below CODES are against Kodi's rules'''
 
 def frun():
 	xbmc.executebuiltin('RunScript(script.featherence.service,,?mode=14&value=Featherence_Code)')
@@ -1982,53 +1983,14 @@ def terminal(command):
 		printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 		'''---------------------------'''
 	return output
-	
-def download_file_from_google_drive(id, destination):
-	name = 'download_file_from_google_drive' ; printpoint = "" ; returned = "" ; session = ""
-	#import requests
-	def get_confirm_token(response):
-		for key, value in response.cookies.items():
-			if key.startswith('download_warning'):
-				return value
-		
-		return None
-		
-	def save_response_content(response, destination):
-		CHUNK_SIZE = 32768
-		
-		with open(destination, "wb") as f:
-			for chunk in response.iter_content(CHUNK_SIZE):
-				if chunk: # filter out keep-alive new chunks
-					pass #f.write(chunk)
-	
-	URL = "https://docs.google.com/uc?export=download"
-	
-	#session = requests.Session()
-	
-	response = session.get(URL, params = { 'id' : id }, stream = True)
-	token = get_confirm_token(response)
-	
-	if token:
-		params = { 'id' : id, 'confirm' : token }
-		response = session.get(URL, params = params, stream = True)
-	
-	save_response_content(response, destination)
-
-	
-	text = "returned" + space2 + str(returned) + newline + \
-	"id" + space2 + str(id) + newline + \
-	'destination' + space2 + str(destination) + newline + \
-	'response' + space2 + str(response) + newline + \
-	'token' + space2 + str(token) + newline
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
 		
 def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percentinfo=""):
-	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = ""
+	name = 'DownloadFile' ; printpoint = "" ; TypeError = "" ; extra = "" ; returned = "" ; extraction = "" ; level = 3
 	downloadpath2 = os.path.join(downloadpath, filename)
 	
 	admin = xbmc.getCondVisibility('Skin.HasSetting(Admin)')
 	scriptfeatherenceservice_downloading = xbmc.getInfoLabel('Window(home).Property(script.featherence.service_downloading)')
-	if admin: scriptfeatherenceservice_downloading = ""
+	if admin: scriptfeatherenceservice_downloading = "" ; notification("Admin!", "", "", 4000)
 	alarm_downloading = xbmc.getCondVisibility('HasAlarm(scriptfeatherenceservice_downloading)')
 	printpoint = printpoint + "1"
 	#import resources.lib.commondownloader
@@ -2039,7 +2001,7 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 	if scriptfeatherenceservice_downloading != "":
 		returned = "skip"
 		notification_common("23")
-		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),7,silent)')
+		xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),1,silent)')
 	else:
 		if alarm_downloading: xbmc.executebuiltin('CancelAlarm(scriptfeatherenceservice_downloading,silent)')
 		setProperty('script.featherence.service_downloading', 'true', type="home")
@@ -2052,28 +2014,42 @@ def DownloadFile(url, filename, downloadpath, extractpath, silent=False, percent
 		
 		if returned == "ok":
 			printpoint = printpoint + "3"
-			ExtractAll(downloadpath2, extractpath)
-		if downloadpath2 != downloadpath:
-			printpoint = printpoint + "4"
-			removefiles(downloadpath2)
-		
-		setProperty('script.featherence.service_downloading', '', type="home")
+			extraction = ExtractAll(downloadpath2, extractpath)
+			if downloadpath2 != downloadpath and extraction:
+				printpoint = printpoint + "4"
+				if admin and admin == 'true' and systemplatformwindows: printpoint = printpoint + "ADMIN"
+				else: removefiles(downloadpath2) ; printpoint = printpoint + "R"
+			else:
+				printpoint = printpoint + "8"
+	
+			if extraction:
+				xbmc.executebuiltin('AlarmClock(scriptfeatherenceservice_downloading,ClearProperty(script.featherence.service_downloading,home),4,silent)')
+				notification_common("21")
+			else: setProperty('script.featherence.service_downloading', '', type="home")
+				
+		else:
+			setProperty('script.featherence.service_downloading', '', type="home") #; notification("returned!=ok", "", "", 4000)
+		if admin and admin == 'true': setProperty('script.featherence.service_downloading', '', type="home") ; notification("Admin!", "", "", 4000)
+		else:
+			pass
 	
 	temp_path = os.path.join(addons_path, 'temp', '')
 	if os.path.exists(temp_path):
 		printpoint = printpoint + 'T'
 		removefiles(temp_path)
 		
-	'''------------------------------
-	---PRINT-END---------------------
-	------------------------------'''
+	if TypeError != "": level = 1
+	
 	text = "returned" + space2 + str(returned) + newline + \
 	"url" + space2 + url + newline + \
+	"admin" + space2 + admin + newline + \
 	'downloadpath' + space2 + str(downloadpath) + newline + \
 	'downloadpath2' + space2 + str(downloadpath2) + newline + \
 	'extractpath' + space2 + str(extractpath) + newline + \
+	'extraction' + space2 + str(extraction) + newline + \
 	'silent' + space2 + str(silent) + newline + \
+	'TypeError' + space2 + str(TypeError) + newline + \
 	extra
-	printlog(title=name, printpoint=printpoint, text=text, level=2, option="")
+	printlog(title=name, printpoint=printpoint, text=text, level=level, option="")
 	'''---------------------------'''
 	

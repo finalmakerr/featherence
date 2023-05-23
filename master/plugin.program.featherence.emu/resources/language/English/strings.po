@@ -148,3 +148,7 @@ msgstr "קטגוריית היעד לא נמצאה."
 msgctxt "#30614"
 msgid ""
 msgstr ""
+
+msgctxt "#30615"
+msgid ""
+msgstr ""

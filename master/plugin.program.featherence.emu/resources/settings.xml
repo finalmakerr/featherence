@@ -2,6 +2,8 @@
 <settings>
 	
 	<category label="$LOCALIZE[128]" description="כללי">
+		<setting type="lsep" label=""/>
+		<setting label="$ADDON[script.featherence.service 32166]" description="Run a test game" type="action" option="open" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%RUN_TEST_GAMES%%)"/>
 		<setting type="lsep" label="Enable in order to hide undownloaded games."/>
 		<setting label="30104" type="bool" id="filter_games" default="false" visible="" />
         <setting type="lsep" label="Enable in order to have an option to delete downloaded games."/>
@@ -85,8 +87,7 @@
 		<setting type="lsep" label="Kind note!"/>
 		<setting type="lsep" label="Control within consoles atm are default for PS3 Joystick (Player1-8)"/>
 		<setting type="lsep" label="and Keyboard (Player1)."/>
-		<setting type="lsep" label="Don't forget to check the controls video per console"/>
-		<setting type="lsep" label="Right click on a console and select in-game keys."/>
+		<setting type="lsep" label="Don't forget to check the $ADDON[plugin.program.featherence.emu 30100] $LOCALIZE[13280]."/>
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="Download Featherence's keymap for PS3/Xbox Joystick (Usage for controlling Kodi interface)."/>
 		<setting label="Copy Keymaps" type="action" action="RunPlugin(plugin://plugin.program.featherence.emu/?%%COPY_KEYMAPS%%)"/>
@@ -108,13 +109,13 @@
 
 	<category label="About" description="About">
 		<setting type="lsep" label=""/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32079]"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32162]"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32157]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=7)" label="$ADDON[script.featherence.service 32158]" option="close" visible="true"/>
-		<setting type="lsep" label="$ADDON[script.featherence.service 32072]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=32&amp;value=3)" label="$ADDON[script.featherence.service 32076]" option="close" visible="true"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=7)" label="$LOCALIZE[10043]" option="open" visible="true"/>
+		<setting type="lsep" label="$ADDON[script.featherence.service 32070]"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=3)" label="$ADDON[script.featherence.service 32076]" option="open" visible="true"/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32071]"/>
-		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="$ADDON[script.featherence.service 32077]" option="close" visible="true"/>
+		<setting type="action" action="RunScript(script.featherence.service,,?mode=512&amp;value=2)" label="$ADDON[script.featherence.service 32077]" option="open" visible="true"/>
 		<setting type="lsep" label=""/>
 		<setting type="lsep" label="$ADDON[script.featherence.service 32044]"/>
 		<setting type="lsep" label=""/>

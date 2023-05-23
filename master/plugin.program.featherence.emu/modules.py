@@ -25,6 +25,8 @@ def del_game(plugin, category, launcher, rom, filename, filepath):
 	"filepath" + space2 + str(filepath) + newline
 	printlog(title=name, printpoint=printpoint, text=text, level=0, option="")
 	
+def testme():
+	notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
 def startup():
 	name = 'startup' ; printpoint = "" ; VerReset = "" ; value = False
 	
@@ -37,7 +39,7 @@ def startup():
 		list = []
 		list.append(addonString_servicefeatherence(32060).encode('utf-8')) #Would you like thanks us? Would love to hear you!
 		list.append(addonString_servicefeatherence(32061).encode('utf-8')) #Do you want to contribute?
-		list.append(addonString_servicefeatherence(32062).encode('utf-8')) #Have an idea for new addon?
+		list.append(addonString_servicefeatherence(32062).encode('utf-8')) #Having fun yet ;)
 		list.append(addonString_servicefeatherence(32063).encode('utf-8')) #Looking for support?
 		list.append(addonString_servicefeatherence(32064).encode('utf-8')) #Having a question?
 		returned, value = getRandom(0, min=0, max=len(list), percent=50)
@@ -60,7 +62,7 @@ def startup():
 	else: copyconfig(force=False)
 	
 	
-	installemuconsole()
+	installemuconsole(force=value)
 	
 	text = "Force" + space2 + str(value) + newline + \
 	'Addon_Update' + space2 + str(Addon_Update) + newline + \
@@ -150,7 +152,7 @@ def copycores(force=False):
 	
 	
 def installemuconsole(force=False):
-	printpoint = ""
+	name = 'installemuconsole' ; printpoint = "" ; text = "" ; extra = ""
 	if force == True:
 		if os.path.exists(emulator_path): notification('Emulator already exists!',emulator_path,"",7000)
 	if systemplatformwindows and OS == 'win32': installaddon('emulator.retroarch_win32', update=True)
@@ -166,16 +168,69 @@ def installemuconsole(force=False):
 		else: installaddon('emulator.retroarch', update=True)
 	else:
 		printpoint = printpoint + '6'
-		notification("OS and hardware are not supported!","www.featherence.com","",2000)
+		notification(addonString_servicefeatherence(32045).encode('utf-8'),"","YouPlay Nostalgia",2000) #OS and hardware are not supported!
 	
 	installaddonP('script.module.featherence.emu', update=True)
+	copyingtestgames(force=force)
+	
 	if not os.path.exists(emulator_path) and not '6' in printpoint: notification('Featherence Emu Console addon is missing!',"Manual download from addon settings","",4000)
+	text = "extra" + space2 + str(extra) + newline + \
+	'force' + space2 + str(force)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
+def copyingtestgames(force=False):
+	name = 'copyingtestgames' ; printpoint = "" ; text = "" ; extra = "" ; x = ""
+	
+	if os.path.exists(roms_dir):
+		printpoint = printpoint + '1'
+		for x in rom_testL:
+			if not os.path.exists(x):
+				printpoint = printpoint + '2'
+				notification(addonString_servicefeatherence(32051).encode('utf-8') + '...',addonString_servicefeatherence(32052).encode('utf-8') + '!',"",4000) #Getting a few games for you, Goodluck running them
+				copyfiles(roms_dir, rom_path)
+				break
+			continue
+		
+		
+	else:
+		printpoint = printpoint + '9'
+	
+	text = "extra" + space2 + str(extra) + newline + \
+	'force' + space2 + str(force)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
+def runtestgames(force=False):
+	name = 'runtestgames' ; printpoint = "" ; text = "" ; extra = "" ; x = "" ; launcherID = "" ; romName = "" ; roms_test_path = "" ; returned = "" ; value = ""
+	xbmc.executebuiltin('ActivateWindow(busydialog)')
+	xbmc.executebuiltin('AlarmClock(busydialog,Dialog.Close(busydialog),00:03,silent)')
+	list = ['-> (Exit)','1.Arcade','2.DOS','3.Nintendo','4.Sega Genesis','5.Super Nintendo'] #ID
+	returned, value = dialogselect(addonString_servicefeatherence(32423).encode('utf-8'),list,0)
+	
+	if returned == -1: printpoint = printpoint + "9"
+	elif returned == 0: printpoint = printpoint + "8"
+	else: printpoint = printpoint + "7"
+	
+	if "7" in printpoint:
+		notification(addonString_servicefeatherence(32165).encode('utf-8'),value,"",3000) #Running a test game
+		if returned == 1: roms_test_path = roms_test_1 ; launcherID = roms_test_1_launcherID ; romName = roms_test_1_romName
+		elif returned == 2: roms_test_path = roms_test_2 ; launcherID = roms_test_2_launcherID ; romName = roms_test_2_romName
+		elif returned == 3: roms_test_path = roms_test_3 ; launcherID = roms_test_3_launcherID ; romName = roms_test_3_romName
+		elif returned == 4: roms_test_path = roms_test_4 ; launcherID = roms_test_4_launcherID ; romName = roms_test_4_romName
+		elif returned == 5: roms_test_path = roms_test_5 ; launcherID = roms_test_5_launcherID ; romName = roms_test_5_romName
+		elif returned == 6: roms_test_path = roms_test_6 ; launcherID = roms_test_6_launcherID ; romName = roms_test_6_romName
+	text = "extra" + space2 + str(extra) + newline + \
+	"returned" + space2 + str(returned) + space + "value" + space2 + str(value) + newline + \
+	"roms_test_path" + space2 + str(roms_test_path) + space + "launcherID" + space2 + str(launcherID) + space + "romName" + space2 + str(romName) + newline + \
+	'force' + space2 + str(force)
+	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
+	
+	return launcherID, romName
+	
 def copyconfig(force=False):
 	name = 'copysettings' ; printpoint = "" ; extra = ""
 	
 	path = config_path2
-	if not os.path.exists(path):
+	if not os.path.exists(path) or force==True:
 		printpoint = printpoint + '1'
 		installemuconsole()
 	elif systemplatformlinux and not systemplatformandroid:
@@ -207,8 +262,9 @@ def copyconfig(force=False):
 		
 		copydolphin(force)
 	elif force==True and systemplatformwindows:
-		notification('OS Not supported!','','',1000)
-		#setconfig(force=True)
+		pass
+		notification('setconfig Win','','',1000)
+		setconfig(force=True)
 	
 	
 	text = "extra" + space2 + str(extra) + newline + \
@@ -243,24 +299,9 @@ def copyautoconfig(force=False):
 	printlog(title=name, printpoint=printpoint, text=text, level=1, option="")
 
 def keys_help(filename):
-	name = 'keys_help' ; printpoint = ""
 	from shared_modules3 import *
-	if filename == 'Arcade': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Nintendo': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Nintendo 64': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Nintendo DS': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'GameCube': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'DOS': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Sega Genesis': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Sega Master System': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Sony Playstation': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Sony Playstation 2': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'Super Nintendo': url = '&youtube_id=b3NE_vZUVCo'
-	elif filename == 'TurboGrafx 16': url = '&youtube_id=b3NE_vZUVCo'
-	else:
-		url = ''
-		printpoint = printpoint + '9'
-		notification(addonString(30035).encode('utf-8'),"","",3000)
+	name = 'keys_help' ; printpoint = "" ; url = ""
+	if filename != '..': url = '&youtube_id=b3NE_vZUVCo'
 	name_ = filename ; mode = 4 ; iconimage = "" ; desc = "" ; num = "" ; viewtype = "" ; fanart = ""
 	if '9' in printpoint:
 		pass
@@ -342,11 +383,11 @@ def setconfig(force=False):
 					
 					elif file == 'retroarch.cfg' and systemplatformwindows:
 						extra = extra + newline + 'retroarch.cfg' + space2
-						copyfiles(retroarchcfg_file2, retroarchcfg_file) ; xbmc.sleep(100)
+						#copyfiles(retroarchcfg_file2, retroarchcfg_file) ; xbmc.sleep(100)
 					
 					elif file == '.retroarch-core-options.cfg' and systemplatformwindows:
 						extra = extra + newline + '.retroarch-core-options.cfg' + space2
-						copyfiles(retroarchcoreoptionscfg_file2, retroarchcoreoptionscfg_file) ; xbmc.sleep(100)
+						#copyfiles(retroarchcoreoptionscfg_file2, retroarchcoreoptionscfg_file) ; xbmc.sleep(100)
 					
 				extra = extra + space + 'y' + space2 + str(y) + space + 'z' + space2 + str(z) + space + 'z2' + space2 + str(z2)
 				
@@ -501,18 +542,14 @@ def copylaunchers(force=False):
 			elif systemplatformlinux: pass
 			elif systemplatformwindows:
 				dp.update(10,'Generating Launchers file',"Setting windows symbols")
-				replace_word(emudata_launcher_file,'rom/','rom\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'/_','\\_', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'_EN/','_EN\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'_HE/','_HE\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'_RU/','_RU\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'/GO.BAT','\\GO.BAT', infile_="", LineR=False , LineClean=False)
+				replacements = {'/_': '\\_', 'rom/': 'rom\\', '_EN/': '_EN\\', '_RU/': '_RU\\', '_FUN/': '_FUN\\', '_ADULT/': '_ADULT\\', 'P/': 'P\\'}
+				for key, value in replacements.items(): replace_word(emudata_launcher_file,key,value, infile_="", LineR=False , LineClean=False)
+
 				replacements = {'/A': '\\A', '/B': '\\B', '/C': '\\C', '/D': '\\D', '/E': '\\E', '/F': '\\F', '/G': '\\G', '/H': '\\H', '/I': '\\I', '/J': '\\J', '/K': '\\K', '/L': '\\L', '/M': '\\M', '/N': '\\N', '/O': '\\O', '/P': '\\P', '/Q': '\\Q', '/R': '\\R', '/S': '\\S', '/T': '\\T', '/U': '\\U', '/V': '\\V', '/W': '\\W', '/X': '\\X', '/Y': '\\Y', '/Z': '\\Z'}
 				for key, value in replacements.items(): replace_word(emudata_launcher_file,key,value, infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'_Artwork/','_Artwork\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'boxfront/','boxfront\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'screenshot/','screenshot\\', infile_="", LineR=False , LineClean=False)
-				replace_word(emudata_launcher_file,'P/','P\\', infile_="", LineR=False , LineClean=False)
+				
+				replacements = {'gameplay(video)/': 'gameplay(video)\\', 'screenshot/': 'screenshot\\', 'boxfront/': 'boxfront\\', '_Artwork/': '_Artwork\\'}
+				for key, value in replacements.items(): replace_word(emudata_launcher_file,key,value, infile_="", LineR=False , LineClean=False)
 			
 			dp.update(15,'Generating Launchers file',"Setting rom_path..")
 			replace_word(emudata_launcher_file,'rom_path',rom_path, infile_="", LineR=False , LineClean=False)
@@ -528,7 +565,7 @@ def copylaunchers(force=False):
 				else: _arcade_args = 'mame2014'
 			elif systemplatformwindows:
 				if OS == "win32": _arcade_args = 'mame2010_libretro.dll'
-				else: _arcade_args = 'mame2014_libretro.dll'
+				else: _arcade_args = 'mame2014_libretro.dll' #'mame_libretro.dll
 			dp.update(40,'Generating Launchers file',"Setting _arcade_args..")
 			replace_word(emudata_launcher_file,'_arcade_args',_arcade_args, infile_="", LineR=False , LineClean=False)
 			
