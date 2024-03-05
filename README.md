@@ -10,7 +10,7 @@ An emotional / mixedaffective state called Nostalgia 😃
 
 YouPlay Nostalgia Addon is completely free for use.
 
-[Support The Developer:](https://youtube.com/@finalmakerr1?si=TOIiK_kADB8cVxCe)
+[Support The Developer](https://youtube.com/@finalmakerr1?si=TOIiK_kADB8cVxCe)
 
 
 # **Links:**
