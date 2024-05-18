@@ -16,6 +16,6 @@ YouPlay Nostalgia Addon is completely free for use.
 # **Links:**
 
 * [YouTube](https://www.youtube.com/@youplay.nostalgia)
-* [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.1.0.zip)
+* [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.2.0.zip)
 
 [![U▶N😄stalgia](https://github.com/finalmakerr/featherence/blob/master/plugin.program.featherence.emu/icon.png?raw=true)](https://www.youtube.com/@youplay.nostalgia)
