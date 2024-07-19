@@ -1,12 +1,9 @@
--------------------------
----www.featherence.com---
--------------------------
-
 ------------------------
-Featherence v0.8.0 (26-OCT-19)
+WIP - WORK IN PROGRESS
 ------------------------
-- Added support for Kodi Leia.
-Just to mention not keeping the changelog updated for so long.
+- ??Added option to hide Top Video Information on fullscreen video while skiping back/next.
+- Added option to disable the auto close of the video/audio OSD.
+- Added option to choose highlight font color.
 
 ------------------------
 Featherence v0.7.11 (22-Dec-17)

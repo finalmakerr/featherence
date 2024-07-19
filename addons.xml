@@ -22,63 +22,6 @@
   </extension>
 </addon>
 
-<addon id="emulator.retroarch_win64" name="Featherence Emu Console - Windows x64" version="1.0.2" provider-name="finalmakerr">
-  <requires>
-	<import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>windx</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/emulator.retroarch_win64</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="plugin.program.featherence.emu" name="YouPlay Nostalgia" version="0.1.30" provider-name="finalmakerr, Angelscry">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-    <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-	<summary lang="en">Nostalgia Games</summary>
-	<summary lang="he">משחקי נוסטלגיה</summary>
-    <description lang="en">Features:
-- 11 Consoles of choice.
-- Advanced customized settings in addon settings.
-- Adult contents support.
-- Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
-- Download any game directly! Over 2000 games are available!
-- Dreamcast virtual memory setup.
-- Fanart and Posters supports and are available as a download pack or per downloaded game.
-- Full PS3 Joystick support in-Kodi and in-Game (In-Game key videos are available per each console).
-- Games are categorized by number of possible players.
-- Genre and Description support.
-- High performance modules with improved quality.
-- Multi-disks support.
-- Search game by Title, Date, Platform, Publisher or Genre.
-- Search trailer in YouTube.
-- Smart self restore and update of contents.
-    </description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
-	<website>https://www.youtube.com/@youplay.nostalgia</website>
-	<source>https://github.com/finalmakerr/featherence</source>
-  </extension>
-</addon>
-
 <addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.5" provider-name="finalmakerr">
   <requires>
     <import addon="xbmc.python" version="2.24.0" />
@@ -101,213 +44,6 @@
 	<forum></forum>
 	<source>https://github.com/finalmakerr/featherence</source>
 	<website>https://www.youtube.com/@featherence</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.featherence.docu" name="Featherence Docu" version="0.1.18" provider-name="finalmakerr, yoel guy">
-  <requires>
-	<import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.86"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary lang="en">Knowledge is power!</summary>
-	<summary lang="he">ידע הוא כוח!</summary>
-    <description lang="en">Features:
-- Customized Menus: Support customized Fanart for each button.
-- Favourite Items: Add any valid existed item to My Kids button.
-- My Docu: Create your own buttons by feeding links from YouTube.
-  You may also add your own title, description, poster, fanart and even share it with others.
-- Random Play: Auto play any visible button in a random super long playlist.
-- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
-- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
-- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
-- YouTube search: Search any contents from YouTube, history included.
-    </description>
-	<description lang="he">מאפיינים:
-- הדוקו שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
-  בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
-- חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
-- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
-- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
-- מעודפים: הוסף כל פריט קיים לכפתור הילדים שלי.
-- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
-- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
-- תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
-	</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.docu</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.featherence.extreme" version="0.1.11" name="Featherence Extreme" provider-name="finalmakerr">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-	<summary lang="en">Watch sport extreme videos.</summary>
-	<summary lang="he">צפה בסרטוני ספורט אקסטרים.</summary>
-    <description lang="en">Features:
-- Customized Menus: Support customized Fanart for each button.
-- Random Play: Auto play any visible button in a random super long playlist.
-- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
-- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
-- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
-- YouTube search: Search any contents from YouTube, history included.
-    </description>
-	<description lang="he">מאפיינים:
-- חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
-- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
-- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
-- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
-- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
-	</description>
-    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<email>finalmakerr@gmail.com</email>
-	<forum></forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.extreme</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.featherence.kids" name="Featherence Kids" version="0.2.27" provider-name="finalmakerr">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary lang="en">Worldwide kids addon</summary>
-	<summary lang="he">הרחבת ילדים בינלאומית</summary>
-    <description lang="en">Features:
-- Contents by country: Choose up to 30 different kids contents by your up to 3 prefered countries.
-- Customized Menus: Support customized Fanart for each button.
-- Favourite Items: Add any valid existed item to My Kids button.
-- My Kids: Create your own buttons by feeding links from YouTube.
-  You may also add your own title, description, poster, fanart and even share it with others.
-- Random Play: Auto play any visible button in a random super long playlist.
-- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
-- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
-- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
-- YouTube search: Search any safe contents from YouTube, history included.
-    </description>
-	<description lang="he">מאפיינים:
-- הילדים שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
-  בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
-- חיפוש יו-טיוב: מאפשר חיפוש תכנים בטוחים מיו-טיוב, כולל רשימת היסטוריה.
-- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
-- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
-- מעודפים: הוסף כל פריט קיים לכפתור הילדים שלי.
-- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
-- תכנים לפי מדינה: בחר למעלה מ-30 תכנים שונים לילדים מעד 3 מדינות מעודפות עליך.
-- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
-- תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
-	</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum>http://forum.kodi.tv/showthread.php?tid=252567</forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.kids</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.featherence.music" name="Featherence Music" version="0.3.10" provider-name="finalmakerr">
-  <requires>
-	<import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary lang="en">International music addon</summary>
-	<summary lang="he">הרחבת מוזיקה בינלאומית</summary>
-    <description lang="en">Features:
-- Customized Menus: Support customized Fanart for each button.
-- Favourite Items: Add any valid existed item to My Kids button.
-- My Music: Create your own buttons by feeding links from YouTube.
-  You may also add your own title, description, poster, fanart and even share it with others.
-- Random Play: Auto play any visible button in a random super long playlist.
-- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
-- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
-- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
-- YouTube search: Search any contents from YouTube, history included.
-    </description>
-	<description lang="he">מאפיינים:
-- המוזיקה שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
-  בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
-- חיפוש יו-טיוב: מאפשר חיפוש תכנים מיו-טיוב, כולל רשימת היסטוריה.
-- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
-- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
-- מעודפים: הוסף כל פריט קיים לכפתור הילדים שלי.
-- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
-- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
-- תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
-	</description>
-    <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.music</source>
-	<website>www.featherence.com</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.featherence.rofl" name="Featherence ROFL" version="0.0.12" provider-name="finalmakerr , Lidor Malich">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary lang="en">Hahaha</summary>
-	<summary lang="he">חחח</summary>
-    <description lang="en">Features:
-- Contents by country: Choose up to 30 different funny contents by your up to 3 prefered countries.
-- Customized Menus: Support customized Fanart for each button.
-- Favourite Items: Add any valid existed item to My Kids button.
-- My ROFL: Create your own buttons by feeding links from YouTube.
-  You may also add your own title, description, poster, fanart and even share it with others.
-- Random Play: Auto play any visible button in a random super long playlist.
-- Sorting: Sorted and Organized contents by ages, languages specific sorting are included.
-- Smart TV Mode: Auto play current button contents as a 40 items playlist, random is optional.
-- Varied and unlimited contents: Support unlimited URLs per content from varied sources such as Youtube, Dailymotion, Dropbox, Kodi's addons, supported websites..
-- YouTube search: Search any safe contents from YouTube, history included.
-    </description>
-	<description lang="he">מאפיינים:
-- הצחוקים שלי: צור כפתורים משלך ע"י הזנת קישורים מיו-טיוב.
-  בנוסף ניתן להוסיף לכפתורים: שם, תאור, תמונה, פאנארט ואפילו לשתף עם אנשים אחרים.
-- חיפוש יו-טיוב: מאפשר חיפוש תכנים בטוחים מיו-טיוב, כולל רשימת היסטוריה.
-- מצב טלוויזיה חכם: ניגון אוטומטי של התכנים בכפתור הנבחר, עד 40 פריטים  שונים בפלייליסט אחד, אפשרות לאקראי.
-- מיון: תכנים ממויינים ומאורגנים לפי גיל, כולל מיון לפי שפה.
-- מעודפים: הוסף כל פריט קיים לכפתור הצחוקים שלי.
-- ניגון אקראי: ניגון אוטומטי של כל הכפתורים בחלון הנוכחי באקראי וברצף.
-- תכנים לפי מדינה: בחר למעלה מ-30 תכנים שונים לילדים מעד 3 מדינות מעודפות עליך.
-- תכנים מגוונים ואין סופיים: תמיכה במגוון עצום של מקורות לתוכן בודד.
-- תפריטים אישיים: אפשרות ליצור פאנארט אישי לכל כפתור.
-	</description>
-    <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
-	<email>finalmakerr@gmail.com</email>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/plugin.video.featherence.rofl</source>
-	<website>www.featherence.com</website>
   </extension>
 </addon>
 
@@ -512,25 +248,9 @@
   </extension>
 </addon>
 
-<addon id="script.module.featherence.emu" name="Featherence Emu Module" version="1.1.14" provider-name="finalmakerr">
+<addon id="skin.featherence" version="0.7.19" name="Featherence" provider-name="finalmakerr">
   <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-    <summary>Multi-emulator frontend based on libretro</summary>
-    <description lang="en">_</description>
-	<description lang="he">_</description>
-    <disclaimer></disclaimer>
-	<source>https://github.com/finalmakerr/featherence</source>
-	<website>https://www.youtube.com/@youplay.nostalgia</website>
-  </extension>
-</addon>
-
-<addon id="skin.featherence" version="0.8.2" name="Featherence" provider-name="finalmakerr">
-  <requires>
-    <import addon="xbmc.gui" version="5.14.0"/>
+    <import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="script.featherence.service" version="0.2.14"/>
 	<!--<import addon="resource.uisounds.featherence" version="0.0.1"/>-->
   </requires>
@@ -608,10 +328,9 @@
 - ו'ידגט מותאם אישית: צור עד 10 כפתורי ו'ידגט לכל כפתור.
 	</description>
     <disclaimer></disclaimer>
-	<email>finalmakerr@gmail.com</email>
 	<forum>http://forum.kodi.tv/showthread.php?tid=251726</forum>
-	<source>https://github.com/finalmakerr/featherence/tree/master/master/skin.featherence/1080i</source>
-	<website></website>
+	<source>https://github.com/finalmakerr/featherence</source>
+	<website>https://www.youtube.com/@featherence</website>
 	<assets>
 		<icon>resources/icon.png</icon>
 		<fanart>resources/fanart.jpg</fanart>

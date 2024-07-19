@@ -241,7 +241,7 @@ class Main:
 
     def _run_launcher(self, launcherID):
         if (self.launchers.has_key(launcherID)):
-            launcher = self.launchers[launcherID]
+            launcher = self.launchers[launcherID] #; printlog(title='test2', printpoint="", text=text, level=7, option="")
             apppath = os.path.dirname(launcher["application"])
             if ( os.path.basename(launcher["application"]).lower().replace(".exe" , "") == "xbmc" ) or ("xbmc-fav-" in launcher["application"]) or ("xbmc-sea-" in launcher["application"]):
                 xbmc.executebuiltin('XBMC.%s' % launcher["args"])
@@ -249,7 +249,7 @@ class Main:
                 if ( os.path.exists(apppath) ) :
                     arguments = launcher["args"].replace("%apppath%" , apppath).replace("%APPPATH%" , apppath)
                     if xbmc.Player().isPlaying() or 1 + 1 == 2:
-						xbmc.Player().stop()
+						xbmc.Player().stop() #; printlog(title='test', printpoint="", text=text, level=7, option="")
 						xbmc.sleep(self.settings[ "start_tempo" ]+100)
 						try:
 							xbmc.audioSuspend()
@@ -396,7 +396,6 @@ class Main:
                             xbmc.executebuiltin('XBMC.' + arguments)
                         else:
                             if ( xbmc.Player().isPlaying() ): #30.04.2023 removed -  or 1 + 1 == 2
-								notification("123","","",2000)
 								xbmc.Player().stop()
 								xbmc.sleep(self.settings[ "start_tempo" ]+100)
 								try:

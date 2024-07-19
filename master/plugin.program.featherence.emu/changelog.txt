@@ -10,6 +10,11 @@ WIP - WORK IN PROGRESS
 - Added option to hide consoles on demand.
 
 ------------------------
+YouPlay Nostalgia v0.1.31 (27-Mar-24)
+------------------------
+- Added more games.
+
+------------------------
 YouPlay Nostalgia v0.1.30 (23-May-23)
 ------------------------
 - Added extra essential information when downloading a game, such as: "This game didn't uploaded yet", Game is unavailable at the moment ..

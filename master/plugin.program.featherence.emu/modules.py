@@ -610,8 +610,9 @@ def copylaunchers(force=False):
 			elif systemplatformlinux:
 				if systemplatformlinuxraspberrypi or OS == "oe2": _ps1_args = 'pcsx.rearmed'
 				elif OS == "i386": _ps1_args = 'mednafen.psx'
-				else: _ps1_args = 'mednafen.psx'
-			elif systemplatformwindows: _ps1_args = 'mednafen.psx_libretro.dll'
+				else: _ps1_args = 'mednafen.psx' #swanstation_libretro
+			elif systemplatformwindows: _ps1_args = 'swanstation_libretro.dll'
+			'''mednafen.psx_libretro.dll'''
 			dp.update(65,'Generating Launchers file',"Setting _ps1_args..")
 			replace_word(emudata_launcher_file,'_ps1_args',_ps1_args, infile_="", LineR=False , LineClean=False)
 			
@@ -647,7 +648,7 @@ def copylaunchers(force=False):
 				if systemplatformlinuxraspberrypi or OS == "oe2": _dreamcast_args = ""
 				elif OS == "i386": _dreamcast_args = 'reicast'
 				else: _dreamcast_args = 'reicast'
-			elif systemplatformwindows: _dreamcast_args = 'reicast_libretro.dll'
+			elif systemplatformwindows: _dreamcast_args = 'flycast_libretro.dll'
 			dp.update(90,'Generating Launchers file',"Setting _dreamcast_args..")
 			replace_word(emudata_launcher_file,'_dreamcast_args',_dreamcast_args, infile_="", LineR=False , LineClean=False)
 			

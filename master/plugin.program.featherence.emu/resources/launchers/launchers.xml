@@ -552,7 +552,7 @@
 					<genre>Miscellaneous</genre>
 					<release>1989</release>
 					<publisher>Taito</publisher>
-					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
+					<gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -8242,6 +8242,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>9a9a6914516f8dc9d60727f73bf2601c</id>
+					<name>Chip 'n Dale - Rescue Rangers</name>
+					<filename>rom_pathNintendo/_2P/Chip 'n Dale - Rescue Rangers.zip</filename>
+					<thumb>rom_pathNintendo/_2P/_Artwork/boxfront/Chip 'n Dale - Rescue Rangers.jpg</thumb>
+					<fanart>rom_pathNintendo/_2P/_Artwork/screenshot/Chip 'n Dale - Rescue Rangers.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1990</release>
+					<publisher>Capcom</publisher>
+					<gameplot>The rescue rangers are tiny heroes. Consisting of two chipmunks, two mice and a fly... these heroes may be small but there's no case too big for them to take on. This game starts out simply enough, with a mission to rescue a small kitten, but soon escalates into a wider plot that pits the rescue rangers against their arch-nemesis, the feline kingpin, Fat Cat.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>9e986469b410e13505789e0d7ebb3527</id>
 					<name>Balloon Fight</name>
 					<filename>rom_pathNintendo/_2P/Balloon Fight.zip</filename>
@@ -10083,10 +10098,10 @@
 				</rom>
 				<rom>
 					<id>d6eaea42459b0eb46da1cb9c7dc60892</id>
-					<name>Mario &amp; Luigi: Bowser's Inside Story</name>
-					<filename>rom_pathNintendo DS/_1P/Mario &amp; Luigi - Bowser's Inside Story.zip</filename>
-					<thumb>rom_pathNintendo DS/_1P/_Artwork/boxfront/Mario and Luigi.png</thumb>
-					<fanart>rom_pathNintendo DS/_1P/_Artwork/screenshot/Mario and Luigi.jpg</fanart>
+					<name>Mario & Luigi - Bowser's Inside Story</name>
+					<filename>rom_pathNintendo DS/_1P/Mario & Luigi - Bowser's Inside Story.zip</filename>
+					<thumb>rom_pathNintendo DS/_1P/_Artwork/boxfront/Mario & Luigi - Bowser's Inside Story.jpg</thumb>
+					<fanart>rom_pathNintendo DS/_1P/_Artwork/screenshot/Mario & Luigi - Bowser's Inside Story.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Role-Playing</genre>
@@ -10937,7 +10952,22 @@
 					<genre>Miscellaneous</genre>
 					<release>1989</release>
 					<publisher>Taito</publisher>
-					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
+					<gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6713ac2769cbd1f4v32</id>
+					<name>Ultimate Mortal Kombat 3</name>
+					<filename>rom_pathSega Genesis/_2P/Ultimate Mortal Kombat 3.zip</filename>
+					<thumb>rom_pathSega Genesis/_2P/_Artwork/boxfront/Ultimate Mortal Kombat 3.jpg</thumb>
+					<fanart>rom_pathSega Genesis/_2P/_Artwork/screenshot/Ultimate Mortal Kombat 3.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Fighting</genre>
+					<release>1995</release>
+					<publisher>Midway Manufacturing Company</publisher>
+					<gameplot>Ultimate Mortal Kombat 3 combines the best of all the Mortal Kombats into a single cartridge. 23 playable characters are immediately available, such as Reptile, Cyrax, Scorpion, Sub-Zero, Jax, Katana, Sonya, and more. There are two bosses that are unlockable, as well as additional characters.[CR]There is a variety of new levels, some of which are interactive. Characters can uppercut someone, causing them to hit the ground hard and crash through to the bottom floor, or they can knocked someone off a bridge, landing in a pit of spikes.[CR]Players can go against the computer one-on-one, two-on-two, or take part in the 8-fighter tournament.[CR]The DS version has a wireless one-one-one multiplayer mode and includes the Puzzle Kombat mini-game from Mortal Kombat: Deception.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -11787,6 +11817,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>57fe101bfv1faa9dfc22fc8536f30000</id>
+					<name>Legacy of Kain - Blood Omen</name>
+					<filename>rom_pathSony Playstation/_1P/Legacy of Kain - Blood Omen/Legacy of Kain - Blood Omen.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Legacy of Kain - Blood Omen.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Legacy of Kain - Blood Omen.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>1996</release>
+					<publisher>Eidos</publisher>
+					<gameplot>The nobleman Kain has been slain by a group of bandits and in his death, he is revived by the necromancer Mortanius for his own ends. Kain is returned in the form of a vampire and yearns to exact vengeance on those who killed him. Stronger and faster than a human being, coupled with a thirst for blood that must be satisfied regularly, he is able to dispatch his killers quickly. However, Mortanius and other forces seek to use him as a tool in a greater plot. Mortanius is of the Circle of Nine, the guardians of the Pillars of Nosgoth. These pillars, connected to the world and balancing the forces, have become corrupted and the Circle members been driven mad. At the Pillars, Kain meets Ariel - a former guardian of the Pillar of Balance, now a spirit after being murdered by an unseen assailant. She informs Kain of his relation to the Pillars and that the only way for him to restore the balance is to seek out each guardian and kill them. The fate of Nosgoth may hang on Kain decisions.[CR]Blood Omen: Legacy of Kain is an action game where the player controls the vampiric Kain. As a vampire, Kain is able to withstand sunlight, but is harmed by water. However, he is able to obtain several cursed abilities and spells such as being able to transform into a bat, wolf, and even a cloud mist respectively, as well as learning the ability to disguise himself from creatures of weaker mind. Kain is also fixated on murder and is a master of several ways to kill and destroy his opponents. As the enemies are slain in front of him, Kain may drink their blood to restore his health, which is always trickling away, representative of his insatiable craving. To aid in the slaughter of his enemies, Kain may equip different weapons and armor, each with its own unique properties.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>78f2c92b3df290cab0fb77676f1651b8</id>
+					<name>Treasures of the Deep</name>
+					<filename>rom_pathSony Playstation/_1P/Treasures of the Deep/Treasures of the Deep.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/Treasures of the Deep.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/Treasures of the Deep.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Adventure</genre>
+					<release>1997</release>
+					<publisher>Namco</publisher>
+					<gameplot>Treasures of the Deep is an underwater exploration game. The player controls an underwater explorer and ex-Navy Seal Jack Runyan, who is approached by the Underwater Mercenary Agency to carry out highly dangerous missions. The risks are great but the rewards are even greater.[CR]Choose from 12 missions in all parts of the globe, from the Great Barrier Reef to the Bermuda Triangle. Eight ships await command; start with an USN RV-1 mini-sub and trade up to the deadly Viper attack submarine. An arsenal of underwater technology and weaponry aid you in the quest: steel-mesh wetsuits, night-vision goggles, homing torpedoes, and remote underwater robot vehicles are just some of the resources at the player's disposal. And each of them is needed to be prepared for the unknown dangers lurking in the deep.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>78f2c92b3df290aab0fb77676f1651b9</id>
 					<name>Ape Escape</name>
 					<filename>rom_pathSony Playstation/_1P/Ape Escape/Ape Escape.m3u</filename>
@@ -12567,6 +12627,36 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>c24d94eb041312025a6aa0e178397f83</id>
+					<name>MediEvil</name>
+					<filename>rom_pathSony Playstation/_1P/MediEvil/MediEvil.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/MediEvil.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/MediEvil.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1998</release>
+					<publisher>Sony Computer Entertainment</publisher>
+					<gameplot>In the year 1286, Sir Daniel Fortesque and his soldiers fought against the evil sorcerer Zarok, who raised an army of demons, intending to conquer the world. Sir Daniel was hailed as a hero after the battle, supposedly having been mortally wounded during it, taking Zarok with him. However, it looks like the sorcerer was not defeated in that battle. A hundred years later, he appears again, robbing people of their souls to build an army of undead. Unleashing waves of necromantic energy, Zarok inadvertently revives Sir Daniel as well. Now a skeletal corpse, the knight must correct the mistakes of the past and defeat Zarok once and for all.[CR]MediEvil is an action game in which the player controls Sir Daniel, exploring 3D environments and fighting many enemies that stand on his path towards the ultimate goal. The protagonist starts with his own detachable arm as the basic weapon; however, later he acquires swords and other melee weapons, as well as bows. Money can be collected and spent on items and equipment sold by gargoyle merchants. The hero must also find various rune stones that will allow him to access new areas.[CR]Each level contains a chalice that can be filled with souls of defeated enemies. Sir Daniel may take a chalice only after having vanquished a sufficient amount of foes. Getting the chalice enables access to the Hall of Heroes, where the protagonist can receive new weapons. Collecting all the chalices in the game unlocks a special ending.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>c24d94ef041312025a6aa0e178397f83</id>
+					<name>MediEvil 2</name>
+					<filename>rom_pathSony Playstation/_1P/MediEvil 2/MediEvil 2.m3u</filename>
+					<thumb>rom_pathSony Playstation/_1P/_Artwork/boxfront/MediEvil 2.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_1P/_Artwork/screenshot/MediEvil 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>2000</release>
+					<publisher>Sony Computer Entertainment</publisher>
+					<gameplot>After Sir Daniel Fortesque vanquished the evil sorcerer Zarok in the year 1386, he was finally admitted into the Hall of Heroes, resting in peace. However, five hundred years later Dan unexpectedly awakens in a Victorian museum in Kensington. A ghost named Winston tells him that the sorcerer Lord Palethorn has found Zarok's spell book, reanimating the dead as a result. The pages of the book have been scattered all over London, and it is the task of the valiant knight and his new companions to prevent the mad lord from collecting them and conquering the city.[CR]MediEvil II is an action game similar in concept and basic gameplay to its predecessor. The sequel is somewhat more linear than the first installment, having no world map and hence no possibility to choose the next level. As before, Dan relies on melee and ranged weapons to get rid of the enemies; however, the 19th century setting has replaced bows from the previous game with firearms such as pistols, shotguns, and portable gatling guns.[CR]A new feature allows the player to equip two weapons on the protagonist and switch between them quickly during combat. Dan also gains the ability to split his own head off, sending it to explore areas he cannot access with his whole body. While in this mode, Dan can solve puzzles and find hidden treasures, but becomes more vulnerable to enemy attacks. The sequel also adds a rotatable camera during exploration.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>077967c5c3aabcf74bd7d301ab5cfd4f</id>
 					<name>Syphon Filter</name>
 					<filename>rom_pathSony Playstation/_1P/Syphon Filter/Syphon Filter.m3u</filename>
@@ -12680,7 +12770,7 @@
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Role-Playing</genre>
-					<release>2000</release>
+					<release>1999</release>
 					<publisher>SCEI</publisher>
 					<gameplot>A peaceful beginning. The legend was born 10,000 years ago. A violent uprising. A civilization of flying creatures enslave the human race. A bloody war. In a bid for freedom, the humans harness the spiritual forces of Dragons and triumph. Tranquility and harmony exist between all. But the past and the future are about to collide...Unveil a fantasy of Magnificence, Deception, Magical Combat and Retribution. Transform into Dragoons and unleash extraordinary powers. Incredibly diverse characters wield unique weapons and Dragoon attacks powered by the forces of Earth, Light, Fire, Wind, Lightning, Water and Darkness. Totally unique and innovative tactical combat "Additionals" System.</gameplot>
 					<altapp></altapp>
@@ -13602,6 +13692,21 @@
 					<release>1994</release>
 					<publisher>Video System</publisher>
 					<gameplot>Aero Fighters is an Action game, developed and published by Video System,  which was released in Japan in 1993.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>9ad9aea08e4j7577efef904c0252ddc5</id>
+					<name>Star Fox</name>
+					<filename>rom_pathSuper Nintendo/_1P/Star Fox.zip</filename>
+					<thumb>rom_pathSuper Nintendo/_1P/_Artwork/boxfront/Star Fox.jpg</thumb>
+					<fanart>rom_pathSuper Nintendo/_1P/_Artwork/screenshot/Star Fox.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action</genre>
+					<release>1993</release>
+					<publisher>Nintendo</publisher>
+					<gameplot>This is the first SNES title using the Super FX chip; you are flying ace Fox McCloud, who with his trusted wingmen and his powerful Arwing starfighter, must rid the Lylat System of the evil that surrounds it. Wave after wave of enemies will fly towards you, and with the advice of your wingmen, you must guide your way through each level and take down as many as you can.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -17175,6 +17280,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>57fe101bfv1fca9dfc22fc8536f30000</id>
+					<name>Legacy of Kain - Blood Omen 2</name>
+					<filename>rom_pathGameCube/_1P/Legacy of Kain - Blood Omen 2.iso</filename>
+					<thumb>rom_pathGameCube/_1P/_Artwork/boxfront/Legacy of Kain - Blood Omen 2.jpg</thumb>
+					<fanart>rom_pathGameCube/_1P/_Artwork/screenshot/Legacy of Kain - Blood Omen 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>2002</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Following the events of Legacy of Kain: Blood Omen, the vampire Kain has assembled an army of vampires to take over the world of the humans. Fighting across Nosgoth, his goal is to make his way to the great city of Meridian and take control of this stronghold. However, upon reaching the gates of the city, the army is challenged by the Serafan Order, an organized force of vampire hunters and its leader, the magical Serafan lord. Kain engages the Serafan lord in single combat, is struck down and defeated. Kain's sword, the Soul Reaver, is claimed by his enemy. Unconscious for 200 years, Kain awakes under the care of the vampire Umah to a world he barely recognizes. Following the defeat of Kain's army, the vampires have been hunted down by the Serafan and only a few remain. The city of Meridian is ruled under martial law by the Serafan Order, which is very oppressive towards its citizens. Strange glyph magic is used to power machines and fuel industry and at the same time is deadly to vampires and used as wards throughout the city. Kain swears revenge on the one who defeated him and seeks to reclaim his place as the ruler of the vampires.[CR]The Legacy of Kain Series: Blood Omen 2 is a third person action game with adventure elements, more similar in perspective to Soul Reaver than the first Blood Omen game. The player views the environment from behind Kain's shoulder, moving him in different directions, attacking, jumping, using dark gifts, and grabbing on to ledges. Kain's life energy steadily depletes and must be replenished constantly by drinking blood. Blood is found by consuming any living creature nearby, often requiring defeating an enemy through combat first. As Kain consumes blood, his meter is filled up. Once full, Kain gains additional health. Kain also learns new dark gifts throughout the game by defeating boss creatures. Some gifts include: the ability to blend into mist, fire projectiles, use projectile telekinesis or make a great horizontal leap. Many of these abilities can be used to perform stealth kills which will instantly defeat a foe. Kain will fight using his bare hands or by picking up daggers, swords, axes, and other weapons. These weapons all attack differently, eventually breaking, and may also be thrown at enemies from afar.[CR]The Serafan Order uses glyph magic, partially because it is deadly to vampires. Kain will often encounter areas where he is barred from progressing because of glyph barriers and must find a way around them. Additionally, glyphs function similar to electricity in that they power machines and switches. Many of the puzzles featured in Blood Omen 2 involve needing to create a glyph circuit in order to deliver power to a specific point. Glyph energy glows as it travels down its path, allowing the player to see exactly where the energy spark is.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gce81ea61168385a37ed78fp12101</id>
 					<name>Donkey Kong - Jungle Beat</name>
 					<filename>rom_pathGameCube/_1P/Donkey Kong - Jungle Beat.iso</filename>
@@ -20209,10 +20329,10 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba1a13ec1769cbd3f4025</id>
-					<name>Command & Conquer 1</name>
-					<filename>rom_pathDOS/_EN/Command & Conquer 1/COMAC1.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer 1.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer 1.jpg</fanart>
+					<name>Command & Conquer</name>
+					<filename>rom_pathDOS/_EN/Command & Conquer/COMAC1.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -20224,10 +20344,10 @@
 				</rom>
 				<rom>
 					<id>d39a1e79ra1ba2a13ec1769cbd3f4025</id>
-					<name>Command & Conquer 2</name>
-					<filename>rom_pathDOS/_EN/Command & Conquer 2/COMAC2.BAT</filename>
-					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer 2.jpg</thumb>
-					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer 2.jpg</fanart>
+					<name>Command & Conquer - Red Alert</name>
+					<filename>rom_pathDOS/_EN/Command & Conquer - Red Alert/COMAC2.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Command & Conquer - Red Alert.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Command & Conquer - Red Alert.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
 					<genre>Strategy</genre>
@@ -21103,7 +21223,7 @@
 					<genre>Miscellaneous</genre>
 					<release>1989</release>
 					<publisher>Taito</publisher>
-					<gameplot><gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot></gameplot>
+					<gameplot>בר לפני שנים ביסס Volfied את מקומו, בצדק יש לומר, בין משחקי "סגירת השטחים" הטובים ביותר. גם בעידן שבו יוצאים לאור גירסאות חדשות של סגנון המשחק הממכר, בגרפיקה מרשימה, מצליח Volfied להשאיר אותם רחוק מאחור במרוץ אל לב הגיימר הממוצע. אין ספק, מדובר ביצירה מושלמת.[CR][CR]למי שטרם זכה להכיר, משחקי סגירת שטחים הם ללא-ספק בין הממכרים שבמשחקים (לצד סנייק ופק-מן). המטרה, כפי שמשתמע מהכותר עצמו, היא לסגור שטחים. האמצעים? פשוטים מאוד בתיאוריה, אבל קשים הרבה יותר כשמכניסים לעסק חרקים חסרי-פחד. שטח המשחק, מלבני בצורתו, כולל שטח כבוש ושטח שטרם-נכבש. המטרה היא כמובן לכבוש את כל השטח, או לפחות אחוז משמעותי מאוד ממנו (מעל 80%). בתוך השטח שטרם-נכבש, מתרוצצים להם באקראיות חרקים ומכרסמים משונים, כך שיש לתכנן ולתזמן מראש כל ניסיון כיבוש. רוב הזמן תהיו בטוחים בשטח שלכם, זה שכבר נכבש, אבל בחלק מהשלבים תאלצו להיזהר גם שם. כדי לכבוש שטח שמאוכלס על ידי החרקים, תצטרכו "למתוח קו" מקצה כבוש אחד לשני, כך שהשטח הריק שנוצר יסתפח לשטחים שכבר בשליטתנו. יש לציין שנגיעה באחד מהחרקים משמעותה מוות מיידי.[CR][CR]במידה ואתם מצליחים לסגור שטח שבתוכו ממוקמת "לבנה", אתם תקבלו בונוס, כמו מהירות או לב נוסף. למשחק רמות קושי שונות ואפשרות לשני שחקנים, אך רק לסירוגין (לא בו-זמנית). מתכנתי Volfied לא המציאו את הגלגל, Xonix היה קיים כמה שנים קודם לכן, אבל אין ספק שהם שיכללו את ההמצאה המקורית בעשרות מונים. מדובר במשחק ממכר, כייפי ומאתגר.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -21119,6 +21239,21 @@
 					<release>1989</release>
 					<publisher>Loriciel SA</publisher>
 					<gameplot>This is the tale of a bouncy, incredible friendly and CRAZY ball called BUMPY![CR]Help our hero BUMPY through more than 120 levels that make up the 9 attractions of BUMPY's ARCADE FANTASY.[CR]Each level is made up of dozens of different platforms and poles that you will discover as you progress in the game.[CR]Get ready to spend some sleepless nights with this crazy and incredible addictive arcade game.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1e79ra1ba6711ec1769cbd3f4033</id>
+					<name>The Incredible Machine</name>
+					<filename>rom_pathDOS/_EN/The Incredible Machine/TIM.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/The Incredible Machine.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/The Incredible Machine.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Puzzle</genre>
+					<release>1992</release>
+					<publisher>Sierra</publisher>
+					<gameplot>The Incredible Machine is a puzzle game where the player has to assemble a Rube Goldberg-type contraption to solve a simple puzzle.[CR]The game consists of a series of puzzles, each having a simple objective, such as "put the baseball into the basket" or "turn on the fan". To achieve this, the player is given a number of parts such as: balls, girders, rope, balloons, seesaws, cats or monkeys, and his job is to arrange and connect them on the playfield, so that, upon clicking the "start puzzle" button, the whole contraption activates and achieves the objective.[CR]For added difficulty, some puzzles have different gravity or air pressure from that of Earth.[CR]There is also a freeform mode where the player is given an unlimited number of parts to construct a machine of his own invention. The machines created this way can be saved to disk.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -23355,7 +23490,7 @@
 				</rom>
 				<rom>
 					<id>d39a1eg1xa1ba6711bc1769zbd3f4020</id>
-					<name>Hugo 2‎‎</name>
+					<name>Hugo 2</name>
 					<filename>rom_pathDOS/_HE/Hugo 2/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 2.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 2.jpg</fanart>
@@ -23370,7 +23505,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e21xa1ba6711bc1769zbd3f4020</id>
-					<name>Hugo 5‎‎</name>
+					<name>Hugo 5</name>
 					<filename>rom_pathDOS/_HE/Hugo 5/GO.BAT</filename>
 					<thumb>rom_pathDOS/_HE/_Artwork/boxfront/Hugo 5.jpg</thumb>
 					<fanart>rom_pathDOS/_HE/_Artwork/screenshot/Hugo 5.jpg</fanart>
@@ -24561,7 +24696,7 @@
 				</rom>
 				<rom>
 					<id>d39a1e21xa1ba6711bc1769zbd3f4021</id>
-					<name>Hugo on the Train‎‎</name>
+					<name>Hugo on the Train</name>
 					<filename>rom_pathWIN95/_SCUMMVM/Hugo on the Train/GO.BAT</filename>
 					<thumb>rom_pathWIN95/_SCUMMVM/_Artwork/boxfront/Hugo on the Train.jpg</thumb>
 					<fanart>rom_pathWIN95/_SCUMMVM/_Artwork/screenshot/Hugo on the Train.jpg</fanart>
@@ -24641,6 +24776,36 @@
 					<release>2004</release>
 					<publisher>Vivendi</publisher>
 					<gameplot>Two purple birds called the Evil Twins form a new threat to Crash's homeworld. Crash has to team up with his arch rival Dr. Neo Cortex to put a stop to this new threat.[CR]Crash Twinsanity is a classic-style Crash platform game, though this time Crash has to work together with Dr. Cortex from time to time. Crash can pick up and throw Dr. Cortex to places he can't reach himself, or use him as a hammer to slap enemies. The consistent conflict between both heroes causes many funny situations.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe101bfv1fcc9dfc22fc8536f30000</id>
+					<name>Legacy of Kain - Soul Reaver 2</name>
+					<filename>rom_pathSony Playstation 2/_1P/Legacy of Kain - Soul Reaver 2.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Legacy of Kain - Soul Reaver 2.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Legacy of Kain - Soul Reaver 2.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>2001</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Following the events in Legacy of Kain: Soul Reaver, Raziel discovers a way back through time and encounters one of the Circle of the Nine, Mobius the timestreamer. Mobius urges Raziel to continue his quest for revenge and destroy the vampire lord Kain. Raziel reluctantly agrees and heads off to discover the knowledge and weapons that will allow him to achieve his goal.[CR]Soul Reaver 2 is a third-person action game with puzzle-solving and some platforming elements, similar to the previous installment. The game world is viewed from behind Raziel's shoulder; the player can move him in any direction, climb, attack, swim, jump and use specific abilities. Raziel retains his special moves from the previous game, which include gripping onto the sides of ledges, climbing walls, and gliding downwards with his torn wings. Like in the previous installment, Raziel can travel between the material world and the spectral realm at will, gaining access to new areas by exploiting distortions that exist between the mirrored worlds. As before, he must drain the souls of his enemies to prolong his existence in the material realm.[CR]Raziel no longer gains abilities from absorbing great souls and instead must imbue his Soul Reaver weapon by activating certain elemental temples. Once activated, various "elemental fonts" can be used to charge the Soul Reaver to specific attributes. Raziel can arm himself with a variety of other weapons including daggers, swords, axes, spears as well as the Soul Reaver and bare-handed claws.[CR]Unlike the previous game, Soul Reaver 2 is linear and follows specific paths through different areas. Raziel cannot return to certain areas once he has left them behind. The game features diverse puzzles, often involving blocks or manipulation of different devices. One common theme is "light puzzles" where Raziel must reflect light, using mirrored objects, so that they touch switches or objects which require activation.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>57fe121bfv1fcc9dfc22fc8536f30000</id>
+					<name>Legacy of Kain - Defiance</name>
+					<filename>rom_pathSony Playstation 2/_1P/Legacy of Kain - Defiance.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Legacy of Kain - Defiance.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Legacy of Kain - Defiance.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Puzzle</genre>
+					<release>2003</release>
+					<publisher>Eidos</publisher>
+					<gameplot>Following the events of Legacy of Kain: Soul Reaver 2, Raziel and Kain were trapped in the Serafan fortress. Separated by sudden events, Raziel was forced to retreat into the spectral realm, leaving Kain to escape from the Serafan on his own. Both must escape the predicament they find themselves in and fight back against those who would seek to use them as manipulations in a grander plot. From both heroes cry out shouts of defiance, and a thirst to find the revelations that have been buried in the world of Nosgoth.[CR]Legacy of Kain: Defiance is a third-person action game with light puzzle-solving elements, combining concepts seen in both Blood Omen 2 and Soul Reaver 2. The story unfolds through chapters, focusing alternately on Kain and Raziel as they pursue their separate, though intertwined quests. Control of each character alternates between levels, however both are controlled from a behind-the-shoulder perspective. While both heroes are different, they are similar in movement, ability to attack, defend, jump and access special abilities.[CR]Kain and Raziel no longer pick up weapons, instead both using a form of the Soul Reaver weapon (Kain uses the physical sword form, Raziel uses an energy blade). Each Soul Reaver can now be "charged" to unleash a special ability, determined by the current alignment of Soul Reaver at the time. Both Kain and Raziel lose energy at a constant rate and must feed to replenish life energy (Kain feeds on the blood of living creatures, Raziel feeds on the souls of living and non-living creatures). And both Kain and Raziel feature telekinetic abilities to manipulate objects at a distance.[CR]The two are, however, different characters that play differently, each requiring use of his talents, to bypass obstacles (sometimes the same obstacle). Kain focuses on strong combat and destructive abilities. He is able to power up the Soul Reaver weapon using properties of the Pillars of Nosgoth. Raziel is more subtle, able to use stealth and the phasing between material and spectral worlds in order to discover new paths. As in Soul Reaver, Raziel can phase into the spectral world at any time but must find a special location in order to phase back. Raziel powers up the Soul Reaver using elemental powers.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
