@@ -10,12 +10,12 @@ An emotional / mixedaffective state called Nostalgia 😃
 
 YouPlay Nostalgia Addon is completely free for use.
 
-[Donate-To-Support YouPlay-Nostalgia Development:](https://www.paypal.com/donate/?hosted_button_id=FHN3R86U5D7ZC)
+[Support The Developer](https://youtube.com/@finalmakerr1?si=TOIiK_kADB8cVxCe)
 
 
 # **Links:**
 
 * [YouTube](https://www.youtube.com/@youplay.nostalgia)
-* [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.1.0.zip)
+* [Featherence Repository](https://github.com/finalmakerr/featherence/raw/master/repository.featherence/repository.featherence-1.2.0.zip)
 
 [![U▶N😄stalgia](https://github.com/finalmakerr/featherence/blob/master/plugin.program.featherence.emu/icon.png?raw=true)](https://www.youtube.com/@youplay.nostalgia)
