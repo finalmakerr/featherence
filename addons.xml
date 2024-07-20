@@ -22,139 +22,40 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.featherence.be_creative" name="Featherence Be Creative" version="0.0.5" provider-name="finalmakerr">
+<addon id="plugin.program.featherence.emu" name="YouPlay Nostalgia" version="0.1.31" provider-name="finalmakerr, Angelscry">
   <requires>
-    <import addon="xbmc.python" version="2.24.0" />
-	<import addon="script.featherence.service" version="0.3.46"/>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.simplejson" version="2.0.9" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+    <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
 	<platform>all</platform>
-    <summary lang="en">Easily create new addon</summary>
-	<summary lang="he">צור הרחבה חדשה בקלי קלות</summary>
-    <description lang="en">For support ask in Featherence's facebook.
-	Also don't forget to check the addon.xml file for the source of information.
+	<summary lang="en">Nostalgia Games</summary>
+	<summary lang="he">משחקי נוסטלגיה</summary>
+    <description lang="en">Features:
+- 11 Consoles of choice.
+- Advanced customized settings in addon settings.
+- Adult contents support.
+- Auto generate of predifined CFG, DIFF and NVRAM Arcade's settings.
+- Download any game directly! Over 2000 games are available!
+- Dreamcast virtual memory setup.
+- Fanart and Posters supports and are available as a download pack or per downloaded game.
+- Full PS3 Joystick support in-Kodi and in-Game (In-Game key videos are available per each console).
+- Games are categorized by number of possible players.
+- Genre and Description support.
+- High performance modules with improved quality.
+- Multi-disks support.
+- Search game by Title, Date, Platform, Publisher or Genre.
+- Search trailer in YouTube.
+- Smart self restore and update of contents.
     </description>
-	<description lang="he">לתמיכה שאל בקבוצת הפייסבוק.
-	Also don't forget to check the addon.xml file for the source of information.
-	</description>
     <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-	<forum></forum>
+	<forum>http://forum.kodi.tv/showthread.php?tid=304634</forum>
+	<website>https://www.youtube.com/@youplay.nostalgia</website>
 	<source>https://github.com/finalmakerr/featherence</source>
-	<website>https://www.youtube.com/@featherence</website>
   </extension>
-</addon>
-
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="3.5.3" provider-name="Sdarot">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.xbmcswift2" version="2.4.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-		<import addon="repository.sdarot" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <minversion>31632</minversion>
-        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
-        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
-        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
-        <description lang="he">סדרות הינו אתר העוסק בצפייה ישירה של סדרות שונות מהארץ ומחו"ל. כל הסדרות מח"ול הנמצאות באתר סדרות מכילות תרגום לעברית, גם בסדרות הישראליות יש תרגום לעתים. אתר סדרות מאפשר צפייה ישירה חינם לאלפי סדרות שונות ועשרות אלפי פרקים שונים בחינם! אתר סדרות מתעדכן על בסיס יומי ומאפשר צפייה ישירה בטכנולוגיות חדשניות תוך הקפדה על איכות מקסימלית ללא פשרות.</description>
-		<news>[B]Version 2.5.3[/B]
-- Change to a new domain.</news>
-        <supportedcontent>
-        <content>tvshows</content>
-        </supportedcontent>
-    </extension>
-</addon>
-
-	<addon id="plugin.video.wallaNew.video" name="וואלה" version="3.3.2" provider-name="sbentin, shlomico, nil">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="walla.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<platform>all</platform>
-			<minversion>31632</minversion>
-			<summary lang="en">Watch Walla video contents.</summary>
-			<summary lang="he">צפה במידע VOD מאתר walla</summary>
-			<description lang="en">Watch Walla contents (inculde Yes, Nickoldeon and Viva).</description>
-			<description lang="he">צפה במגוון הסרטים ערוצים וסדרות הניתנים לצפיה דרך אתר video.walla.co.il</description>
-			<disclaimer>This addon parse Walla site, you should check Walla's TOS before you using. It's as is</disclaimer>
-			<supportedcontent>
-			  <content>tvshows</content>
-			  <content>episodes</content>
-			  <content>movies</content>
-			</supportedcontent>
-		</extension>
-	</addon>
-
-<addon id="plugin.video.youtube" name="YouTube" version="5.4.15" provider-name="jdf76, bromix">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-        <news>
-[add] MPEG-DASH support for Kodi 17 w/ inputstream.adaptive add-on or SPMC 16 w/ builtin-in
-[add] optional History and Watch Later custom playlist to Settings -> Folders, or (My)Playlists context menu to set/remove
-[add] Maintenance section to Settings
-[add] 'Subtitle language(s) to download' selection to Settings -> General
-[add] 'Force SSL Certificate verification' to Settings -> Advanced
-[upd] API key set switching from Settings -> API (this will log you out)
-[upd] Dual login only required if My Subscriptions folder is enabled at sign-in
-[upd] setting content type from episodes, now videos
-[del] override view options
-[upd] Norwegian strings [torstehu]
-[upd] Greek strings [twilight0]
-[upd] Portuguese strings [Wanilton]
-[upd] Dutch strings [flemlion]
-[fix/upd] API tweaking and various other updates
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <summary lang="en">Plugin for YouTube</summary>
-        <description lang="en">YouTube is one of the biggest video-sharing websites of the world.</description>
-		<summary lang="de">Plugin für YouTube</summary>
-        <description lang="de">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
-        <summary lang="pl">Wtyczka YouTube</summary>
-        <description lang="pl">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
-		<summary lang="hu">Kiegészítő  a YouTube-hoz</summary>
-        <description lang="hu">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
-        <summary lang="es">Plugin para YouTube</summary>
-        <description lang="es">YouTube es un uno de los mayores sitios web de intercambio de vídeos del mundo.</description>
-        <summary lang="ru">Видеодополнение YouTube</summary>
-        <description lang="ru">Данное дополнение позволяет находить и смотреть видео на всеми любимом сайте.</description>
-        <summary lang="fr">Plugin pour YouTube</summary>
-        <description lang="fr">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
-        <summary lang="zh">YouTube附加元件</summary>
-        <description lang="zh">「Youtube」是全世界最大的影片分享網站</description>
-        <summary lang="bg">Добавка за YouTube</summary>
-        <description lang="bg">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
-		<summary lang="el">Πρόσθετο YouTube</summary>
-        <description lang="el">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
-        <summary lang="no">Tillegg for YouTube</summary>
-        <description lang="no">YouTube er en av verdens største nettsider for videodeling.</description>
-        <disclaimer lang="en"></disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=267160</forum>
-		<website>http://www.youtube.com</website>
-		<email>ytplugin at datanet dot ws</email>
-		<source>https://github.com/Kolifanes/plugin.video.youtube</source>
-	</extension>
 </addon>
 
 <addon id="repository.featherence" name="Featherence repository" version="1.2.0" provider-name="finalmakerr">
@@ -245,6 +146,22 @@
 	<email>featherence.kodi@gmail.com</email>
 	<source>https://github.com/finalmakerr/featherence</source>
 	<website>https://www.youtube.com/@featherence</website>
+  </extension>
+</addon>
+
+<addon id="script.module.featherence.emu" name="Featherence Emu Module" version="1.1.14" provider-name="finalmakerr">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+	<platform>all</platform>
+    <summary>Multi-emulator frontend based on libretro</summary>
+    <description lang="en">_</description>
+	<description lang="he">_</description>
+    <disclaimer></disclaimer>
+	<source>https://github.com/finalmakerr/featherence</source>
+	<website>https://www.youtube.com/@youplay.nostalgia</website>
   </extension>
 </addon>
 
