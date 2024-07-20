@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<zorder>2</zorder>
-	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Paused | Player.Caching | Player.ShowInfo | Player.ShowTime | Player.IsTempo | Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
-	<visible>[Window.IsActive(FullscreenVideo) | Window.IsActive(FullscreenGame) | Window.IsActive(Visualisation) | Window.IsActive(subtitlesearch)] + Player.Paused + !Player.ShowInfo</visible>
+	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !IsEmpty(Player.SeekNumeric)</visible>
+	<visible>!Window.IsActive(sliderdialog)</visible>
 	<depth>DepthOSD</depth>
+	<zorder>0</zorder>
 	<controls>
 		<include>DialogSeekBar</include>
 		<include>featherencepause</include>
 		<include>ForwardingRewinding</include>
-		<!--<include>TopInformation</include>-->
+		<include>TopInformation</include>
 	</controls>
 </window>

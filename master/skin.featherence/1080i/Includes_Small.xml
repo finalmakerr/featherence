@@ -362,7 +362,7 @@
 		<visible>!VideoPlayer.Content(LiveTV)</visible>
 		<control type="image">
 			<left>0</left>
-			<top>10</top>
+			<top>4</top>
 			<width>1920</width>
 			<height>70</height>
 			<texture border="1,32,1,1">osd/bottombar.png</texture>
@@ -404,9 +404,8 @@
 			<visible>!Window.IsVisible(VideoOSD.xml)</visible>-->
 			<orientation>horizontal</orientation>
 		</control>
-		<control type="label">
+		<control type="label" id="402">
 		  <font>size24</font>
-		  <label>$VAR[TimeLabels]</label>
 		  <posx>7</posx>
 		  <posy>7</posy>
 		</control>
@@ -607,6 +606,10 @@
 		<posy>185</posy>
         <width>184</width>
         <height>9</height>
+        <texturebg border="6,0,6,0" colordiffuse="$VAR[VolumeIconColor]">progress/ProgressBG.png</texturebg>
+        <midtexture border="0,1,0,1" colordiffuse="$VAR[VolumeIconColor]">progress/ProgressM.png</midtexture>
+        <righttexture border="1,1,6,1" colordiffuse="$VAR[VolumeIconColor]">progress/ProgressR.png</righttexture>
+        <lefttexture border="6,1,1,1" colordiffuse="$VAR[VolumeIconColor]">progress/ProgressL.png</lefttexture>
         <overlaytexture>-</overlaytexture>
         <info>Player.Volume</info>
       </control>
