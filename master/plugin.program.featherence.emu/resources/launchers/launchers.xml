@@ -20283,6 +20283,51 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1e79aa1ba6713ed9761ebd3f49b0</id>
+					<name>Heroes of Might and Magic I XXXXX</name>
+					<filename>rom_pathDOS/_EN/Heroes of Might and Magic I/GO.BAT</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Heroes of Might and Magic I.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Heroes of Might and Magic I.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>1995</release>
+					<publisher>Ubisoft</publisher>
+					<gameplot>Heroes of Might and Magic is a turn-based strategy game in which the player takes on the role of one of four different heroes: the warlock, sorceress, barbarian, or knight. As the hero the player must build up his or her castle by adding different buildings to earn different units to strengthen the hero's army with. Units include dragons, cyclopes, phoenixes, paladins, and many more fantasy creatures. Buildings and units cost money and resources. Buildings can also be upgraded to unlock new unit types.[CR]Another aspect of the game is exploring the world and discovering treasures, spells, mines to gather resources, nomad camps, magic lamps, ultimate artifacts, and more. The game uses a top down map in which the player can move his heroes a number of spaces each turn. Whenever the player encounters an enemy hero or castle a battle is shown in a close-up view.[CR]During battles all the player's units are shown as stacks. The player can move these stacks around on a hexagonal grid. Different units have different movement and attack capabilities requiring different strategies to use and overcome.[CR]The goal is to defeat all opponents by conquering their castles and defeating their heroes in battle. The player must also defend his own castles from enemy attacks. The player's heroes can collect spells to use in battle and can boost the units under their command, but they otherwise don't have a presence on the battlefields. The heroes collect experience points in typical RPG manner which boosts their stats. In addition, items can be collected for additional bonuses.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d39a1a79aa1ba6713ed9761ebd3f49b0</id>
+					<name>Snoopy</name>
+					<filename>rom_pathDOS/_EN/Snoopy/SNOOPY.COM</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Snoopy.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Snoopy.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Adventure</genre>
+					<release>1989</release>
+					<publisher>Edge</publisher>
+					<gameplot>A simple adventure game for young players where you play Snoopy as the main character solving various puzzles in the area.[CR]The basic idea is manipulating objects by picking them up and dropping them at certain areas, which will result in a new sequence to the plot.[CR]You can use either a keyboard or joystick to play the game and there are only 5 actions you can perform: Move left, Move right, Jump, Pickup/Drop and Object Information.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>d29a1a79aa1ba6713ed9761ebd3f49b0</id>
+					<name>Scorched Earth</name>
+					<filename>rom_pathDOS/_EN/Scorched Earth/SCORCH.exe</filename>
+					<thumb>rom_pathDOS/_EN/_Artwork/boxfront/Scorched Earth.jpg</thumb>
+					<fanart>rom_pathDOS/_EN/_Artwork/screenshot/Scorched Earth.png</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Strategy</genre>
+					<release>1991</release>
+					<publisher>Edge</publisher>
+					<gameplot>It's all-out war in Scorched Earth, an artillery combat game. You and up to nine friends can duke it out on hills and in valleys as you nuke each other into submission in this turn-based tank battle.[CR]At the start of each round, each player purchases their weaponry, and if they choose, shields and parachutes for defense and safety from long drops. Then it's off to battle! Aim your cannon, taking note of trajectory and wind, and fire off your weapons in attempt to take out the opposition.[CR]The game offers a variety of weapons. A small sample of these include the standard nukes, which obliterate the screen. There's the Funky Bomb, which scatters smaller bombs in an unpredictable variety of directions. Or, if missiles aren't your thing, you can send your foes a personal gift of flaming napalm. There are also dirt bombs which can be used to bury opponents or yourself, for safety from opposing attacks.[CR]One of the other features are the amusing quips displayed before a shot is fired, and when a tank is destroyed. These can even be added to by editing the files to give your threats a more personal flavor.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1e79ba1ba6713ed9761ebd3f49b0</id>
 					<name>King's Quest</name>
 					<filename>rom_pathDOS/_EN/King's Quest/KingsQ~1.BAT</filename>

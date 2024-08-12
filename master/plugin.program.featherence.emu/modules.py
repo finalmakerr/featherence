@@ -315,15 +315,9 @@ def copykeymaps():
 	filename_ = ""
 	returned = dialogyesno('Would you like to continue?','This action will overwrite your current related files!')
 	if returned == 'ok':
-		keymaps_path = os.path.join(userdata_path, 'keymaps', '')
+		keymaps_path = os.path.join(userdata_path, 'keymaps', '') ; keymaps_path2 = os.path.join(addondata_path,'peripheral.joystick','resources','buttonmaps','xml','linux','')
 		copyfiles(emukeymaps_path, keymaps_path)
-		
-		keymaps2_path = os.path.join(userdata_path, 'addon_data', 'peripheral.joystick', 'resources', 'buttonmaps', 'xml', '')
-		if os.path.exists(keymaps2_path) and 1 + 1 == 3:
-			copyfiles(emukeymaps2_path, keymaps2_path)
-			for file in os.listdir(emukeymaps2_path):
-				filename = os.path.basename(file)
-				filename_ = filename_ + ', ' + filename
+		copyfiles(emukeymaps3_path, keymaps_path2)
 		
 		xbmc.executebuiltin('Action(reloadkeymaps)')
 				

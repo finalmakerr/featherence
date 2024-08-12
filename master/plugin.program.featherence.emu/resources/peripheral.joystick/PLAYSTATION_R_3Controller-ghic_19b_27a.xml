@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<buttonmap>
+    <device name="PLAYSTATION(R)3Controller-ghic" provider="linux" buttoncount="19" axiscount="27">
+        <configuration>
+            <axis index="8" center="-1" range="2" />
+            <axis index="9" center="-1" range="2" />
+            <axis index="10" center="-1" range="2" />
+            <axis index="12" center="-1" range="2" />
+            <axis index="13" center="-1" range="2" />
+            <axis index="14" center="-1" range="2" />
+            <axis index="15" center="-1" range="2" />
+            <axis index="16" center="-1" range="2" />
+            <axis index="17" center="1" range="2" />
+            <axis index="18" center="1" range="2" />
+            <axis index="19" center="-1" range="2" />
+        </configuration>
+        <controller id="game.controller.dreamcast">
+            <feature name="a" button="14" />
+            <feature name="b" axis="+18" />
+            <feature name="down" button="5" />
+            <feature name="left" button="7" />
+            <feature name="right" axis="+8" />
+            <feature name="up" button="4" />
+        </controller>
+        <controller id="game.controller.ps">
+            <feature name="cross" button="14" />
+            <feature name="down" button="6" />
+            <feature name="left" button="7" />
+            <feature name="leftbumper" button="10" />
+            <feature name="leftstick">
+                <up axis="+13" />
+            </feature>
+            <feature name="lefttrigger" button="8" />
+            <feature name="right" button="5" />
+            <feature name="rightbumper" button="11" />
+            <feature name="righttrigger" button="9" />
+            <feature name="select" button="0" />
+            <feature name="square" button="15" />
+            <feature name="start" button="3" />
+            <feature name="triangle" button="12" />
+            <feature name="up" axis="+8" />
+        </controller>
+    </device>
+</buttonmap>

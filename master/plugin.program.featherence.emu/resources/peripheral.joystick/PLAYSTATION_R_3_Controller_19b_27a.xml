@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<buttonmap>
+    <device name="PLAYSTATION(R)3 Controller" provider="linux" buttoncount="19" axiscount="27">
+        <configuration>
+            <axis index="8" center="-1" range="1" />
+            <axis index="10" center="-1" range="1" />
+            <axis index="12" center="-1" range="2" />
+            <axis index="13" center="-1" range="2" />
+            <axis index="14" center="-1" range="1" />
+            <axis index="15" center="-1" range="1" />
+            <axis index="18" ignore="true" />
+            <axis index="19" center="-1" range="2" />
+        </configuration>
+        <controller id="game.controller.ps">
+            <feature name="triangle" axis="+1" />
+        </controller>
+    </device>
+</buttonmap>
