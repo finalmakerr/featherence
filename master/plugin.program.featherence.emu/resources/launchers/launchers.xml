@@ -12828,7 +12828,7 @@
 			<name>Sony Playstation 2P</name>
 			<category>Featherence_playstation</category>
 			<application>emulator_file</application>
-			<args>lib_args_ps2_args "%rom%"</args>
+			<args>lib_args_ps1_args "%rom%"</args>
 			<rompath>rom_pathSony Playstation/_2P/</rompath>
 			<thumbpath>rom_pathSony Playstation/_2P/_Artwork/boxfront/</thumbpath>
 			<fanartpath>rom_pathSony Playstation/_2P/_Artwork/screenshot/</fanartpath>
@@ -13192,6 +13192,21 @@
 					<release>2000</release>
 					<publisher>Eidetic</publisher>
 					<gameplot>Deadly Espionage In A World Held Hostage  "Intelligence reports have confirmed that the Syphon Filter virus is being sold to a terrorist nation. Gabe and Lian Xing, use lethal force to stop the save and prevent imminent acts of bio-warfare." - Special Agent Lipan  Operation: "The Enemy Within"  * Active Agents: Gabe Logan and Lian Xing, exited Agency operatives.  * Current Arsenal: Nightvision Rifle, M-16 Assault Rifle, Flame Thrower, Silenced 9mm Handgun, Sniper Rifle, M-79 Grenade Launcher, Tear Gas, Crossbow, Combat Knife and more.  * Global Intelligence Experts: Explore more than 20 huge, international environments.  * Combat Force Operatives: Battle deadly terrorists as either Gabe Logan or Lian Xing.  * Special Operation Note: Utilize all-new 2-player mode for more intense, action-packed challenges.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
+					<id>077961c5c3aabcf74bd7d301ab5cfd5f</id>
+					<name>Syphon Filter 3</name>
+					<filename>rom_pathSony Playstation/_2P/Syphon Filter 2/Syphon Filter 3.m3u</filename>
+					<thumb>rom_pathSony Playstation/_2P/_Artwork/boxfront/Syphon Filter 3.jpg</thumb>
+					<fanart>rom_pathSony Playstation/_2P/_Artwork/screenshot/Syphon Filter 3.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Shooter</genre>
+					<release>2001</release>
+					<publisher>Sony</publisher>
+					<gameplot>Gabe and Lian are back -- however, this time, "The Agency" has put Lian and Gabe on trial for crimes they did not commit while they secretly plot to distribute Syphon Filter, a deadly virus, throughout the population. And with Gabe and Lian on trial, there would be no one to stop them...[CR]The game now includes mini-missions that allow you to sharpen your skills. The basic mini-mission simply takes a map, drops you in, tosses in some enemies and weapons and lets you do the rest. There is also an improved multiplayer element and tons of new weapons, including an X-Ray sniper rifle and an explosive shotgun.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
@@ -19672,6 +19687,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>7d2gcd81ea21668385a37ed78f4p0011</id>
+					<name>TimeSplitters 3</name>
+					<filename>rom_pathGameCube/_4P/TimeSplitters 3.iso</filename>
+					<thumb>rom_pathGameCube/_4P/_Artwork/boxfront/TimeSplitters 3.jpg</thumb>
+					<fanart>rom_pathGameCube/_4P/_Artwork/screenshot/TimeSplitters 3.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Action / Shooter</genre>
+					<release>2005</release>
+					<publisher>Electronic Arts</publisher>
+					<gameplot>In the year 2401 the space marine Sergeant Cortez is leaving the space station that he visited in the end of his previous journey. He soon discovers that the crystals he has found can power up a time machine. After having located traces of TimeSplitter activities in various time periods on the Earth, Cortez boards the time machine and travels to these periods, hoping to aid various characters in their battles against evil.[CR]TimeSplitters: Future Perfect is a first-person shooter in which players battle their way through thirteen story missions spread across six time periods, either alone or cooperatively. The protagonist's arsenal varies depending on the time period he travels to: for example, traveling to 1924 will allow Cortez to wield World War I weapons; a Soviet setting in the 1960's contains various local firearms of that time period; stages that take place in the future feature corresponding futuristic weaponry, etc. In addition to fast-paced shooting gameplay there are also some stealth and vehicle-driving segments.[CR]Like in the previous installments of the series, various multiplayer modes are included. Players can take on computer-controlled opponents on any of the fifteen arcade maps, or make their own ones. Players can also compete for awards in dozens of arcade league matches and challenges. It is possible to choose from between 150 characters and challenge other players to a head-to-head battle, either with up to four-player split screen or online and LAN play.</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>7d2gcd81ea61668385a37ed78f4p0012</id>
 					<name>NBA Street Vol 2</name>
 					<filename>rom_pathGameCube/_4P/NBA Street Vol 2.iso</filename>
@@ -24740,6 +24770,21 @@
 					<altarg></altarg>
 				</rom>
 				<rom>
+					<id>d39a1ne1qx1ba6711bc1769zbd3f4020</id>
+					<name>So You Think You're Smart?</name>
+					<filename>rom_pathWIN95/_SCUMMVM/So You Think You're Smart/GO.BAT</filename>
+					<thumb>rom_pathWIN95/_SCUMMVM/_Artwork/boxfront/So You Think You're Smart.jpg</thumb>
+					<fanart>rom_pathWIN95/_SCUMMVM/_Artwork/screenshot/So You Think You're Smart.jpg</fanart>
+					<trailer></trailer>
+					<custom></custom>
+					<genre>Puzzles</genre>
+					<release>1998</release>
+					<publisher>מִשׂגב מערכות</publisher>
+					<gameplot>אתם יודעים, הרושם הראשוני שיש לנו על בן אדם יכול להיות מוטעה לפעמים...[CR]אני זוכר את הפעם הראשונה שראיתי את טל פרידמן בטלוויזיה, זה היה בתוכנית בשם "שערוריה", תוכנית קומית שכל קשר בינה לבין קומדיה הוא מקרי בהחלט, ישבתי שעות וחיפשתי קטעים מצחיקים בכמה פרקים אך לשווא, התוכנית דמתה יותר לטרגדיה יוונית מאשר לקומדיה.[CR]אני זוכר שאמרתי על טל פרידמן: "הבנאדם הזה לא יוכל להצחיק גם אם חייו יהיו תלויים בכך".[CR]קיבינמט כמה שטעיתי...[CR]הדרך לגילוי הטעות שלי עברה דרך "חלומות בהקיציס", "החטא ועונשו" וכמובן, "ארץ נהדרת", אך ראשיתה דווקא במשחק קטן ומדהים אשר נשא את השם המחייב: "אתה חושב שאתה חכם"</gameplot>
+					<altapp></altapp>
+					<altarg></altarg>
+				</rom>
+				<rom>
 					<id>d39a1e21xa1ba6711bc1769zbd3f4021</id>
 					<name>Hugo on the Train</name>
 					<filename>rom_pathWIN95/_SCUMMVM/Hugo on the Train/GO.BAT</filename>
@@ -24886,61 +24931,61 @@
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30003</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Final Fantasy XII</name>
+					<filename>rom_pathSony Playstation 2/_1P/Final Fantasy XII.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Final Fantasy XII.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Final Fantasy XII.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>RPG</genre>
+					<release>2006</release>
+					<publisher>Square Enix</publisher>
+					<gameplot>Two powerful empires, Archadia and Rozaria, are at war. All they care for is victory over the opponent. In order to achieve it more quickly, Archadia invades the small kingdom of Dalmasca. The young prince of Dalmasca falls in battle shortly after his marriage to the beautiful princess Ashe. The king is murdered under mysterious circumstances just before signing a peace treaty with Archadia. The iron rule of the empire is established in the small country.[CR]The player takes control of a young thief named Vaan who lives in Rabanastre, the capital city of Dalmasca. Through a series of events Vaan finds himself involved in the political struggle, hoping to avenge the death of his treacherously murdered brother.[CR]Final Fantasy XII is set in Ivalice, a fantasy world which also served as a setting for Final Fantasy Tactics. The game differs from its predecessors in several core gameplay-related aspects. The game world is composed of vast areas with visibly walking enemies. There are no separate battle screens in the game; combat takes place in the same environment as exploration. Player-controlled characters can freely move during combat. Actions are still selected by choosing commands from a pop-up menu, and each character has a traditional ATB bar that determines when he or she may act; however, overall the combat resembles the "real-time with pause" system of Western role-playing games such as Knights of the Old Republic.[CR]The player can issue specific commands to the party members, or assign to them combat strategies (called "gambits" in the game). New magic, abilities, and equipment are bought from stores or found in containers in the world. Before a character can use any of these, the player has to buy a corresponding license by spending license points earned in combat. These act like skill points, and can be allocated by the player manually on the character's license board.[CR]In addition to the enemies and bosses found by following the story, the player can also accept "Hunts" posted in bars or offered to the player in conversations. These are optional encounters where the player has to track down and either trap or lure a very powerful monster before defeating it.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30004</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Resident Evil 4</name>
+					<filename>rom_pathSony Playstation 2/_1P/Resident Evil 4.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Resident Evil 4.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Resident Evil 4.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2005</release>
+					<publisher>Capcom</publisher>
+					<gameplot>Picking up six years after Resident Evil 2, the fourth game in the series follows a former cop (now US agent), Leon S. Kennedy, to Europe on a top-secret mission to investigate the disappearance of the president's daughter Ashley. As Leon encounters unimaginable horrors, he must find out who or what is behind everything. Old friends...and enemies...lurk around every corner as Leon attempts to find out who is truly behind the kidnapping of the president's daughter.[CR]Resident Evil 4 is a major change from the previous installments. Instead of a fixed third-person perspective, the game features a new "behind the back" movement camera angle and an "over the shoulder" aiming feature that allows players to control their gun movement for specific body part hits. It features a brand new AI system and more open environments that allow enemies to work together to capture and corner Leon. Enemies are now humans, which allows them to climb up ladders, open doors, and use weapons throughout the game.[CR]The entire item system has also been revamped, so that smaller items no longer require an entire item space to hold. Instead, items take up blocks of space in a briefcase according to their real-life size, to allow for many more items and weapons. Leon can collect treasure from enemies or from the surrounding area, and visit the infamous "merchant" to purchase bigger briefcases, treasure maps, weapons upgrades, and powerful weapons such as the one-shot RPG.[CR]There is also the Mercenaries mode from Resident Evil 3, which allows the player to play survival scenarios as characters such as Hunk and even Albert Wesker himself.[CR]Unlike the original GameCube release, later released platforms come with a bonus story mode called Separate Ways which becomes unlocked after finishing the main game. This story lets you play as Ada Wong and occurs in parallel to the main story, showing you what Ada did, who she contacted, and where she's been when she wasn't with Leon. While most of the locations and weapons are the same, there are some entirely new levels and Ada's personal gadgets not previously seen in the main story.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30005</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Metal Gear Solid 2</name>
+					<filename>rom_pathSony Playstation 2/_1P/Metal Gear Solid 2.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Metal Gear Solid 2.png</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Metal Gear Solid 2.png</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Action</genre>
+					<release>2002</release>
+					<publisher>Konami</publisher>
+					<gameplot>Metal Gear Solid 2: Substance is a re-vamped and revised edition of the original Metal Gear Solid 2: Sons of Liberty, in which Solid Snake must recover the stolen Metal Gear Ray from a group of terrorists bent on using its power for unthinkable reasons.[CR]Along with the original espionage shooter comes a collection of 200 virtual reality (VR) missions. Missions range from killing certain targets and using particular weapons, as well as seeing the world of Solid Snake from different perspectives and styles, with first-person target modes and a variety mode including crazy characters of different shapes and sizes.[CR]Also included are various alternative missions, ranging from the protagonist sneaking around and snapping photos of targets to bomb disposal, all out destruction, and more.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
 				<rom>
 					<id>57fe101bfv5fcc9dfc22fc8536f30006</id>
-					<name>XXXXX</name>
-					<filename>rom_pathSony Playstation 2/_1P/XXXXX.iso</filename>
-					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/XXXXX.jpg</thumb>
-					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/XXXXX.jpg</fanart>
+					<name>Heroes of Might and Magic - Quest for the DragonBone Staff</name>
+					<filename>rom_pathSony Playstation 2/_1P/Heroes of Might and Magic - Quest for the DragonBone Staff.iso</filename>
+					<thumb>rom_pathSony Playstation 2/_1P/_Artwork/boxfront/Heroes of Might and Magic - Quest for the DragonBone Staff.jpg</thumb>
+					<fanart>rom_pathSony Playstation 2/_1P/_Artwork/screenshot/Heroes of Might and Magic - Quest for the DragonBone Staff.jpg</fanart>
 					<trailer></trailer>
 					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
+					<genre>Strategy</genre>
+					<release>2001</release>
+					<publisher>3DO</publisher>
+					<gameplot>Heroes of Might and Magic: Quest for the DragonBone Staff is really the old classic King's Bounty from New World Computing for the PC with revamped graphics. Very little else has changed, in fact even the text was the exact same with the original.[CR]For those who are not familiar with the history of the series, King's Bounty was a spin-off of the Might & Magic RPG series which was then still in its early chapters and was inspired by board games. The gameplay resembles a simplified Heroes of Might & Magic game with only one Hero and no city improvements. Combat is turn-based using a set grid and stacked units.[CR]The goal of the game is to discover an ancient artifact by collecting pieces of a map and identifying its location before time runs out. Of course the player must have amassed a strong army by then because he will have to face the evil Dragon overlord before the end.</gameplot>
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>

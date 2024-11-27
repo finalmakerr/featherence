@@ -950,7 +950,7 @@ def mode32(value, value2="", value3="", name="", printpoint=""):
 		if admin == 'false':
 			setsetting('admin','true')
 			#setsetting_custom1('script.featherence.service','admin',"true")
-			#notification(admin,'','',1000)
+			notification(admin,'','',1000)
 			setSkinSetting('1','Admin','true')
 		else:
 			setsetting('admin','false')
